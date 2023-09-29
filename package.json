@@ -1,0 +1,10 @@
+{
+  "name": "@xmonks/website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xmonks/website.git",
+  "author": "Aleš Roubíček <ales@roubicek.name>",
+  "license": "Apache-2.0",
+  "private": true,
+  "packageManager": "yarn@3.6.3"
+}
