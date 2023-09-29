@@ -1,0 +1,53 @@
+:root {
+  --headings-font-family: "ouma-latin-variable", sans-serif;
+  --text-font-family: "mae-variable", sans-serif;
+  --text-color: black;
+  --background: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white;
+    --background: black;
+  }
+}
+
+body {
+  font-family: var(--text-font-family);
+  font-variant-ligatures: common-ligatures;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+
+  color: var(--text-color);
+  background-color: var(--background);
+  color-scheme: light dark;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--headings-font-family);
+}
+
+h1 {
+  font-size: var(--font-size-fluid-3);
+  font-variation-settings: 'wght' 700;
+}
+
+h2 {
+  color: var(--background);
+  background-color: var(--lime-5);
+  font-size: var(--font-size-fluid-2);
+  font-variation-settings: 'wght' 500;
+
+  padding: 0.5em 1em;
+  inline-size: max-content;
+}
+
+h2 + h2 {
+  background-color: var(--orange-4);
+}
+
+h2 + h2 + h2 {
+  background-color: var(--purple-5);
+}

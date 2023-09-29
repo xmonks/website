@@ -1,0 +1,22 @@
+{% extends 'layouts/website.html' %}
+
+{% block title %}xmonks.studio{% endblock %}
+
+{% block content %}
+<h1>xmonks.studio</h1>
+
+{% markdown %}
+## extreme
+## experience
+## experiment
+{% endmarkdown %}
+
+{% endblock %}
+
+{% block javascript %}
+<script type="module">
+  import { helloWorld } from "{{ 'index.js' | assetUrl('esm') }}";
+
+  helloWorld();
+</script>
+{% endblock %}
