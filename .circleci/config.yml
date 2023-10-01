@@ -22,7 +22,7 @@ jobs:
           command: yarn build
       - run:
           name: Deploy website
-          command: yarn wrangler pages deploy public --project-name website
+          command: yarn wrangler pages publish public --project-name website
 
 workflows:
   ci:
