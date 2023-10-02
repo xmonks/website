@@ -5,6 +5,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.1.0
+  slack: circleci/slack@4.12.5
 
 jobs:
   build:
@@ -23,9 +24,20 @@ jobs:
       - run:
           name: Deploy website
           command: yarn wrangler pages publish public --project-name website
+      - slack/notify:
+          event: fail
+          mentions: '@here'
+          template: basic_fail_1
+          channel: ntf-website
+      - slack/notify:
+          event: pass
+          template: success_tagged_deploy_1
+          channel: ntf-website
 
 workflows:
   ci:
     jobs:
       - build:
-          context: cloudflare
+          context:
+            - cloudflare
+            - slack
