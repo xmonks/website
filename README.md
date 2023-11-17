@@ -1,1 +1,3 @@
 # website
+
+`yarn start`
