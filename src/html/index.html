@@ -1,21 +1,21 @@
 {% extends 'layouts/website.html' %}
 
-{% block title %}xmonks.studio{% endblock %}
+{% block title %}hckr.studio{% endblock %}
 
 {% block content %}
-<h1>xmonks.studio</h1>
+<h1><img src="/assets/img/hckr-studio.png" alt="hckr.studio" width="357" height="160"></h1>
 
 {% markdown %}
 ## extreme
 ## experience
-## experiment
+## experiments
 {% endmarkdown %}
 
 {% endblock %}
 
 {% block javascript %}
 <script type="module">
-  import { helloWorld } from "{{ 'index.js' | assetUrl('esm') }}";
+  import {helloWorld} from "{{ 'index.js' | assetUrl('esm') }}";
 
   helloWorld();
 </script>
