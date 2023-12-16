@@ -1,15 +1,15 @@
 {
-  "name": "@xmonks/website",
+  "name": "@hckr-studio/website",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
-  "repository": "https://github.com/xmonks/website.git",
+  "repository": "https://github.com/hckr-studio/website.git",
   "author": "Aleš Roubíček <ales@roubicek.name>",
   "license": "Apache-2.0",
   "private": true,
-  "packageManager": "yarn@3.6.3",
+  "packageManager": "yarn@4.0.2",
   "devDependencies": {
-    "@xmonks/blendid": "https://github.com/xmonks/blendid.git#commit=42f57c1f425d6dc80e894d381320dee4984fd485",
+    "@hckr_/blendid": "7.0.2",
     "open-props": "1.6.12",
     "postcss-jit-props": "1.0.14",
     "wrangler": "3.16.0"
