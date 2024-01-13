@@ -23,7 +23,8 @@ const hckrTvPages = createPages(account, hckrTvZone.zone, "@", "hckr-tv");
 const redirects = [
   createRedirect(account, hckrSpaceZone.zone, "www", "hckr_space", hckrSpacePages.domain.domain),
   createRedirect(account, hckrStudioZone.zone, "www", "hckr_studio", hckrStudioPages.domain.domain),
-  createRedirect(account, hckrTvZone.zone, "www", "hckr_tv", hckrTvPages.domain.domain)
+  createRedirect(account, hckrTvZone.zone, "www", "hckr_tv", hckrTvPages.domain.domain),
+  ["rarous.net", "https://www.rarous.net"]
 ];
 
 const list = new cloudflare.List(`hckr/redirect-list`, {
