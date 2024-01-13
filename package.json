@@ -1,21 +1,21 @@
 {
-  "name": "@hckr-studio/website",
+  "name": "@hckr-studio/websites",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
-  "repository": "https://github.com/hckr-studio/website.git",
+  "repository": "https://github.com/hckr-studio/websites.git",
   "author": "Aleš Roubíček <ales@roubicek.name>",
   "license": "Apache-2.0",
   "private": true,
-  "packageManager": "yarn@4.0.2",
   "devDependencies": {
-    "@hckr_/blendid": "7.0.2",
-    "open-props": "1.6.12",
-    "postcss-jit-props": "1.0.14",
-    "wrangler": "3.16.0"
+    "dprint": "^0.45.0"
   },
   "scripts": {
-    "build": "blendid build",
-    "start": "blendid"
-  }
+    "fmt": "dprint fmt \"**/*.{md,mjs,js,json}\""
+  },
+  "workspaces": [
+    "hckr.studio",
+    "infrastructure"
+  ],
+  "packageManager": "yarn@4.0.2"
 }

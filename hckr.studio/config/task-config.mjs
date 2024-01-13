@@ -1,6 +1,6 @@
 import OpenProps from "open-props";
 import jitProps from "postcss-jit-props";
-import pathConfig from "./path-config.json" assert {type: "json"};
+import pathConfig from "./path-config.json" assert { type: "json" };
 
 export default {
   html: true,
@@ -17,9 +17,9 @@ export default {
   stylesheets: {
     postcss: {
       plugins: [
-        jitProps(OpenProps)
-      ]
-    }
+        jitProps(OpenProps),
+      ],
+    },
   },
 
   workboxBuild: {
@@ -27,14 +27,14 @@ export default {
     globPatterns: ["**/*.{html,json,js,css,png,jpg,gif,svg}"],
     // Create service-worker.js source file and define `swSrc` to use `injectManifest` method
     // swSrc: `${pathConfig.src}/sw.js`,
-    swDest: `${pathConfig.dest}/sw.prod.js`
+    swDest: `${pathConfig.dest}/sw.prod.js`,
   },
 
   production: {
-    rev: true
+    rev: true,
   },
 
   watch: {
-    tasks: []
-  }
+    tasks: [],
+  },
 };

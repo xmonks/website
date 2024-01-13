@@ -1,3 +1,3 @@
-# website
+# websites
 
-`yarn start`
+Monorepo for websites

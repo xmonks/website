@@ -1,0 +1,9 @@
+{
+  "name": "@hckr-studio/websites-infrastructure",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@pulumi/cloudflare": "5.18.1",
+    "@pulumi/pulumi": "3.101.1"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "src": "./src",
-  "dest": "./public",
+  "dest": "../.blendid/public/hckr.studio",
 
   "html": {
     "src": "html",

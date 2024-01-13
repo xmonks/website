@@ -21,9 +21,11 @@ jobs:
       - run:
           name: Build website
           command: yarn build
+          working_directory: hckr.studio
       - run:
           name: Deploy website
-          command: yarn wrangler pages deploy public --project-name xmonks-studio
+          command: yarn wrangler pages deploy ../.blendid/public/hckr.studio --project-name hckr-studio
+          working_directory: hckr.studio
       - slack/notify:
           event: fail
           mentions: '@here'

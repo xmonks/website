@@ -1,0 +1,6 @@
+name: hckr-websites
+runtime:
+  name: nodejs
+  options:
+    typescript: false
+description: Infrastructure for hckr.studio websites
