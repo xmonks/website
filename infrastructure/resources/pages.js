@@ -19,19 +19,18 @@ export function createPages(account, zone, recordName, projectName) {
     value: pages.domains[0],
     ttl: 1,
     proxied: true,
-  }, {dependsOn: [zone, pages]});
+  }, { dependsOn: [zone, pages] });
 
   const domain = new cloudflare.PagesDomain(`${projectName}/pages-domain`, {
     accountId: account.id,
     domain: record.hostname,
     projectName: pages.name,
-  }, {dependsOn: [record]});
+  }, { dependsOn: [record] });
 
-  return {pages, record, domain};
+  return { pages, record, domain };
 }
 
 export function createRedirect(account, zone, recordName, projectName, target) {
-
   new cloudflare.Record(`${projectName}/redirect-dns-record-a`, {
     zoneId: zone.id,
     name: recordName,
@@ -39,7 +38,7 @@ export function createRedirect(account, zone, recordName, projectName, target) {
     value: "192.0.2.1",
     ttl: 1,
     proxied: true,
-  }, {dependsOn: [zone]});
+  }, { dependsOn: [zone] });
 
   new cloudflare.Record(`${projectName}/redirect-dns-record-aaaa`, {
     zoneId: zone.id,
@@ -48,7 +47,7 @@ export function createRedirect(account, zone, recordName, projectName, target) {
     value: "100::",
     ttl: 1,
     proxied: true,
-  }, {dependsOn: [zone]});
+  }, { dependsOn: [zone] });
 
-  return [target.apply(x => `${recordName}.${x}`), target.apply(x => `https://${x}`)]
+  return [target.apply(x => `${recordName}.${x}`), target.apply(x => `https://${x}`)];
 }

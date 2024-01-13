@@ -9,5 +9,3 @@ export function createDnsZone(account) {
 
   return { zone };
 }
-
-

@@ -3,7 +3,7 @@ import pulumi from "@pulumi/pulumi";
 import * as hckrSpace from "./hckr-space.js";
 import * as hckrStudio from "./hckr-studio.js";
 import * as hckrTv from "./hckr-tv.js";
-import {createPages, createRedirect} from "./resources/pages.js";
+import { createPages, createRedirect } from "./resources/pages.js";
 
 const config = new pulumi.Config();
 
@@ -11,7 +11,7 @@ const account = new cloudflare.Account("rarous", {
   accountId: config.require("cloudflare-accountId"),
   name: "rarous",
   enforceTwofactor: true,
-}, {protect: true});
+}, { protect: true });
 
 const hckrSpaceZone = hckrSpace.createDnsZone(account);
 const hckrStudioZone = hckrStudio.createDnsZone(account);
@@ -24,7 +24,7 @@ const redirects = [
   createRedirect(account, hckrSpaceZone.zone, "www", "hckr_space", hckrSpacePages.domain.domain),
   createRedirect(account, hckrStudioZone.zone, "www", "hckr_studio", hckrStudioPages.domain.domain),
   createRedirect(account, hckrTvZone.zone, "www", "hckr_tv", hckrTvPages.domain.domain),
-  ["rarous.net", "https://www.rarous.net"]
+  ["rarous.net", "https://www.rarous.net"], // this is managed in another repository, but Lists are global to account
 ];
 
 const list = new cloudflare.List(`hckr/redirect-list`, {
@@ -41,11 +41,11 @@ const list = new cloudflare.List(`hckr/redirect-list`, {
           preserveQueryString: "enabled",
           includeSubdomains: "disabled",
           subpathMatching: "enabled",
-          preservePathSuffix: "enabled"
-        }]
-      }
+          preservePathSuffix: "enabled",
+        }],
+      },
     }
-  ))
+  )),
 });
 
 const rulset = new cloudflare.Ruleset(`hckr/redirect-ruleset`, {
@@ -60,12 +60,12 @@ const rulset = new cloudflare.Ruleset(`hckr/redirect-ruleset`, {
       expression: list.name.apply(x => `http.request.full_uri in $${x}`),
       action: "redirect",
       actionParameters: {
-        fromList: {key: "http.request.full_uri", name: list.name}
+        fromList: { key: "http.request.full_uri", name: list.name },
       },
-      enabled: true
-    }
-  ]
-})
+      enabled: true,
+    },
+  ],
+});
 
 export default {
   accountId: account.id,
@@ -75,4 +75,4 @@ export default {
   hckrSpaceHost: hckrSpacePages.domain.domain,
   hckrStudioHost: hckrStudioPages.domain.domain,
   hckrTvHost: hckrTvPages.domain.domain,
-}
+};
