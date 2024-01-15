@@ -19,7 +19,8 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn-berry
       - pulumi/update:
-          stack: rarous/hckr-websites/prod
+          working_directory: infrastructure
+          stack: prod
           skip-preview: true
       - slack/notify:
           event: fail
@@ -36,7 +37,8 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn-berry
       - pulumi/preview:
-          stack: rarous/hckr-websites/prod
+          working_directory: infrastructure
+          stack: prod
       - slack/notify:
           event: fail
           template: basic_fail_1
