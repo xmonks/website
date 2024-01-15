@@ -14,18 +14,35 @@ jobs:
     resource_class: arm.large
     steps:
       - checkout
-      - node/install:
-          install-yarn: true
       - node/install-packages:
           pkg-manager: yarn-berry
       - run:
-          name: Build website
+          name: Build hckr.studio website
+          working_directory: hckr.studio
           command: yarn build
-          working_directory: hckr.studio
+      - persist_to_workspace:
+          root: .
+          paths: .blendid
+      - slack/notify:
+          event: fail
+          mentions: '@here'
+          template: basic_fail_1
+          channel: ntf-website
+
+  deploy:
+    docker:
+      - image: cimg/node:lts
+    resource_class: arm.large
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - node/install-packages:
+          pkg-manager: yarn-berry
       - run:
-          name: Deploy website
+          name: Deploy hckr.studio website
+          working_directory: hckr.studio # change directory to deploy functions
           command: yarn wrangler pages deploy ../.blendid/public/hckr.studio --project-name hckr-studio
-          working_directory: hckr.studio
       - slack/notify:
           event: fail
           mentions: '@here'
@@ -35,11 +52,18 @@ jobs:
           event: pass
           template: success_tagged_deploy_1
           channel: ntf-website
-
 workflows:
   ci:
     jobs:
       - build:
           context:
+            - slack
+      - deploy:
+          context:
             - cloudflare
             - slack
+          requires:
+            - build
+          filters:
+            branches:
+              only: trunk
