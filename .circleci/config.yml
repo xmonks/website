@@ -5,9 +5,43 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.2.0
+  pulumi: pulumi/pulumi@2.1.0
   slack: circleci/slack@4.12.5
 
 jobs:
+  provision:
+    docker:
+      - image: cimg/node:lts
+    resource_class: arm.large
+    steps:
+      - checkout
+      - pulumi/login
+      - node/install-packages:
+          pkg-manager: yarn-berry
+      - pulumi/update:
+          stack: hckr-websites/prod
+          skip-preview: true
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
+          channel: ntf-website
+
+  pre-provision:
+    docker:
+      - image: cimg/node:lts
+    resource_class: arm.large
+    steps:
+      - checkout
+      - pulumi/login
+      - node/install-packages:
+          pkg-manager: yarn-berry
+      - pulumi/preview:
+          stack: hckr-websites/prod
+      - slack/notify:
+          event: fail
+          template: basic_fail_1
+          channel: ntf-website
+
   build:
     docker:
       - image: cimg/node:lts
@@ -55,6 +89,20 @@ jobs:
 workflows:
   ci:
     jobs:
+      - provision:
+          context:
+            - pulumi
+            - slack
+          filters:
+            branches:
+              only: trunk
+      - pre-provision:
+          context:
+            - pulumi
+            - slack
+          filters:
+            branches:
+              ignore: trunk
       - build:
           context:
             - slack
@@ -64,6 +112,7 @@ workflows:
             - slack
           requires:
             - build
+            - provision
           filters:
             branches:
               only: trunk
