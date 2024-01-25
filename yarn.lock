@@ -2246,7 +2246,7 @@ __metadata:
   resolution: "@hckr-studio/websites-infrastructure@workspace:infrastructure"
   dependencies:
     "@pulumi/cloudflare": "npm:5.19.0"
-    "@pulumi/pulumi": "npm:3.103.0"
+    "@pulumi/pulumi": "npm:3.103.1"
   languageName: unknown
   linkType: soft
 
@@ -2698,9 +2698,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pulumi/pulumi@npm:3.103.0":
-  version: 3.103.0
-  resolution: "@pulumi/pulumi@npm:3.103.0"
+"@pulumi/pulumi@npm:3.103.1":
+  version: 3.103.1
+  resolution: "@pulumi/pulumi@npm:3.103.1"
   dependencies:
     "@grpc/grpc-js": "npm:1.9.6"
     "@logdna/tail-file": "npm:^2.0.6"
@@ -2714,6 +2714,7 @@ __metadata:
     "@opentelemetry/semantic-conventions": "npm:^1.6.0"
     "@pulumi/query": "npm:^0.3.0"
     "@types/google-protobuf": "npm:^3.15.5"
+    "@types/semver": "npm:^7.5.6"
     "@types/tmp": "npm:^0.2.6"
     execa: "npm:^5.1.0"
     google-protobuf: "npm:^3.5.0"
@@ -2731,7 +2732,7 @@ __metadata:
     ts-node: "npm:^7.0.1"
     typescript: "npm:~3.8.3"
     upath: "npm:^1.1.0"
-  checksum: 6fb2834a9d1c4a19cc3a41018b3370ab60b4a38105557e77a1073464c0ffcbc6e44869313a69c3b4cd6c005adabed4a175d1b2e3c3b724fb6d252e6eef30eb61
+  checksum: 2dd95b531fa67676303738a1a44c6f3ce7df0cca2df7cd4487ac6af43908576463263efc73af51eb0bd6f6c36723f03fbd40d235b72bb29af757355bc8083e82
   languageName: node
   linkType: hard
 
@@ -3100,6 +3101,13 @@ __metadata:
   dependencies:
     "@types/node": "npm:*"
   checksum: 6ac4b35723429b11b117e813c7acc42c3af8b5554caaf1fc750404c1ae59f9b7376bc69b9e9e194a5a97357a597c2228b7173d317320f0360d617b6425212f58
+  languageName: node
+  linkType: hard
+
+"@types/semver@npm:^7.5.6":
+  version: 7.5.6
+  resolution: "@types/semver@npm:7.5.6"
+  checksum: e77282b17f74354e17e771c0035cccb54b94cc53d0433fa7e9ba9d23fd5d7edcd14b6c8b7327d58bbd89e83b1c5eda71dfe408e06b929007e2b89586e9b63459
   languageName: node
   linkType: hard
 
