@@ -2222,7 +2222,7 @@ __metadata:
     "@hckr_/blendid": "npm:7.0.4"
     open-props: "npm:1.6.18"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.27.0"
+    wrangler: "npm:3.28.0"
   languageName: unknown
   linkType: soft
 
@@ -13440,9 +13440,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.27.0":
-  version: 3.27.0
-  resolution: "wrangler@npm:3.27.0"
+"wrangler@npm:3.28.0":
+  version: 3.28.0
+  resolution: "wrangler@npm:3.28.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:^0.2.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -13459,13 +13459,18 @@ __metadata:
     selfsigned: "npm:^2.0.1"
     source-map: "npm:0.6.1"
     xxhash-wasm: "npm:^1.0.1"
+  peerDependencies:
+    "@cloudflare/workers-types": ^4.20230914.0
   dependenciesMeta:
     fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@cloudflare/workers-types":
       optional: true
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/205ebfa77619510c329446d9bd627b5dbc36b24cb42abbe01cd49c94d90bce58a84ca8d5ae9129c8a750edf307fff50b4a7d87ac1ea2af2551cf85a76e292cc0
+  checksum: 10/a36b56a3be889db99b6829684e5152b89a566df00f0fbeb872f267d0a84f9b4f6e340e76e549f2c550ae94c13aed888d78b4a1142eec08f770ae408a5065d7b9
   languageName: node
   linkType: hard
 
