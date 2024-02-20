@@ -33,3 +33,7 @@ h1 {
   font-size: var(--font-size-fluid-3);
   font-variation-settings: 'wght' 700;
 }
+
+section h2::after {
+  content: "_";
+}
