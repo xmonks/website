@@ -1,6 +1,6 @@
 :root {
-  --headings-font-family: system-ui, sans-serif;
-  --text-font-family: system-ui, sans-serif;
+  --headings-font-family: var(--font-sans);
+  --text-font-family: var(--font-mono);
   --text-color: black;
   --background: white;
 }
@@ -32,9 +32,14 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: var(--font-size-fluid-3);
   font-variation-settings: 'wght' 700;
+  letter-spacing: var(--font-letterspacing-0);
 }
 h2 {
   font-size: var(--font-size-fluid-2);
+  letter-spacing: var(--font-letterspacing-0);
+}
+h3 {
+  font-size: var(--font-size-fluid-1);
 }
 
 section h2::after {
