@@ -34,14 +34,36 @@ h1 {
   font-variation-settings: 'wght' 700;
   letter-spacing: var(--font-letterspacing-0);
 }
+
 h2 {
   font-size: var(--font-size-fluid-2);
   letter-spacing: var(--font-letterspacing-0);
 }
+
 h3 {
   font-size: var(--font-size-fluid-1);
 }
 
+hgroup h1 {
+  margin-bottom: 0;
+}
+hgroup h2 {
+  margin-top: 0;
+}
+
+main > section {
+  margin: 4em 0;
+}
+
 section h2::after {
   content: "_";
+}
+
+blockquote dt {
+  font-size: var(--font-size-fluid-1);
+  font-weight: 600;
+}
+
+blockquote dd {
+  font-family: Gergia, var(--font-serif);
 }

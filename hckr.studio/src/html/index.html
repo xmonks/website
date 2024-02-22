@@ -4,34 +4,59 @@
 
 {% block content %}
 <main vocab="https://schema.org/" typeof="Organization">
-  <hgroup>
-    <h1>hckr.studio</h1>
-    <h2>extreme_ experiments_ experience_</h2>
-  </hgroup>
+  <header>
+    <hgroup>
+      <h1>hckr.studio</h1>
+      <h2>extreme_ experiments_ experience_</h2>
+    </hgroup>
 
-  <blockquote>
-    <dl>
-      <dt><code>/ˈhækə(r)/</code></dt>
-      <dd>a person who uses or writes computer programs with enthusiasm and skill</dd>
-      <dt><code>/ˈstjuːdiəʊ/</code></dt>
-      <dd>a room where an artist works</dd>
-    </dl>
-  </blockquote>
+    <blockquote>
+      <dl>
+        <dt><code>/ˈhækə(r)/</code></dt>
+        <dd>a person who uses or writes computer programs with enthusiasm and skill</dd>
+        <dt><code>/ˈstjuːdiəʊ/</code></dt>
+        <dd>a room where an artist works</dd>
+      </dl>
+    </blockquote>
+  </header>
 
   <section id="team">
     <h2>our team</h2>
 
-    <div class="contact">
-      <h3>Dan Hromada</h3>
-      <p><a href="https://bager.page/">banger.page</a></p>
+    <div role="list">
+      <div class="contact" role="listitem">
+        <h3>Dan Hromada</h3>
+        <p><a href="https://bager.page/">banger.page</a></p>
+      </div>
+      <div class="contact" role="listitem">
+        <h3>Aleš Roubíček</h3>
+        <p><a href="https://www.rarous.net/">rarous.net</a></p>
+      </div>
+      <div class="contact" role="listitem">
+        <h3>Pavel Trnka</h3>
+        <p><a href="https://www.ptrnka.cz/">ptrnka.cz</a></p>
+      </div>
     </div>
-    <div class="contact">
-      <h3>Aleš Roubíček</h3>
-      <p><a href="https://www.rarous.net/">rarous.net</a></p>
-    </div>
-    <div class="contact">
-      <h3>Pavel Trnka</h3>
-      <p><a href="https://www.ptrnka.cz/">ptrnka.cz</a></p>
+  </section>
+
+  <section id="partners">
+    <h2>our partners</h2>
+    <div role="list">
+      <div role="listitem">
+        <h3><a href="https://www.keboola.com">Keboola</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://www.fenek.cz/">agentura Fenek</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://geneea.com/">Geneea</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://www.byzkids.com/">ByzKids</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://www.raumea.cz/">Raumea</a></h3>
+      </div>
     </div>
   </section>
 
@@ -71,6 +96,7 @@
       </dl>
     </section>
   </section>
+
   <section id="references">
     <h2>references</h2>
 
