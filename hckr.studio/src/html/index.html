@@ -6,9 +6,14 @@
 <main vocab="https://schema.org/" typeof="Organization">
   <header>
     <hgroup>
-      <h1>hckr_<em>studio</em></h1>
+      <h1 property="name">hckr_<em>studio</em></h1>
       <h2>extreme_ experiments_ experience_</h2>
     </hgroup>
+
+    <div>
+      <time datetime="2021-01-30" property="foudingDate"></time>
+      <data value="3" property="numberOfEmployees"></data>
+    </div>
 
     <blockquote>
       <dl>
@@ -24,17 +29,17 @@
     <h2>our team</h2>
 
     <div role="list">
-      <div class="contact" role="listitem">
-        <h3>Dan Hromada</h3>
-        <p><a href="https://bager.page/">banger.page</a></p>
+      <div class="contact" role="listitem" property="founder" typeof="Person">
+        <h3 property="name">Dan Hromada</h3>
+        <p><a property="sameAs" href="https://bager.page/">banger.page</a></p>
       </div>
-      <div class="contact" role="listitem">
-        <h3>Aleš Roubíček</h3>
-        <p><a href="https://www.rarous.net/">rarous.net</a></p>
+      <div class="contact" role="listitem" property="founder" typeof="Person">
+        <h3 property="name">Aleš Roubíček</h3>
+        <p><a property="sameAs" href="https://www.rarous.net/">rarous.net</a></p>
       </div>
-      <div class="contact" role="listitem">
-        <h3>Pavel Trnka</h3>
-        <p><a href="https://www.ptrnka.cz/">ptrnka.cz</a></p>
+      <div class="contact" role="listitem" property="founder" typeof="Person">
+        <h3 property="name">Pavel Trnka</h3>
+        <p><a property="sameAs" href="https://www.ptrnka.cz/">ptrnka.cz</a></p>
       </div>
     </div>
   </section>
@@ -66,12 +71,12 @@
     <p><a property="email" href="mailto:team&#64;hckr.studio">team&#64;<!-- -->hckr.studio</a></p>
 
     <h3>office</h3>
-    <div property="location" typeof="Place">
+    <div property="address" typeof="PostalAddress">
       <div>
         <div><strong>hckr.space</strong></div>
-        <div>U půjčovny 952/2</div>
-        <div><span>110 00</span>, <span>Praha 1</span></div>
-        <div>Czech Republic</div>
+        <div property="streetAddress">U půjčovny 952/2</div>
+        <div><span property="postalCode">110 00</span>, <span property="addressLocality">Praha 1</span></div>
+        <div property="addressCountry">Czech Republic</div>
         <div><a href="https://maps.app.goo.gl/MzqwzhzW78ptbujE7">navigate</a></div>
       </div>
     </div>
