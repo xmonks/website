@@ -2251,7 +2251,7 @@ __metadata:
   resolution: "@hckr-studio/websites-infrastructure@workspace:infrastructure"
   dependencies:
     "@pulumi/cloudflare": "npm:5.21.0"
-    "@pulumi/pulumi": "npm:3.108.0"
+    "@pulumi/pulumi": "npm:3.108.1"
   languageName: unknown
   linkType: soft
 
@@ -2865,9 +2865,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pulumi/pulumi@npm:3.108.0":
-  version: 3.108.0
-  resolution: "@pulumi/pulumi@npm:3.108.0"
+"@pulumi/pulumi@npm:3.108.1":
+  version: 3.108.1
+  resolution: "@pulumi/pulumi@npm:3.108.1"
   dependencies:
     "@grpc/grpc-js": "npm:^1.10.1"
     "@logdna/tail-file": "npm:^2.0.6"
@@ -2881,7 +2881,6 @@ __metadata:
     "@opentelemetry/sdk-trace-node": "npm:^1.6.0"
     "@opentelemetry/semantic-conventions": "npm:^1.6.0"
     "@pulumi/query": "npm:^0.3.0"
-    "@types/glob": "npm:^8.1.0"
     "@types/google-protobuf": "npm:^3.15.5"
     "@types/semver": "npm:^7.5.6"
     "@types/tmp": "npm:^0.2.6"
@@ -2901,7 +2900,7 @@ __metadata:
     ts-node: "npm:^7.0.1"
     typescript: "npm:~3.8.3"
     upath: "npm:^1.1.0"
-  checksum: 10/ea5de9d3015e470b0e85737200b93d6981fd81116f096998cd7604d5a57c2183be5f19aa8fb480ed20951b2938c41078b87999204db869caddfe5140d75116a4
+  checksum: 10/69e208c0e0179cef9a1672eb941cc203eabf8322e7774f2ec2d6bfefb63c7119bb3cc7cb1c61aa148d9d554c23b58cf322cd4e4b3481d1ba18fc20cd08555f79
   languageName: node
   linkType: hard
 
@@ -3273,16 +3272,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/glob@npm:^8.1.0":
-  version: 8.1.0
-  resolution: "@types/glob@npm:8.1.0"
-  dependencies:
-    "@types/minimatch": "npm:^5.1.2"
-    "@types/node": "npm:*"
-  checksum: 10/9101f3a9061e40137190f70626aa0e202369b5ec4012c3fabe6f5d229cce04772db9a94fa5a0eb39655e2e4ad105c38afbb4af56a56c0996a8c7d4fc72350e3d
-  languageName: node
-  linkType: hard
-
 "@types/google-protobuf@npm:^3.15.5":
   version: 3.15.12
   resolution: "@types/google-protobuf@npm:3.15.12"
@@ -3314,13 +3303,6 @@ __metadata:
   dependencies:
     "@types/node": "npm:*"
   checksum: 10/e009a2bfb50e90ca9b7c6e8f648f8464067271fd99116f881073fa6fa76dc8d0133181dd65e6614d5fb1220d671d67b0124aef7d97dc02d7e342ab143a47779d
-  languageName: node
-  linkType: hard
-
-"@types/minimatch@npm:^5.1.2":
-  version: 5.1.2
-  resolution: "@types/minimatch@npm:5.1.2"
-  checksum: 10/94db5060d20df2b80d77b74dd384df3115f01889b5b6c40fa2dfa27cfc03a68fb0ff7c1f2a0366070263eb2e9d6bfd8c87111d4bc3ae93c3f291297c1bf56c85
   languageName: node
   linkType: hard
 
