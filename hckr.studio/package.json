@@ -7,7 +7,7 @@
     "@hckr_/blendid": "7.0.4",
     "open-props": "1.6.21",
     "postcss-jit-props": "1.0.14",
-    "wrangler": "3.31.0"
+    "wrangler": "3.32.0"
   },
   "scripts": {
     "build": "blendid build",
