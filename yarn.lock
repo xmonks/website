@@ -2289,7 +2289,7 @@ __metadata:
   resolution: "@hckr-studio/websites-infrastructure@workspace:infrastructure"
   dependencies:
     "@pulumi/cloudflare": "npm:5.22.0"
-    "@pulumi/pulumi": "npm:3.109.0"
+    "@pulumi/pulumi": "npm:3.110.0"
   languageName: unknown
   linkType: soft
 
@@ -2903,7 +2903,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pulumi/pulumi@npm:3.109.0, @pulumi/pulumi@npm:^3.0.0":
+"@pulumi/pulumi@npm:3.110.0":
+  version: 3.110.0
+  resolution: "@pulumi/pulumi@npm:3.110.0"
+  dependencies:
+    "@grpc/grpc-js": "npm:^1.10.1"
+    "@logdna/tail-file": "npm:^2.0.6"
+    "@npmcli/arborist": "npm:^7.3.1"
+    "@opentelemetry/api": "npm:^1.2.0"
+    "@opentelemetry/exporter-zipkin": "npm:^1.6.0"
+    "@opentelemetry/instrumentation": "npm:^0.32.0"
+    "@opentelemetry/instrumentation-grpc": "npm:^0.32.0"
+    "@opentelemetry/resources": "npm:^1.6.0"
+    "@opentelemetry/sdk-trace-base": "npm:^1.6.0"
+    "@opentelemetry/sdk-trace-node": "npm:^1.6.0"
+    "@opentelemetry/semantic-conventions": "npm:^1.6.0"
+    "@pulumi/query": "npm:^0.3.0"
+    "@types/google-protobuf": "npm:^3.15.5"
+    "@types/semver": "npm:^7.5.6"
+    "@types/tmp": "npm:^0.2.6"
+    execa: "npm:^5.1.0"
+    fdir: "npm:^6.1.1"
+    google-protobuf: "npm:^3.5.0"
+    got: "npm:^11.8.6"
+    ini: "npm:^2.0.0"
+    js-yaml: "npm:^3.14.0"
+    minimist: "npm:^1.2.6"
+    normalize-package-data: "npm:^6.0.0"
+    picomatch: "npm:^3.0.1"
+    pkg-dir: "npm:^7.0.0"
+    require-from-string: "npm:^2.0.1"
+    semver: "npm:^7.5.2"
+    source-map-support: "npm:^0.5.6"
+    tmp: "npm:^0.2.1"
+    ts-node: "npm:^7.0.1"
+    typescript: "npm:~3.8.3"
+    upath: "npm:^1.1.0"
+  checksum: 10/6b26474859be91f824591c0a80463602ed8e19374b29520f0fe5c277122e1031264a57c3037a142f0cd34694aa5a6f03b27f4441fdc83bdae079f0c5f3c85479
+  languageName: node
+  linkType: hard
+
+"@pulumi/pulumi@npm:^3.0.0":
   version: 3.109.0
   resolution: "@pulumi/pulumi@npm:3.109.0"
   dependencies:
@@ -6269,6 +6309,18 @@ __metadata:
   dependencies:
     reusify: "npm:^1.0.4"
   checksum: 10/a443180068b527dd7b3a63dc7f2a47ceca2f3e97b9c00a1efe5538757e6cc4056a3526df94308075d7727561baf09ebaa5b67da8dcbddb913a021c5ae69d1f69
+  languageName: node
+  linkType: hard
+
+"fdir@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "fdir@npm:6.1.1"
+  peerDependencies:
+    picomatch: 3.x
+  peerDependenciesMeta:
+    picomatch:
+      optional: true
+  checksum: 10/fabde9004433983ba22fac2578c0b2835a498e66518df9d7994b1564a5f3f015ac974efaff02975b56966e01a684f600fe4cce0bb2f146aedec4dcf35d6c5906
   languageName: node
   linkType: hard
 
@@ -10048,6 +10100,13 @@ __metadata:
   version: 2.3.1
   resolution: "picomatch@npm:2.3.1"
   checksum: 10/60c2595003b05e4535394d1da94850f5372c9427ca4413b71210f437f7b2ca091dbd611c45e8b37d10036fa8eade25c1b8951654f9d3973bfa66a2ff4d3b08bc
+  languageName: node
+  linkType: hard
+
+"picomatch@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "picomatch@npm:3.0.1"
+  checksum: 10/65ac837fedbd0640586f7c214f6c7481e1e12f41cdcd22a95eb6a2914d1773707ed0f0b5bd2d1e39b5ec7860b43a4c9150152332a3884cd8dd1d419b2a2fa5b5
   languageName: node
   linkType: hard
 
