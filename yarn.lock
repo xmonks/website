@@ -2280,7 +2280,7 @@ __metadata:
     "@hckr_/blendid": "npm:7.1.0"
     open-props: "npm:1.6.21"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.35.0"
+    wrangler: "npm:3.36.0"
   languageName: unknown
   linkType: soft
 
@@ -14101,9 +14101,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.35.0":
-  version: 3.35.0
-  resolution: "wrangler@npm:3.35.0"
+"wrangler@npm:3.36.0":
+  version: 3.36.0
+  resolution: "wrangler@npm:3.36.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.1"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -14131,7 +14131,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/91e3f255abb224ff3f8560dfa91716b95edac2698f1a90d375254934d8155e4566778c1cd56468cc7caaee04fab099fd655aab3467d8aa24f65fdfee0b90ea71
+  checksum: 10/2f4afc2ebfc34987de3758a1c7c194bdb7e3f4401211dadbe78aede006a0709ba014438baf083e6858e60c611da8adc75d067a057186be06f00ab92c59daf3a4
   languageName: node
   linkType: hard
 
