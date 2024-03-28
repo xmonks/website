@@ -24,9 +24,12 @@ const redirects = [
   createRedirect(account, hckrSpaceZone.zone, "www", "hckr_space", hckrSpacePages.domain.domain),
   createRedirect(account, hckrStudioZone.zone, "www", "hckr_studio", hckrStudioPages.domain.domain),
   createRedirect(account, hckrTvZone.zone, "www", "hckr_tv", hckrTvPages.domain.domain),
-  // those are managed in another repository, but Lists are global to the account
+  // those are managed in another repositories, but Lists are global to the account
   ["rarous.net", "https://www.rarous.net"],
-  ["hackercamp.cz", "https://www.hackercamp.cz"]
+  ["hackercamp.cz", "https://www.hackercamp.cz"],
+  ["hckr.camp", "https://www.hackercamp.cz"],
+  ["www.hckr.camp", "https://www.hackercamp.cz"],
+  ["donut.hckr.camp", "https://donut.hackercamp.cz"]
 ];
 
 const list = new cloudflare.List(`hckr/redirect-list`, {
