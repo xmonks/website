@@ -2263,7 +2263,7 @@ __metadata:
   resolution: "@hckr-studio/hckr-studio-web@workspace:hckr.studio"
   dependencies:
     "@hckr_/blendid": "npm:7.1.0"
-    open-props: "npm:1.6.21"
+    open-props: "npm:1.7.0"
     postcss-jit-props: "npm:1.0.14"
     wrangler: "npm:3.42.0"
   languageName: unknown
@@ -9752,10 +9752,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"open-props@npm:1.6.21":
-  version: 1.6.21
-  resolution: "open-props@npm:1.6.21"
-  checksum: 10/6ab3f0cbf2c4cdd371bbce423fddcd9f20a5cbe40dccdcf0b07dd527f8fee91d269dc1dbaf5ecba139ef7333c16eb63c6342ba66276171c38a969d223627be0c
+"open-props@npm:1.7.0":
+  version: 1.7.0
+  resolution: "open-props@npm:1.7.0"
+  checksum: 10/5808c8de7404a47c0c140ca3e940b5cd68d2e4f3661477c75c85013ad57787964c88264b8c76823ed75229fcc25da77df1948ed86a2ede5f24cffce00d1ab8c4
   languageName: node
   linkType: hard
 
