@@ -18,7 +18,13 @@ const hckrStudioZone = hckrStudio.createDnsZone(account);
 const hckrTvZone = hckrTv.createDnsZone(account);
 
 const hckrSpacePages = createPages(account, hckrSpaceZone.zone, "@", "hckr-space");
-const hckrStudioPages = createPages(account, hckrStudioZone.zone, "@", "hckr-studio");
+const hckrStudioPages = createPages(account, hckrStudioZone.zone, "@", "hckr-studio", {
+  productionConfiguration: {
+    secrets: {
+      RAUMEA_POSTMARK_TOKEN: config.require("raumea-postmark-token"),
+    }
+  }
+});
 const hckrTvPages = createPages(account, hckrTvZone.zone, "@", "hckr-tv");
 const redirects = [
   createRedirect(account, hckrSpaceZone.zone, "www", "hckr_space", hckrSpacePages.domain.domain),
