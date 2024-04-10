@@ -1396,6 +1396,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cloudflare/workers-types@npm:4.20240405.0":
+  version: 4.20240405.0
+  resolution: "@cloudflare/workers-types@npm:4.20240405.0"
+  checksum: 10/03e5f5b48b2f4633fd6fca137b64b70b74f3aba2bd98ca66db375c94fb69dc18c96c05abfc26ccc7490579fd14e68af9a83d89256b269c51e5f80c211b009bc9
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-support@npm:0.8.1":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -2275,6 +2282,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-studio-web@workspace:hckr.studio"
   dependencies:
+    "@cloudflare/workers-types": "npm:4.20240405.0"
     "@hckr_/blendid": "npm:7.1.0"
     open-props: "npm:1.7.2"
     postcss-jit-props: "npm:1.0.14"
