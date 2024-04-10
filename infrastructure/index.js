@@ -17,6 +17,8 @@ const hckrSpaceZone = hckrSpace.createDnsZone(account);
 const hckrStudioZone = hckrStudio.createDnsZone(account);
 const hckrTvZone = hckrTv.createDnsZone(account);
 
+hckrStudio.defineDnsRecords(hckrStudioZone);
+
 const hckrSpacePages = createPages(account, hckrSpaceZone.zone, "@", "hckr-space");
 const hckrStudioPages = createPages(account, hckrStudioZone.zone, "@", "hckr-studio");
 const hckrTvPages = createPages(account, hckrTvZone.zone, "@", "hckr-tv");
@@ -29,7 +31,7 @@ const redirects = [
   ["hackercamp.cz", "https://www.hackercamp.cz"],
   ["hckr.camp", "https://www.hackercamp.cz"],
   ["www.hckr.camp", "https://www.hackercamp.cz"],
-  ["donut.hckr.camp", "https://donut.hackercamp.cz"]
+  ["donut.hckr.camp", "https://donut.hackercamp.cz"],
 ];
 
 const list = new cloudflare.List(`hckr/redirect-list`, {
