@@ -7,7 +7,8 @@ export async function onRequestPost({ request, env }) {
   const origin = request.headers.get("origin");
   if (client === "raumea.cz" && origin === "https://www.raumea.cz") {
     const raumeaToken = env.RAUMEA_POSTMARK_TOKEN;
-    console.log(request.body);
+    const payload = Object.fromEntries(await request.formData());
+    console.log(payload)
     return new Response("ok", {status: 200});
   }
   return new Response(null, {status: 400});
