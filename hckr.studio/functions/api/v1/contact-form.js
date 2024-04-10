@@ -8,20 +8,16 @@ async function sendRaumeaContactForm(token, payload) {
     },
     body: JSON.stringify({
       "From": "no-reply@hckr.studio",
-      "To": "pavel.trnka@hckr.studio",
+      "To": "info@raumea.cz",
       "Subject": "Kontaktní formulář z webu raumea.cz",
       "HtmlBody": `
         <p>Ahoj Michale,</p>
         <p>Někdo ti vyplnil kontaktní formulář na webu:</p>
         <dl>
-            <dt>Jméno a příjmení</dt>
-            <dd>${payload.name}</dd>
-            <dt>Společnost</dt>
-            <dd>${payload.company}</dd>
-            <dt>E-mail</dt>
-            <dd>${payload.email}</dd>
-            <dt>Telefon</dt>
-            <dd>${payload.phone}</dd>
+            <dt>Jméno a příjmení</dt><dd>${payload.name}</dd>
+            ${payload.company && `<dt>Společnost</dt><dd>${payload.company}</dd>`}
+            <dt>E-mail</dt><dd>${payload.email}</dd>
+            ${payload.phone && `<dt>Telefon</dt><dd>${payload.phone}</dd>`}
         </dl>
 
         <blockquote><p>${payload.message}</p></blockquote>
