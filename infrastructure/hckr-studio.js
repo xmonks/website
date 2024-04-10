@@ -7,11 +7,6 @@ export function createDnsZone(account) {
     zone: "hckr.studio",
   }, { protect: true });
 
-  return { zone };
-}
-
-/** @param {cloudflare.Zone} zone */
-export function defineDnsRecords(zone) {
   new cloudflare.Record("postmark-dkim-hckr.studio", {
     zoneId: zone.id,
     type: "TXT",
@@ -27,4 +22,6 @@ export function defineDnsRecords(zone) {
     comment: "Postmarkapp Return path",
     value: "pm.mtasv.net",
   });
+
+  return { zone };
 }
