@@ -22,8 +22,8 @@ const hckrStudioPages = createPages(account, hckrStudioZone.zone, "@", "hckr-stu
   productionConfiguration: {
     secrets: {
       RAUMEA_POSTMARK_TOKEN: config.require("raumea-postmark-token"),
-    }
-  }
+    },
+  },
 });
 const hckrTvPages = createPages(account, hckrTvZone.zone, "@", "hckr-tv");
 const redirects = [

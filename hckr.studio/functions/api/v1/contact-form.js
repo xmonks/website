@@ -4,7 +4,7 @@ async function sendRaumeaContactForm(token, payload) {
     headers: {
       "Accept": "application/json",
       "Content-Type": "application/json",
-      "X-Postmark-Server-Token": token
+      "X-Postmark-Server-Token": token,
     },
     body: JSON.stringify({
       "From": "no-reply@hckr.studio",
@@ -25,8 +25,8 @@ async function sendRaumeaContactForm(token, payload) {
         <p>Tak měj hezký den a hodně štěstí.</p>
         <p>Tvoje hckr.studio</p>
       `,
-      "MessageStream": "outbound"
-    })
+      "MessageStream": "outbound",
+    }),
   });
 }
 
@@ -41,7 +41,25 @@ export async function onRequestPost({ request, env }) {
     const raumeaToken = env.RAUMEA_POSTMARK_TOKEN;
     const payload = Object.fromEntries(await request.formData());
     await sendRaumeaContactForm(raumeaToken, payload);
-    return new Response("ok", {status: 200});
+    return new Response("ok", {
+      status: 200,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Max-Age": "86400",
+      },
+    });
   }
-  return new Response(null, {status: 400});
+  return new Response(null, { status: 400 });
+}
+
+export async function onRequestOptions() {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "GET, OPTIONS",
+      "Access-Control-Max-Age": "86400",
+    },
+  });
 }

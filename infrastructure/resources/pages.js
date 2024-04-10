@@ -5,8 +5,8 @@ import cloudflare from "@pulumi/cloudflare";
 /**
  * @param {Object} options
  * @param {PagesProjectDeploymentConfigsProduction} options.productionConfiguration
- * */
-export function createPages(account, zone, recordName, projectName, {productionConfiguration} = {}) {
+ */
+export function createPages(account, zone, recordName, projectName, { productionConfiguration } = {}) {
   const pages = new cloudflare.PagesProject(`${projectName}/pages`, {
     accountId: account.id,
     name: projectName,
@@ -14,7 +14,7 @@ export function createPages(account, zone, recordName, projectName, {productionC
     deploymentConfigs: {
       production: {
         compatibilityDate: "2023-09-29",
-        ...productionConfiguration
+        ...productionConfiguration,
       },
     },
   });
