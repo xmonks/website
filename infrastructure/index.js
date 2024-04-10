@@ -17,7 +17,7 @@ const hckrSpaceZone = hckrSpace.createDnsZone(account);
 const hckrStudioZone = hckrStudio.createDnsZone(account);
 const hckrTvZone = hckrTv.createDnsZone(account);
 
-hckrStudio.defineDnsRecords(hckrStudioZone);
+hckrStudio.defineDnsRecords(hckrStudioZone.zone);
 
 const hckrSpacePages = createPages(account, hckrSpaceZone.zone, "@", "hckr-space");
 const hckrStudioPages = createPages(account, hckrStudioZone.zone, "@", "hckr-studio");
