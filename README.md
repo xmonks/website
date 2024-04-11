@@ -6,7 +6,7 @@ Monorepo for websites
 
 ## Development
 
-You'll need Node.js to develop and build websites. We are using [yarn](https://yarnpkg.com/) for worspace management and automation. 
+You'll need Node.js to develop and build websites. We are using [yarn](https://yarnpkg.com/) for worspace management and automation.
 
 ```bash
 cd hckr.studio
