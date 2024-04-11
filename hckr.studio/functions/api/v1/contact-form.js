@@ -44,7 +44,7 @@ export async function onRequestPost({ request, env }) {
     return new Response("ok", {
       status: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": origin,
         "Access-Control-Max-Age": "86400",
       },
     });
