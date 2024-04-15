@@ -4,6 +4,6 @@
   "type": "module",
   "dependencies": {
     "@pulumi/cloudflare": "5.25.0",
-    "@pulumi/pulumi": "3.112.0"
+    "@pulumi/pulumi": "3.113.0"
   }
 }
