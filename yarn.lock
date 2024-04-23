@@ -1396,10 +1396,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:4.20240419.0":
-  version: 4.20240419.0
-  resolution: "@cloudflare/workers-types@npm:4.20240419.0"
-  checksum: 10/a19af236370356e3e6ea5f53c39ce9df1338aad9743278cf6304de51c07e7161dde5c5a0c6a76e8584ea1bd809be0977970252c1e5f228d2c61899d3258e87ff
+"@cloudflare/workers-types@npm:4.20240423.0":
+  version: 4.20240423.0
+  resolution: "@cloudflare/workers-types@npm:4.20240423.0"
+  checksum: 10/70beae06cf929b01883c847d0a41aee8ac6734350785a8d1b913fe8b7ceb050b0d339967e373b7016da0b7697bf8d58dfb69de5c8a3b79cf2bbc72f2681695eb
   languageName: node
   linkType: hard
 
@@ -2459,7 +2459,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-studio-web@workspace:hckr.studio"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20240419.0"
+    "@cloudflare/workers-types": "npm:4.20240423.0"
     "@hckr_/blendid": "npm:8.0.7"
     open-props: "npm:1.7.3"
     postcss-jit-props: "npm:1.0.14"
