@@ -2461,7 +2461,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:4.20240423.0"
     "@hckr_/blendid": "npm:8.0.7"
-    open-props: "npm:1.7.3"
+    open-props: "npm:1.7.4"
     postcss-jit-props: "npm:1.0.14"
     wrangler: "npm:3.52.0"
   languageName: unknown
@@ -9079,10 +9079,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"open-props@npm:1.7.3":
-  version: 1.7.3
-  resolution: "open-props@npm:1.7.3"
-  checksum: 10/47cddb6cd4a863cd990eff042d41129db91094ae24b87dc2914716728f373ccb50179a0b47af61b3c0516c8b94e20a6021697238a3e8023e92616cf4f986ae51
+"open-props@npm:1.7.4":
+  version: 1.7.4
+  resolution: "open-props@npm:1.7.4"
+  checksum: 10/e8729652c455eecccd53c4d74e5b86fa414b86ce6c05e0f3585fded42582aa926e2d76afa62e3c1d1e75e9e805fd097f2b53f9af90c9d6952f7317c1e37d1ddf
   languageName: node
   linkType: hard
 
