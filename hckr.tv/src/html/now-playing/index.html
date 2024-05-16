@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hckr_space - Now Playing</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <style>
+      @font-face {
+        font-family: "AvantGarde";
+        src: url("/assets/css/AvantGardeDefectedRegular.eot");
+        src: url("/assets/css/AvantGardeDefectedRegular.eot?#iefix")
+            format("embedded-opentype"),
+          url("/assets/css/AvantGardeDefectedRegular.woff2") format("woff2"),
+          url("/assets/css/AvantGardeDefectedRegular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "AvantGarde";
+        src: url("/assets/css/AvantGardeDefectedRegular.eot");
+        src: url("/assets/css/AvantGardeDefectedRegular.eot?#iefix")
+            format("embedded-opentype"),
+          url("/assets/css/AvantGardeDefectedRegular.woff2") format("woff2"),
+          url("/assets/css/AvantGardeDefectedRegular.woff") format("woff");
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      body {
+        color: var(--color, #fff);
+        background-color: var(--background-color, #000);
+        -webkit-font-feature-settings: "kern", "liga", "clig", "calt", "lnum",
+          "zero";
+        font-feature-settings: "kern", "liga", "clig", "calt", "lnum", "zero";
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: geometricPrecision;
+        -webkit-font-kerning: normal;
+        font-kerning: normal;
+        font-size: 16px;
+        -webkit-font-variant-ligatures: common-ligatures contextual;
+        font-variant-ligatures: common-ligatures contextual;
+        font-variant-numeric: lining-nums slashed-zero;
+        letter-spacing: 0;
+      }
+
+      h1 {
+        font-family: var(
+          --font-family,
+          "AvantGarde",
+          "Helvetica Neue",
+          sans-serif
+        );
+        font-size: var(--font-size, 36px);
+        font-weight: var(--font-weight, 700);
+        margin: 0 0 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="now-playing"></h1>
+    <script type="module">
+      import setStyles from "https://hckr.tv/assets/esm/set-styles.js";
+
+      const nowPlaying = document.getElementById("now-playing");
+      const params = new URLSearchParams(location.search);
+
+      async function update() {
+        const resp = await fetch("https://hckr.tv/api/v1/now-playing");
+        const trackName = await resp.text();
+        if (trackName) nowPlaying.innerText = trackName;
+      }
+
+      setStyles(params);
+      update();
+
+      const updateTime = params.get("refresh") || 120;
+      setInterval(() => update(), updateTime * 1000);
+    </script>
+  </body>
+</html>

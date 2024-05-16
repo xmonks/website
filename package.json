@@ -15,6 +15,7 @@
   },
   "workspaces": [
     "hckr.studio",
+    "hckr.tv",
     "infrastructure"
   ],
   "packageManager": "yarn@4.2.2"
