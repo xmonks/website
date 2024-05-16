@@ -2482,7 +2482,7 @@ __metadata:
     "@hckr_/blendid": "npm:7.1.0"
     linkedom: "npm:^0.18.0"
     lit-html: "npm:^3.1.3"
-    open-props: "npm:1.7.2"
+    open-props: "npm:1.7.4"
     parse-duration: "npm:^1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:^7.8.1"
@@ -10530,13 +10530,6 @@ __metadata:
   dependencies:
     mimic-fn: "npm:^2.1.0"
   checksum: 10/e9fd0695a01cf226652f0385bf16b7a24153dbbb2039f764c8ba6d2306a8506b0e4ce570de6ad99c7a6eb49520743afdb66edd95ee979c1a342554ed49a9aadd
-  languageName: node
-  linkType: hard
-
-"open-props@npm:1.7.2":
-  version: 1.7.2
-  resolution: "open-props@npm:1.7.2"
-  checksum: 10/7b899dd869568488814c73a5dba1bcc3d6284e73f79d8f16f88fd0e1a759988f66c3ffcc4cc23ca76532a75e5bfd2f5dc2bb2e55a055b9fa33e7c81aa84a0a6c
   languageName: node
   linkType: hard
 
