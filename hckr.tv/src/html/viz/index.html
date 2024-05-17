@@ -1,0 +1,254 @@
+<!doctype html>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Visualizer</title>
+<style>
+  @font-face {
+    font-family: "Sixtyfour";
+    src: local("Trickster"), url("/assets/css/Sixtyfour.woff2") format("woff2");
+    font-style: normal;
+  }
+
+  :root {
+    --background-color: #000;
+    --text-color: #fff;
+    --primary-color: #71E6B7;
+    --secondary-color: #502CCC;
+
+    --text-font: "Sixtyfour", sans-serif;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--text-font);
+  }
+
+  #logger {
+    font: 40px Iosevka, monospace;
+  }
+
+  #canvas {
+    width: 100vw;
+    height: auto;
+  }
+</style>
+<pre id="logger"></pre>
+<canvas id="canvas" width=1280 height=720></canvas>
+<script type="module">
+  let logger = document.getElementById("logger");
+
+  function log(text) {
+    logger.textContent = text;
+  }
+
+  let query = new URLSearchParams(location.search);
+
+  if (query.has("debug")) {
+    await debug();
+  } else {
+    logger.style.display = "none";
+  }
+  let title = query.get("t") ?? query.get("title") ?? "HCKR_SPACE";
+  let audio = query.has("deviceId") ? { deviceId: query.get("deviceId") } : true;
+
+  setStyles(document.documentElement.style, query);
+
+  let canvas = document.getElementById("canvas");
+  let canvasCtx = canvas.getContext("2d", { antialias: true });
+  canvasCtx.globalCompositeOperation = "source-over";
+  canvasCtx.textAlign = "center";
+  canvasCtx.textBaseline = "middle";
+  canvasCtx.textRendering = "optimizeSpeed";
+  canvasCtx.fontKerning = "normal";
+
+  let stream = await navigator.mediaDevices.getUserMedia({ audio });
+  let audioCtx = new AudioContext();
+  let mic = audioCtx.createMediaStreamSource(stream);
+
+  let analyser = audioCtx.createAnalyser();
+  analyser.fftSize = 256;
+
+  mic.connect(analyser);
+
+  let filterAnalyser = audioCtx.createAnalyser();
+  filterAnalyser.smoothingTimeConstant = 0;
+  let filter = audioCtx.createBiquadFilter();
+  filter.type = "lowpass";
+  filter.frequency.setValueAtTime(80, audioCtx.currentTime);
+
+  mic.connect(filter);
+  filter.connect(filterAnalyser);
+
+  let style = getCustomStyle(canvas);
+  let sum = (a, b) => a + b;
+
+  /**
+   * @param {CanvasRenderingContext2D} ctx
+   * @param {string|CanvasGradient|CanvasPattern} style
+   * @param rect
+   */
+  function drawRect(ctx, style, { x, y, w, h }) {
+    ctx.fillStyle = style;
+    ctx.fillRect(x, y, w, h);
+  }
+
+  /**
+   * @param {CanvasRenderingContext2D} ctx
+   * @param signal
+   */
+  function drawBackground(ctx, { canvas, style }) {
+    drawRect(ctx, style.bgColor, { x: 0, y: 0, w: canvas.width, h: canvas.height });
+  }
+
+  /**
+   * @param {CanvasRenderingContext2D} ctx
+   * @param signal
+   */
+  function drawBars(ctx, { frequencies, canvas, style }) {
+    let barWidth = (canvas.width / frequencies.length);
+
+    for (let i = 0; i < frequencies.length; i++) {
+      let r = frequencies.length - (1 + i);
+      drawRect(ctx, style.color2, {
+        x: i * barWidth,
+        y: canvas.height - frequencies[r],
+        w: barWidth - 4,
+        h: frequencies[r]
+      });
+      drawRect(ctx, style.color1, {
+        x: i * barWidth,
+        y: canvas.height - frequencies[i],
+        w: barWidth - 4,
+        h: frequencies[i]
+      });
+      drawRect(ctx, style.color2, {
+        x: i * barWidth,
+        y: 0,
+        w: barWidth - 4,
+        h: frequencies[r]
+      });
+      drawRect(ctx, style.color1, {
+        x: i * barWidth,
+        y: 0,
+        w: barWidth - 4,
+        h: frequencies[i]
+      });
+    }
+  }
+
+  /**
+   * @param {CanvasRenderingContext2D} ctx
+   * @param signal
+   */
+  function drawTitle(ctx, { avg, canvas, style, title }) {
+    let x = canvas.width / 2;
+    let y = canvas.height / 2;
+    let fontSize = 150 - avg;
+
+    ctx.font = `400 ${fontSize}px ${style.textFont}`;
+    ctx.fillStyle = style.textColor;
+    ctx.shadowColor = style.color1;
+    ctx.shadowBlur = 20;
+    ctx.fillText(title, x, y);
+
+    // reset shadows
+    ctx.shadowBlur = 0;
+    ctx.shadowColor = "transparent";
+  }
+
+  /**
+   * @param {CanvasRenderingContext2D} ctx
+   * @param signal
+   */
+  function drawCircle(ctx, { bass, canvas, style }) {
+    let x = canvas.width / 2;
+    let y = canvas.height / 2;
+    let radius = 2 * bass + 48;
+
+    ctx.fillStyle = style.color2;
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, 2 * Math.PI)
+    ctx.fill();
+  }
+
+  function draw() {
+    let frequencies = new Uint8Array(analyser.frequencyBinCount);
+    analyser.getByteFrequencyData(frequencies);
+    let avg = Math.ceil(frequencies.reduce(sum) / frequencies.length);
+
+    let bassFrequencies = new Uint8Array(filterAnalyser.frequencyBinCount);
+    filterAnalyser.getByteFrequencyData(bassFrequencies);
+    let bass = Math.ceil(bassFrequencies.reduce(sum) / bassFrequencies.filter(Boolean).length);
+
+    let signal = { frequencies, avg, bass, canvas: { width: canvas.width, height: canvas.height }, title, style };
+
+    drawBackground(canvasCtx, signal);
+    drawCircle(canvasCtx, signal);
+    drawBars(canvasCtx, signal);
+    drawTitle(canvasCtx, signal);
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
+
+  function getCustomStyle(el) {
+    let style = getComputedStyle(el);
+
+    let bgColor = style.getPropertyValue("--background-color");
+    let textColor = style.getPropertyValue("--text-color");
+    let textFont = style.getPropertyValue("--text-font");
+    let color1 = style.getPropertyValue("--primary-color");
+    let color2 = style.getPropertyValue("--secondary-color");
+
+    return { bgColor, textColor, textFont, color1, color2 };
+  }
+
+  function setStyles(style, params) {
+    let queryToCSSProp = new Map([
+      ["c1", "--primary-color"],
+      ["color1", "--primary-color"],
+      ["c2", "--secondary-color"],
+      ["color2", "--secondary-color"],
+      ["tc", "--text-color"],
+      ["text-color", "--text-color"],
+      ["bg", "--background-color"],
+      ["background-color", "--background-color"],
+    ]);
+
+    for (let [param, prop] of queryToCSSProp) {
+      if (params.has(param)) style.setProperty(prop, params.get(param));
+    }
+
+    if (params.has("gfonts")) {
+      let link = document.createElement("link");
+      link.href = `https://fonts.googleapis.com/css2?${new URLSearchParams({
+        family: params.get("gfonts"),
+        display: "swap"
+      })}`;
+      link.rel = "stylesheet";
+      document.head.appendChild(link);
+    }
+  }
+
+  async function debug() {
+    if (!navigator.mediaDevices) {
+      log("No mediaDevices support");
+    } else {
+      let sources = await navigator.mediaDevices.enumerateDevices();
+      log(
+        sources
+          .filter(x => x.kind === "audioinput")
+          .map(x => `${x.label}: ${x.deviceId} - ${x.groupId}`)
+          .join("\n")
+      );
+    }
+  }
+</script>
