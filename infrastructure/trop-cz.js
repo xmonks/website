@@ -10,7 +10,7 @@ export function createDnsZone(account) {
   }, { protect: true });
 
   registerRedirectRecords("trop_cz", zone, "@");
-  registerRedirectRecords("trop_cz", zone, "www");
+  registerRedirectRecords("www_trop_cz", zone, "www");
 
   return { zone };
 }
