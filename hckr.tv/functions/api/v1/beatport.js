@@ -1,5 +1,3 @@
-import { DOMParser } from "linkedom/cached";
-
 /**
  * @param {EventContext<Env>} context
  */
@@ -7,24 +5,17 @@ export async function onRequestGet({ request }) {
   const qs = new URL(request.url).searchParams;
   /** @type Response */
   const resp = await fetch(
-    `https://www.beatport.com/search?${new URLSearchParams({
+    `https://api.beatport.com/v4/catalog/search/?${new URLSearchParams({
       q: qs.get("track"),
-      _pjax: "#pjax-inner-wrapper"
+      type: 'tracks',
+      per_page: 1
     })}`,
     {
-      credentials: "include",
-      headers: {
-        "X-PJAX": "true",
-        "X-PJAX-Container": "#pjax-inner-wrapper"
-      },
-      referrer: "https://www.beatport.com/",
       method: "GET",
-      mode: "cors"
+      headers: { "Accept": "application/json" }
     }
   );
-  const html = await resp.text();
-  const document = new DOMParser().parseFromString(html, "text/html");
-  const tracks = document.querySelectorAll(".bucket-item.track");
+  const { tracks } = await resp.json();
   if (!tracks.length) {
     return new Response(null, { status: 404 });
   }
@@ -32,12 +23,12 @@ export async function onRequestGet({ request }) {
   return Response.json({
       "@context": "https://schema.org",
       "@type": "MusicRecording",
-      byArtist: track.querySelector(".buk-track-artists").innerText.trim(),
-      name: track.querySelector(".buk-track-primary-title").innerText.trim(),
-      version: track.querySelector(".buk-track-remixed").innerText.trim(),
-      genre: track.querySelector(".buk-track-genre").innerText.trim(),
-      url: `https://www.beatport.com${track.querySelector(".buk-track-title a").getAttribute("href")}`,
-      image: track.querySelector("img").getAttribute("src")
+      byArtist: track.artists.map((artist) => ({ "@type": "MusicGroup", name: artist.name })),
+      name: track.name,
+      version: track.mix_name,
+      genre: track.genre.name,
+      url: `https://www.beatport.com/track/${track.slug}/${track.id}`,
+      image: track.release.image.uri
     }
   );
 }
