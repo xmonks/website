@@ -3,19 +3,19 @@
  */
 export async function onRequestGet({ request }) {
   const qs = new URL(request.url).searchParams;
+  const params = new URLSearchParams({
+    q: qs.get("track"),
+    type: 'tracks',
+    per_page: 1
+  });
   /** @type Response */
-  const resp = await fetch(
-    `https://api.beatport.com/v4/catalog/search/?${new URLSearchParams({
-      q: qs.get("track"),
-      type: 'tracks',
-      per_page: 1
-    })}`,
-    {
-      method: "GET",
-      headers: { "Accept": "application/json" }
-    }
-  );
-  const { tracks } = await resp.json();
+  const resp = await fetch(`https://api.beatport.com/v4/catalog/search/?${params}`, {
+    method: "GET",
+    headers: { "Accept": "application/json" }
+  });
+  let data = await resp.json();
+  console.log({response: data})
+  const { tracks } = data;
   if (!tracks.length) {
     return new Response(null, { status: 404 });
   }
