@@ -1477,7 +1477,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-cascade-layers@npm:^4.0.6":
+"@csstools/postcss-cascade-layers@npm:^4.0.4, @csstools/postcss-cascade-layers@npm:^4.0.6":
   version: 4.0.6
   resolution: "@csstools/postcss-cascade-layers@npm:4.0.6"
   dependencies:
@@ -1489,7 +1489,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-color-function@npm:^3.0.16":
+"@csstools/postcss-color-function@npm:^3.0.14, @csstools/postcss-color-function@npm:^3.0.16":
   version: 3.0.16
   resolution: "@csstools/postcss-color-function@npm:3.0.16"
   dependencies:
@@ -1504,7 +1504,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-color-mix-function@npm:^2.0.16":
+"@csstools/postcss-color-mix-function@npm:^2.0.14, @csstools/postcss-color-mix-function@npm:^2.0.16":
   version: 2.0.16
   resolution: "@csstools/postcss-color-mix-function@npm:2.0.16"
   dependencies:
@@ -1519,7 +1519,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-exponential-functions@npm:^1.0.7":
+"@csstools/postcss-exponential-functions@npm:^1.0.5, @csstools/postcss-exponential-functions@npm:^1.0.7":
   version: 1.0.7
   resolution: "@csstools/postcss-exponential-functions@npm:1.0.7"
   dependencies:
@@ -1544,7 +1544,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-gamut-mapping@npm:^1.0.9":
+"@csstools/postcss-gamut-mapping@npm:^1.0.7, @csstools/postcss-gamut-mapping@npm:^1.0.9":
   version: 1.0.9
   resolution: "@csstools/postcss-gamut-mapping@npm:1.0.9"
   dependencies:
@@ -1557,7 +1557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-gradients-interpolation-method@npm:^4.0.17":
+"@csstools/postcss-gradients-interpolation-method@npm:^4.0.15, @csstools/postcss-gradients-interpolation-method@npm:^4.0.17":
   version: 4.0.17
   resolution: "@csstools/postcss-gradients-interpolation-method@npm:4.0.17"
   dependencies:
@@ -1572,7 +1572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-hwb-function@npm:^3.0.15":
+"@csstools/postcss-hwb-function@npm:^3.0.13, @csstools/postcss-hwb-function@npm:^3.0.15":
   version: 3.0.15
   resolution: "@csstools/postcss-hwb-function@npm:3.0.15"
   dependencies:
@@ -1609,7 +1609,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-is-pseudo-class@npm:^4.0.8":
+"@csstools/postcss-is-pseudo-class@npm:^4.0.6, @csstools/postcss-is-pseudo-class@npm:^4.0.8":
   version: 4.0.8
   resolution: "@csstools/postcss-is-pseudo-class@npm:4.0.8"
   dependencies:
@@ -1621,7 +1621,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-light-dark-function@npm:^1.0.5":
+"@csstools/postcss-light-dark-function@npm:^1.0.3, @csstools/postcss-light-dark-function@npm:^1.0.5":
   version: 1.0.5
   resolution: "@csstools/postcss-light-dark-function@npm:1.0.5"
   dependencies:
@@ -1673,7 +1673,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-logical-viewport-units@npm:^2.0.9":
+"@csstools/postcss-logical-viewport-units@npm:^2.0.7, @csstools/postcss-logical-viewport-units@npm:^2.0.9":
   version: 2.0.9
   resolution: "@csstools/postcss-logical-viewport-units@npm:2.0.9"
   dependencies:
@@ -1685,7 +1685,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-media-minmax@npm:^1.1.6":
+"@csstools/postcss-media-minmax@npm:^1.1.4, @csstools/postcss-media-minmax@npm:^1.1.6":
   version: 1.1.6
   resolution: "@csstools/postcss-media-minmax@npm:1.1.6"
   dependencies:
@@ -1699,7 +1699,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-media-queries-aspect-ratio-number-values@npm:^2.0.9":
+"@csstools/postcss-media-queries-aspect-ratio-number-values@npm:^2.0.7, @csstools/postcss-media-queries-aspect-ratio-number-values@npm:^2.0.9":
   version: 2.0.9
   resolution: "@csstools/postcss-media-queries-aspect-ratio-number-values@npm:2.0.9"
   dependencies:
@@ -1735,7 +1735,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-oklab-function@npm:^3.0.16":
+"@csstools/postcss-oklab-function@npm:^3.0.14, @csstools/postcss-oklab-function@npm:^3.0.16":
   version: 3.0.16
   resolution: "@csstools/postcss-oklab-function@npm:3.0.16"
   dependencies:
@@ -1761,7 +1761,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-relative-color-syntax@npm:^2.0.16":
+"@csstools/postcss-relative-color-syntax@npm:^2.0.14, @csstools/postcss-relative-color-syntax@npm:^2.0.16":
   version: 2.0.16
   resolution: "@csstools/postcss-relative-color-syntax@npm:2.0.16"
   dependencies:
@@ -1787,7 +1787,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-stepped-value-functions@npm:^3.0.8":
+"@csstools/postcss-stepped-value-functions@npm:^3.0.6, @csstools/postcss-stepped-value-functions@npm:^3.0.8":
   version: 3.0.8
   resolution: "@csstools/postcss-stepped-value-functions@npm:3.0.8"
   dependencies:
@@ -1812,7 +1812,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@csstools/postcss-trigonometric-functions@npm:^3.0.8":
+"@csstools/postcss-trigonometric-functions@npm:^3.0.6, @csstools/postcss-trigonometric-functions@npm:^3.0.8":
   version: 3.0.8
   resolution: "@csstools/postcss-trigonometric-functions@npm:3.0.8"
   dependencies:
@@ -2516,6 +2516,69 @@ __metadata:
     dprint: "npm:0.46.1"
   languageName: unknown
   linkType: soft
+
+"@hckr_/blendid@npm:8.0.8":
+  version: 8.0.8
+  resolution: "@hckr_/blendid@npm:8.0.8"
+  dependencies:
+    "@vitejs/plugin-basic-ssl": "npm:1.1.0"
+    browser-sync: "npm:3.0.2"
+    browserslist: "npm:4.23.0"
+    caniuse-lite: "npm:1.0.30001612"
+    cloudinary: "npm:2.2.0"
+    cssnano: "npm:7.0.1"
+    del: "npm:7.1.0"
+    gulp: "npm:5.0.0"
+    gulp-changed: "npm:5.0.2"
+    gulp-data: "npm:1.3.1"
+    gulp-debug: "npm:5.0.1"
+    gulp-esbuild: "npm:0.12.0"
+    gulp-htmlmin-next: "npm:6.0.1"
+    gulp-if: "npm:3.0.0"
+    gulp-inject: "npm:5.0.5"
+    gulp-markdown-to-json: "npm:1.1.0"
+    gulp-merge-json: "npm:2.2.1"
+    gulp-mode: "npm:1.1.0"
+    gulp-notify: "npm:4.0.0"
+    gulp-nunjucks-render: "npm:2.2.3"
+    gulp-postcss: "npm:10.0.0"
+    gulp-rename: "npm:2.0.0"
+    gulp-rev-delete-original: "npm:0.2.3"
+    gulp-rev-rewrite: "npm:=5.0.0"
+    gulp-sizereport: "npm:1.2.1"
+    gulp-svgmin: "npm:4.1.0"
+    gulp-svgstore: "npm:9.0.0"
+    gulplog: "npm:2.2.0"
+    lodash-es: "npm:4.17.21"
+    marked: "npm:12.0.2"
+    marked-gfm-heading-id: "npm:3.1.3"
+    marked-highlight: "npm:2.1.1"
+    marked-mangle: "npm:1.1.7"
+    minify-html-literals: "npm:1.3.5"
+    modify-filename: "npm:2.0.0"
+    nunjucks: "npm:3.2.4"
+    nunjucks-markdown: "npm:2.0.1"
+    open: "npm:10.1.0"
+    plugin-error: "npm:2.0.1"
+    postcss: "npm:8.4.38"
+    postcss-preset-env: "npm:9.5.9"
+    replace-ext: "npm:2.0.0"
+    rev-hash: "npm:4.1.0"
+    rev-path: "npm:3.0.0"
+    sass-embedded: "npm:1.75.0"
+    sort-keys: "npm:5.0.0"
+    strip-ansi: "npm:7.1.0"
+    undertaker-registry: "npm:2.0.0"
+    vinyl: "npm:3.0.0"
+    vinyl-file: "npm:5.0.0"
+    vinyl-sourcemaps-apply: "npm:0.2.1"
+    vite: "npm:5.2.10"
+    workbox-build: "npm:7.1.0"
+  bin:
+    blendid: bin/blendid.js
+  checksum: 10/518d799e848ffa6646e3215158db51c7d134122e8d360ed2f82c74c47327c1f72e887b1ea7a04a17eca1071be2196b4d855da7f003111c4c1cb214a1d9007033
+  languageName: node
+  linkType: hard
 
 "@hckr_/blendid@npm:8.1.0":
   version: 8.1.0
@@ -4512,6 +4575,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"caniuse-lite@npm:1.0.30001612":
+  version: 1.0.30001612
+  resolution: "caniuse-lite@npm:1.0.30001612"
+  checksum: 10/8fb95102aade9147694541a9e576ec16d8d455f37e1456f497403af45f1ddd24465a62057d619d57c052e9634e090e5115e383ab066f8f9f9b87d14f738f81df
+  languageName: node
+  linkType: hard
+
 "caniuse-lite@npm:1.0.30001625":
   version: 1.0.30001625
   resolution: "caniuse-lite@npm:1.0.30001625"
@@ -4951,7 +5021,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-has-pseudo@npm:^6.0.5":
+"css-has-pseudo@npm:^6.0.3, css-has-pseudo@npm:^6.0.5":
   version: 6.0.5
   resolution: "css-has-pseudo@npm:6.0.5"
   dependencies:
@@ -9529,7 +9599,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-color-functional-notation@npm:^6.0.11":
+"postcss-color-functional-notation@npm:^6.0.11, postcss-color-functional-notation@npm:^6.0.9":
   version: 6.0.11
   resolution: "postcss-color-functional-notation@npm:6.0.11"
   dependencies:
@@ -9594,7 +9664,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-media@npm:^10.0.6":
+"postcss-custom-media@npm:^10.0.4, postcss-custom-media@npm:^10.0.6":
   version: 10.0.6
   resolution: "postcss-custom-media@npm:10.0.6"
   dependencies:
@@ -9608,7 +9678,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:^13.3.10":
+"postcss-custom-properties@npm:^13.3.10, postcss-custom-properties@npm:^13.3.8":
   version: 13.3.10
   resolution: "postcss-custom-properties@npm:13.3.10"
   dependencies:
@@ -9623,7 +9693,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-selectors@npm:^7.1.10":
+"postcss-custom-selectors@npm:^7.1.10, postcss-custom-selectors@npm:^7.1.8":
   version: 7.1.10
   resolution: "postcss-custom-selectors@npm:7.1.10"
   dependencies:
@@ -9760,7 +9830,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-lab-function@npm:^6.0.16":
+"postcss-lab-function@npm:^6.0.14, postcss-lab-function@npm:^6.0.16":
   version: 6.0.16
   resolution: "postcss-lab-function@npm:6.0.16"
   dependencies:
@@ -9881,7 +9951,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-nesting@npm:^12.1.5":
+"postcss-nesting@npm:^12.1.2, postcss-nesting@npm:^12.1.5":
   version: 12.1.5
   resolution: "postcss-nesting@npm:12.1.5"
   dependencies:
@@ -10111,6 +10181,76 @@ __metadata:
   peerDependencies:
     postcss: ^8.4
   checksum: 10/04f8ff761952cc3665918d01f875fff8610a732c3de06e0caf4f79b917d44ba772a231cd831278795f29a91b423e691c98aa24a2f636441232edd6debd2cd92f
+  languageName: node
+  linkType: hard
+
+"postcss-preset-env@npm:9.5.9":
+  version: 9.5.9
+  resolution: "postcss-preset-env@npm:9.5.9"
+  dependencies:
+    "@csstools/postcss-cascade-layers": "npm:^4.0.4"
+    "@csstools/postcss-color-function": "npm:^3.0.14"
+    "@csstools/postcss-color-mix-function": "npm:^2.0.14"
+    "@csstools/postcss-exponential-functions": "npm:^1.0.5"
+    "@csstools/postcss-font-format-keywords": "npm:^3.0.2"
+    "@csstools/postcss-gamut-mapping": "npm:^1.0.7"
+    "@csstools/postcss-gradients-interpolation-method": "npm:^4.0.15"
+    "@csstools/postcss-hwb-function": "npm:^3.0.13"
+    "@csstools/postcss-ic-unit": "npm:^3.0.6"
+    "@csstools/postcss-initial": "npm:^1.0.1"
+    "@csstools/postcss-is-pseudo-class": "npm:^4.0.6"
+    "@csstools/postcss-light-dark-function": "npm:^1.0.3"
+    "@csstools/postcss-logical-float-and-clear": "npm:^2.0.1"
+    "@csstools/postcss-logical-overflow": "npm:^1.0.1"
+    "@csstools/postcss-logical-overscroll-behavior": "npm:^1.0.1"
+    "@csstools/postcss-logical-resize": "npm:^2.0.1"
+    "@csstools/postcss-logical-viewport-units": "npm:^2.0.7"
+    "@csstools/postcss-media-minmax": "npm:^1.1.4"
+    "@csstools/postcss-media-queries-aspect-ratio-number-values": "npm:^2.0.7"
+    "@csstools/postcss-nested-calc": "npm:^3.0.2"
+    "@csstools/postcss-normalize-display-values": "npm:^3.0.2"
+    "@csstools/postcss-oklab-function": "npm:^3.0.14"
+    "@csstools/postcss-progressive-custom-properties": "npm:^3.2.0"
+    "@csstools/postcss-relative-color-syntax": "npm:^2.0.14"
+    "@csstools/postcss-scope-pseudo-class": "npm:^3.0.1"
+    "@csstools/postcss-stepped-value-functions": "npm:^3.0.6"
+    "@csstools/postcss-text-decoration-shorthand": "npm:^3.0.6"
+    "@csstools/postcss-trigonometric-functions": "npm:^3.0.6"
+    "@csstools/postcss-unset-value": "npm:^3.0.1"
+    autoprefixer: "npm:^10.4.19"
+    browserslist: "npm:^4.22.3"
+    css-blank-pseudo: "npm:^6.0.2"
+    css-has-pseudo: "npm:^6.0.3"
+    css-prefers-color-scheme: "npm:^9.0.1"
+    cssdb: "npm:^8.0.0"
+    postcss-attribute-case-insensitive: "npm:^6.0.3"
+    postcss-clamp: "npm:^4.1.0"
+    postcss-color-functional-notation: "npm:^6.0.9"
+    postcss-color-hex-alpha: "npm:^9.0.4"
+    postcss-color-rebeccapurple: "npm:^9.0.3"
+    postcss-custom-media: "npm:^10.0.4"
+    postcss-custom-properties: "npm:^13.3.8"
+    postcss-custom-selectors: "npm:^7.1.8"
+    postcss-dir-pseudo-class: "npm:^8.0.1"
+    postcss-double-position-gradients: "npm:^5.0.6"
+    postcss-focus-visible: "npm:^9.0.1"
+    postcss-focus-within: "npm:^8.0.1"
+    postcss-font-variant: "npm:^5.0.0"
+    postcss-gap-properties: "npm:^5.0.1"
+    postcss-image-set-function: "npm:^6.0.3"
+    postcss-lab-function: "npm:^6.0.14"
+    postcss-logical: "npm:^7.0.1"
+    postcss-nesting: "npm:^12.1.2"
+    postcss-opacity-percentage: "npm:^2.0.0"
+    postcss-overflow-shorthand: "npm:^5.0.1"
+    postcss-page-break: "npm:^3.0.4"
+    postcss-place: "npm:^9.0.1"
+    postcss-pseudo-class-any-link: "npm:^9.0.2"
+    postcss-replace-overflow-wrap: "npm:^4.0.0"
+    postcss-selector-not: "npm:^7.0.2"
+  peerDependencies:
+    postcss: ^8.4
+  checksum: 10/5ee14e53a2515588c498559b468d42ba62f036531407660a5a4a7b7ed8391248f01689b85c14e8bf420d21590615089dd7378ced910f5bd8c7e500e1f620915f
   languageName: node
   linkType: hard
 
@@ -10936,12 +11076,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-android-arm64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-android-arm64@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "sass-embedded-android-arm64@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-android-arm64@npm:1.77.2"
   bin:
     sass: dart-sass/sass
   conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"sass-embedded-android-arm@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-android-arm@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=android & cpu=arm
   languageName: node
   linkType: hard
 
@@ -10954,12 +11112,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-android-ia32@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-android-ia32@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=android & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "sass-embedded-android-ia32@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-android-ia32@npm:1.77.2"
   bin:
     sass: dart-sass/sass
   conditions: os=android & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"sass-embedded-android-x64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-android-x64@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=android & cpu=x64
   languageName: node
   linkType: hard
 
@@ -10972,12 +11148,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-darwin-arm64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-darwin-arm64@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "sass-embedded-darwin-arm64@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-darwin-arm64@npm:1.77.2"
   bin:
     sass: dart-sass/sass
   conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"sass-embedded-darwin-x64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-darwin-x64@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
@@ -10990,12 +11184,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-linux-arm64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-linux-arm64@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "sass-embedded-linux-arm64@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-linux-arm64@npm:1.77.2"
   bin:
     sass: dart-sass/sass
   conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"sass-embedded-linux-arm@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-linux-arm@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
@@ -11008,12 +11220,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-linux-ia32@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-linux-ia32@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
+  conditions: os=linux & cpu=ia32
+  languageName: node
+  linkType: hard
+
 "sass-embedded-linux-ia32@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-linux-ia32@npm:1.77.2"
   bin:
     sass: dart-sass/sass
   conditions: os=linux & cpu=ia32
+  languageName: node
+  linkType: hard
+
+"sass-embedded-linux-musl-arm64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-linux-musl-arm64@npm:1.75.0"
+  conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
@@ -11024,10 +11252,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-linux-musl-arm@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-linux-musl-arm@npm:1.75.0"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
 "sass-embedded-linux-musl-arm@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-linux-musl-arm@npm:1.77.2"
   conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"sass-embedded-linux-musl-ia32@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-linux-musl-ia32@npm:1.75.0"
+  conditions: os=linux & cpu=ia32
   languageName: node
   linkType: hard
 
@@ -11038,9 +11280,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-linux-musl-x64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-linux-musl-x64@npm:1.75.0"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
 "sass-embedded-linux-musl-x64@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-linux-musl-x64@npm:1.77.2"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"sass-embedded-linux-x64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-linux-x64@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
@@ -11054,12 +11312,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-win32-arm64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-win32-arm64@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass.bat
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "sass-embedded-win32-arm64@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-win32-arm64@npm:1.77.2"
   bin:
     sass: dart-sass/sass.bat
   conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"sass-embedded-win32-ia32@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-win32-ia32@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass.bat
+  conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
@@ -11072,12 +11348,87 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sass-embedded-win32-x64@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded-win32-x64@npm:1.75.0"
+  bin:
+    sass: dart-sass/sass.bat
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
 "sass-embedded-win32-x64@npm:1.77.2":
   version: 1.77.2
   resolution: "sass-embedded-win32-x64@npm:1.77.2"
   bin:
     sass: dart-sass/sass.bat
   conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"sass-embedded@npm:1.75.0":
+  version: 1.75.0
+  resolution: "sass-embedded@npm:1.75.0"
+  dependencies:
+    "@bufbuild/protobuf": "npm:^1.0.0"
+    buffer-builder: "npm:^0.2.0"
+    immutable: "npm:^4.0.0"
+    rxjs: "npm:^7.4.0"
+    sass-embedded-android-arm: "npm:1.75.0"
+    sass-embedded-android-arm64: "npm:1.75.0"
+    sass-embedded-android-ia32: "npm:1.75.0"
+    sass-embedded-android-x64: "npm:1.75.0"
+    sass-embedded-darwin-arm64: "npm:1.75.0"
+    sass-embedded-darwin-x64: "npm:1.75.0"
+    sass-embedded-linux-arm: "npm:1.75.0"
+    sass-embedded-linux-arm64: "npm:1.75.0"
+    sass-embedded-linux-ia32: "npm:1.75.0"
+    sass-embedded-linux-musl-arm: "npm:1.75.0"
+    sass-embedded-linux-musl-arm64: "npm:1.75.0"
+    sass-embedded-linux-musl-ia32: "npm:1.75.0"
+    sass-embedded-linux-musl-x64: "npm:1.75.0"
+    sass-embedded-linux-x64: "npm:1.75.0"
+    sass-embedded-win32-arm64: "npm:1.75.0"
+    sass-embedded-win32-ia32: "npm:1.75.0"
+    sass-embedded-win32-x64: "npm:1.75.0"
+    supports-color: "npm:^8.1.1"
+    varint: "npm:^6.0.0"
+  dependenciesMeta:
+    sass-embedded-android-arm:
+      optional: true
+    sass-embedded-android-arm64:
+      optional: true
+    sass-embedded-android-ia32:
+      optional: true
+    sass-embedded-android-x64:
+      optional: true
+    sass-embedded-darwin-arm64:
+      optional: true
+    sass-embedded-darwin-x64:
+      optional: true
+    sass-embedded-linux-arm:
+      optional: true
+    sass-embedded-linux-arm64:
+      optional: true
+    sass-embedded-linux-ia32:
+      optional: true
+    sass-embedded-linux-musl-arm:
+      optional: true
+    sass-embedded-linux-musl-arm64:
+      optional: true
+    sass-embedded-linux-musl-ia32:
+      optional: true
+    sass-embedded-linux-musl-x64:
+      optional: true
+    sass-embedded-linux-x64:
+      optional: true
+    sass-embedded-win32-arm64:
+      optional: true
+    sass-embedded-win32-ia32:
+      optional: true
+    sass-embedded-win32-x64:
+      optional: true
+  checksum: 10/a2171d3434fefb78b0fbc1be1c21062cf431e8ebff9ec8bd5a5a9977dc4ae3e8552be73b9bfbe2eca659606a93df21b27872855cb20cf51ccf7642ea617fe30a
   languageName: node
   linkType: hard
 
@@ -12646,6 +12997,46 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vite@npm:5.2.10":
+  version: 5.2.10
+  resolution: "vite@npm:5.2.10"
+  dependencies:
+    esbuild: "npm:^0.20.1"
+    fsevents: "npm:~2.3.3"
+    postcss: "npm:^8.4.38"
+    rollup: "npm:^4.13.0"
+  peerDependencies:
+    "@types/node": ^18.0.0 || >=20.0.0
+    less: "*"
+    lightningcss: ^1.21.0
+    sass: "*"
+    stylus: "*"
+    sugarss: "*"
+    terser: ^5.4.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@types/node":
+      optional: true
+    less:
+      optional: true
+    lightningcss:
+      optional: true
+    sass:
+      optional: true
+    stylus:
+      optional: true
+    sugarss:
+      optional: true
+    terser:
+      optional: true
+  bin:
+    vite: bin/vite.js
+  checksum: 10/a0c4ac7b95e9a2a59f4e73e5b42a63f33569f5ec505af9dd019f19ff419fd20d66ad9aad6708987d4da173d485358f0024f410af78ac97cf5c92a38f8c96c451
+  languageName: node
+  linkType: hard
+
 "vite@npm:5.2.12":
   version: 5.2.12
   resolution: "vite@npm:5.2.12"
@@ -12786,6 +13177,51 @@ __metadata:
   dependencies:
     workbox-core: "npm:7.1.0"
   checksum: 10/8dd87c05b14c0e7f03711d8a189949d5b16a33c53fc0d252569ba4758e450baca2d1aac45628b4210532c930176b1796a2a917be51000289001e401bdc5d3915
+  languageName: node
+  linkType: hard
+
+"workbox-build@npm:7.1.0":
+  version: 7.1.0
+  resolution: "workbox-build@npm:7.1.0"
+  dependencies:
+    "@apideck/better-ajv-errors": "npm:^0.3.1"
+    "@babel/core": "npm:^7.24.4"
+    "@babel/preset-env": "npm:^7.11.0"
+    "@babel/runtime": "npm:^7.11.2"
+    "@rollup/plugin-babel": "npm:^5.2.0"
+    "@rollup/plugin-node-resolve": "npm:^15.2.3"
+    "@rollup/plugin-replace": "npm:^2.4.1"
+    "@rollup/plugin-terser": "npm:^0.4.3"
+    "@surma/rollup-plugin-off-main-thread": "npm:^2.2.3"
+    ajv: "npm:^8.6.0"
+    common-tags: "npm:^1.8.0"
+    fast-json-stable-stringify: "npm:^2.1.0"
+    fs-extra: "npm:^9.0.1"
+    glob: "npm:^7.1.6"
+    lodash: "npm:^4.17.20"
+    pretty-bytes: "npm:^5.3.0"
+    rollup: "npm:^2.43.1"
+    source-map: "npm:^0.8.0-beta.0"
+    stringify-object: "npm:^3.3.0"
+    strip-comments: "npm:^2.0.1"
+    tempy: "npm:^0.6.0"
+    upath: "npm:^1.2.0"
+    workbox-background-sync: "npm:7.1.0"
+    workbox-broadcast-update: "npm:7.1.0"
+    workbox-cacheable-response: "npm:7.1.0"
+    workbox-core: "npm:7.1.0"
+    workbox-expiration: "npm:7.1.0"
+    workbox-google-analytics: "npm:7.1.0"
+    workbox-navigation-preload: "npm:7.1.0"
+    workbox-precaching: "npm:7.1.0"
+    workbox-range-requests: "npm:7.1.0"
+    workbox-recipes: "npm:7.1.0"
+    workbox-routing: "npm:7.1.0"
+    workbox-strategies: "npm:7.1.0"
+    workbox-streams: "npm:7.1.0"
+    workbox-sw: "npm:7.1.0"
+    workbox-window: "npm:7.1.0"
+  checksum: 10/6d2086899e65f7728fe3c2cc7d14dbc18bec2ae8c2e1e681f552e0162b8c138b2c2a235ddcf820b3b966cb06b60319fcaa9eb1831f35f1fab1da77fa4238dcbd
   languageName: node
   linkType: hard
 
