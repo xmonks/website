@@ -8211,15 +8211,15 @@ __metadata:
   linkType: hard
 
 "linkedom@npm:^0.18.0":
-  version: 0.18.0
-  resolution: "linkedom@npm:0.18.0"
+  version: 0.18.2
+  resolution: "linkedom@npm:0.18.2"
   dependencies:
     css-select: "npm:^5.1.0"
     cssom: "npm:^0.5.0"
     html-escaper: "npm:^3.0.3"
     htmlparser2: "npm:^9.1.0"
     uhyphen: "npm:^0.2.0"
-  checksum: 10/e3a04909d240a700969e6091b6f1a8f291b43ce319dc1240d4af55a093151a81e0cfd2d65b72bbde4bc79968478c0a4746a5d7cd3c6fdd490e850399419172cc
+  checksum: 10/44c8a7b7ecef547d620bb5a993402e0cd99c2de5e2e93463ccd49e55206123a27e319be4f3d74a007e3e09be69b4dd48e4d4a33a11bbedc4f9017b197307f368
   languageName: node
   linkType: hard
 
