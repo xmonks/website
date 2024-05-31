@@ -9,7 +9,7 @@ export default {
   fonts: true,
   static: true,
   svgSprite: true,
-  javascripts: true,
+  javascripts: false,
   esbuild: true,
 
   browserSync: false,
