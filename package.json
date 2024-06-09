@@ -8,7 +8,7 @@
   "license": "Apache-2.0",
   "private": true,
   "devDependencies": {
-    "dprint": "0.46.1"
+    "dprint": "0.46.2"
   },
   "scripts": {
     "fmt": "dprint fmt \"**/*.{md,mjs,js,json}\""
