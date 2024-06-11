@@ -2470,7 +2470,7 @@ __metadata:
     "@hckr_/blendid": "npm:8.1.0"
     open-props: "npm:1.7.4"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.60.1"
+    wrangler: "npm:3.60.2"
   languageName: unknown
   linkType: soft
 
@@ -2487,7 +2487,7 @@ __metadata:
     parse-duration: "npm:^1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:^7.8.1"
-    wrangler: "npm:3.60.1"
+    wrangler: "npm:3.60.2"
   languageName: unknown
   linkType: soft
 
@@ -2504,7 +2504,7 @@ __metadata:
     parse-duration: "npm:^1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:^7.8.1"
-    wrangler: "npm:3.60.1"
+    wrangler: "npm:3.60.2"
   languageName: unknown
   linkType: soft
 
@@ -13074,9 +13074,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.60.1":
-  version: 3.60.1
-  resolution: "wrangler@npm:3.60.1"
+"wrangler@npm:3.60.2":
+  version: 3.60.2
+  resolution: "wrangler@npm:3.60.2"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.2"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -13105,7 +13105,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/00f762ec8edaff4eae2983c0e12aeae39cbb7fe51e282f1eca46cbcae9853520c9676b6a3ab916041d9d31dfcf619bbdcf2201936823bf657990820b67fc37a6
+  checksum: 10/63fb8d4c31d78ab47d47793422394ed05cbd7afc7f27007fd11a40055984c62fbea15e40709e37384ba0a47bb74076ca2c28348f5638d3b3be9016ff8e481cbb
   languageName: node
   linkType: hard
 
