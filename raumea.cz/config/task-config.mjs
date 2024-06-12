@@ -14,7 +14,16 @@ export default {
   browserSync: false,
 
   generate: {
-    json: [{ collection: "references" }]
+    json: [{
+      collection: "references",
+      mergeOptions: {
+        concatArrays: true,
+        startObj: [],
+        edit(json) {
+          return [json];
+        }
+      }
+    }],
   },
 
   html: {
