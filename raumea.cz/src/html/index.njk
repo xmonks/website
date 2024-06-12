@@ -1,10 +1,11 @@
-{% extends 'layouts/website.html' %}
+{% extends 'layouts/website.njk' %}
+
+{% set wfPage = "66317069a775f581698259e4" %}
 
 {% block title %}raumea.cz - extreme. experiments. experience.{% endblock %}
 
 {% block content %}
-<main vocab="https://schema.org/" typeof="Organization">
-    <div class="page-wrapper">
+  <div class="page-wrapper">
       <div class="page-main">
         <div class="navbar-logo-left">
           <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container shadow-three w-nav">
@@ -44,9 +45,9 @@
           <div class="home-hero_section">
             <div class="hero-wrapper">
               <div class="hero-split">
-                <h1 data-w-id="c94f51e9-f0f4-7ee3-ab5a-a8d45073c819" style="opacity:0" class="heading">Pomáháme inovovat interiéry</h1>
+                <h1 data-w-id="c94f51e9-f0f4-7ee3-ab5a-a8d45073c819" class="heading">Pomáháme inovovat interiéry</h1>
                 <p class="margin-bottom-24px">Pojďme se sejít a pobavit se o tom, jak vám můžeme pomoci.</p>
-                <a href="https://tidycal.com/michalfitrik/15-minute-meeting" target="_blank" class="button-primary w-button">Naplánovat schůzku</a>
+                <a href="https://tidycal.com/michalfitrik/15-minute-meeting" target="tidycal" class="button-primary w-button">Naplánovat schůzku</a>
               </div>
               <div class="hero-split">
                 <a href="#" class="w-inline-block w-lightbox"><img class="image-5" src="{{ 'portfolio.png' | assetUrl('images') }}" alt="" style="opacity:0" sizes="(max-width: 479px) 90vw, (max-width: 767px) 100vw, (max-width: 991px) 728px, 518.875px" data-w-id="6e6a56e0-410b-2c38-5f65-74e2c476e1c6" loading="lazy" srcset="{{ 'portfolio-p-500.png' | assetUrl('images') }} 500w, {{ 'portfolio-p-800.png' | assetUrl('images') }} 800w, {{ 'portfolio.png' | assetUrl('images') }} 876w">
@@ -189,7 +190,7 @@
               </section>
             </div>
             <div class="w-layout-blockcontainer container-5 w-container">
-              <a href="https://tidycal.com/michalfitrik/15-minute-meeting" target="_blank" class="button-primary w-button">Naplánovat schůzku</a>
+              <a href="https://tidycal.com/michalfitrik/15-minute-meeting" target="tidycal" class="button-primary w-button">Naplánovat schůzku</a>
             </div>
             <div class="w-layout-blockcontainer w-container">
               <div id="zeptat-se" class="container-default w-container">
@@ -269,7 +270,7 @@
                         </div>
                       </div>
                       <div class="error-message w-form-fail">
-                        <div>Oops! Something went wrong while submitting the form.</div>
+                        <div>Při odesílání formuláře došlo k chybě. Zkuste to znova.</div>
                       </div>
                     </div>
                   </div>
@@ -325,9 +326,7 @@
           </section>
         </div>
       </div>
-    </div>
-</main>
-
+</div>
 {% endblock %}
 
 {% block javascript %}

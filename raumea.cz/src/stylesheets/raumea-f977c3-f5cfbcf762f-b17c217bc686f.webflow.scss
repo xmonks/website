@@ -41,7 +41,7 @@
 }
 
 .home-hero_wrapper {
-  background-image: url('../images/bg.png');
+  background-image: assetUrl("images", "bg.png");
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -51,7 +51,7 @@
 .home-hero_wrapper.mobile {
   font-family: var(--font-family);
   background-color: #f5f5f5;
-  background-image: url('../images/wawe-2.svg');
+  background-image: assetUrl("images", "wawe-2.svg");
   background-position: 50% -100px;
   background-repeat: repeat;
   background-size: cover;
@@ -252,7 +252,7 @@
   z-index: 2;
   font-family: var(--font-family);
   background-color: #fff;
-  background-image: url('../images/bg-grafdient.jpg');
+  background-image: assetUrl("images", 'bg-grafdient.jpg');
   background-position: 50% 0;
   background-size: cover;
   border-radius: 2em 2em 0 0;
@@ -271,7 +271,7 @@
 }
 
 .home-cta_section {
-  background-image: url('../images/wawe-2.svg');
+  background-image: assetUrl("images", 'wawe-2.svg');
   background-position: 0 0;
   background-repeat: repeat;
   background-size: cover;
@@ -1178,7 +1178,7 @@
 
 .home-content-wrap-sticky {
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/DSC00499-HDR.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), assetUrl("images", 'DSC00499-HDR.jpg');
   background-position: 0 0, 50%;
   background-size: auto, cover;
   border-radius: 2em;
@@ -1194,7 +1194,7 @@
 
 .home-content-wrap-sticky-2 {
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/cbd-obchod.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), assetUrl("images", 'cbd-obchod.jpg');
   background-position: 0 0, 50%;
   background-size: auto, cover;
   border-radius: 2em;
@@ -1210,7 +1210,7 @@
 
 .home-content-wrap-sticky-3 {
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/interier.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), assetUrl("images", 'interier.jpg');
   background-position: 0 0, 50%;
   background-size: auto, cover;
   border-radius: 2em;
@@ -1331,7 +1331,7 @@
 }
 
 .cell {
-  background-image: url('../images/reference-4.jpg');
+  background-image: assetUrl("images", 'reference-4.jpg');
   background-position: 50%;
   background-size: cover;
   border-top-left-radius: 2rem;
@@ -2007,7 +2007,7 @@
 
 .home-content-wrap-sticky-4 {
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../images/DSC00865-HDR.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), assetUrl("images", 'DSC00865-HDR.jpg');
   background-position: 0 0, 50%;
   background-size: auto, cover;
   border-radius: 2em;
@@ -2024,7 +2024,7 @@
 @media screen and (min-width: 1440px) {
   .home-hero_wrapper.mobile {
     background-color: #f5f7fa;
-    background-image: url('../images/wawe-2.svg');
+    background-image: assetUrl("images", 'wawe-2.svg');
     background-position: 50% -100px;
     background-repeat: repeat;
     background-size: cover;
@@ -2083,7 +2083,7 @@
   }
 
   .home-content-wrap-sticky {
-    background-image: linear-gradient(to bottom, null, null), url('../images/DSC00499-HDR.jpg');
+    background-image: linear-gradient(to bottom, null, null), assetUrl("images", 'DSC00499-HDR.jpg');
   }
 
   .home-content_wrapper-intro {
@@ -2398,7 +2398,7 @@
 
 @media screen and (max-width: 767px) {
   .home-hero_wrapper.mobile {
-    background-image: url('../images/wawe-2.svg');
+    background-image: assetUrl("images", 'wawe-2.svg');
   }
 
   .hero-heading-left, .team-slider, .hero-without-image {
@@ -2749,7 +2749,7 @@
   }
 
   .home-hero_wrapper.mobile {
-    background-image: url('../images/wawe-2.svg');
+    background-image: assetUrl("images", 'wawe-2.svg');
     background-position: 0%;
     background-size: cover;
   }
@@ -2762,7 +2762,7 @@
 
   .hero-wrapper {
     background-color: #f5f7fa;
-    background-image: url('../images/wawe.svg');
+    background-image: assetUrl("images", 'wawe.svg');
     background-position: 50% 100%;
     background-size: cover;
     margin-left: auto;
@@ -2908,12 +2908,12 @@
   }
 
   .home-content-wrap-sticky-2 {
-    background-image: linear-gradient(to bottom, null, null), url('../images/reference-5.jpg');
+    background-image: linear-gradient(to bottom, null, null), assetUrl("images", 'reference-5.jpg');
     background-position: 0 0, 50%;
   }
 
   .home-content-wrap-sticky-3 {
-    background-image: linear-gradient(to bottom, null, null), url('../images/reference-6.jpg');
+    background-image: linear-gradient(to bottom, null, null), assetUrl("images", 'reference-6.jpg');
     background-position: 0 0, 50%;
   }
 
@@ -3130,7 +3130,7 @@
   }
 
   .home-content-wrap-sticky-4 {
-    background-image: linear-gradient(to bottom, null, null), url('../images/reference-6.jpg');
+    background-image: linear-gradient(to bottom, null, null), assetUrl("images", 'reference-6.jpg');
     background-position: 0 0, 50%;
   }
 }

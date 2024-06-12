@@ -3,7 +3,6 @@ import jitProps from "postcss-jit-props";
 import pathConfig from "./path-config.json" assert { type: "json" };
 
 export default {
-  html: true,
   images: true,
   cloudinary: false,
   fonts: true,
@@ -13,6 +12,14 @@ export default {
   esbuild: true,
 
   browserSync: false,
+
+  generate: {
+    json: [{ collection: "references" }]
+  },
+
+  html: {
+    collections: ["references"]
+  },
 
   stylesheets: {
     postcss: {

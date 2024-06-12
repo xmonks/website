@@ -24,12 +24,12 @@
 
   "stylesheets": {
     "src": "stylesheets",
-    "dest": "assets/css"
+    "dest": "css"
   },
 
   "images": {
     "src": "images",
-    "dest": "assets/img"
+    "dest": "images"
   },
 
   "cloudinary": {
