@@ -14,6 +14,7 @@ export default {
   browserSync: false,
 
   generate: {
+    exclude: ["references.json"],
     json: [{
       collection: "references",
       mergeOptions: {
