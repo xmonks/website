@@ -7981,15 +7981,15 @@ __metadata:
   linkType: hard
 
 "linkedom@npm:^0.18.0":
-  version: 0.18.3
-  resolution: "linkedom@npm:0.18.3"
+  version: 0.18.4
+  resolution: "linkedom@npm:0.18.4"
   dependencies:
     css-select: "npm:^5.1.0"
     cssom: "npm:^0.5.0"
     html-escaper: "npm:^3.0.3"
     htmlparser2: "npm:^9.1.0"
     uhyphen: "npm:^0.2.0"
-  checksum: 10/0a87bd090a2f423ee028e1b48aab28344299d50fc14164713d2b08d4217b0a9d7c6e5e72b511fd4cc00c18d24ca26b3a7aecb13274d09569c457fdd56ed7608b
+  checksum: 10/20ba81a925e60a152f40ce9937071f800f79b56014534245a6979b6705b3283c89fe90d3e18009e1828fef8327e8152a6be53216348e65d3b91348c5e9ca92a8
   languageName: node
   linkType: hard
 
