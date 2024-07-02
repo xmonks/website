@@ -3381,15 +3381,15 @@ __metadata:
   linkType: hard
 
 "@thi.ng/atom@npm:^5.3.0":
-  version: 5.3.2
-  resolution: "@thi.ng/atom@npm:5.3.2"
+  version: 5.3.3
+  resolution: "@thi.ng/atom@npm:5.3.3"
   dependencies:
     "@thi.ng/api": "npm:^8.11.4"
     "@thi.ng/equiv": "npm:^2.1.60"
     "@thi.ng/errors": "npm:^2.5.9"
     "@thi.ng/paths": "npm:^5.1.83"
     tslib: "npm:^2.6.3"
-  checksum: 10/95b0d40c682e7d4bb2eafa6492295a6bbb170c3d36806118dc40bcb3e9072287da52e807ba0194ed9c4cb9c51f2ac2daadc25f6c6bdc4a49ea5656ff36b3ee32
+  checksum: 10/6cb662b3cdea45c9ae4e2a1a7e81a92d36600c95fe95fe656fa5750a47663f2115bf442f35f0581d2e97d561070a43aef8018b0b48419efb4f08a7921674f5dc
   languageName: node
   linkType: hard
 
