@@ -6,6 +6,8 @@ logo: zeppelin.svg
 tags: ["interier", "nabytek"]
 ---
 
+# ZEPPELIN
+
 Tady pak bude, tklivý popis zázazníka...
 
 Psát **tučný** nebo s *kurzívou* nebo [nějaký odkaz](https://www.zeppelin.cz).
