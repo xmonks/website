@@ -2323,18 +2323,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hckr-studio/raumea-web@workspace:raumea.cz":
-  version: 0.0.0-use.local
-  resolution: "@hckr-studio/raumea-web@workspace:raumea.cz"
-  dependencies:
-    "@cloudflare/workers-types": "npm:4.20240712.0"
-    "@hckr_/blendid": "npm:8.5.2"
-    open-props: "npm:1.7.5"
-    postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.64.0"
-  languageName: unknown
-  linkType: soft
-
 "@hckr-studio/websites-infrastructure@workspace:infrastructure":
   version: 0.0.0-use.local
   resolution: "@hckr-studio/websites-infrastructure@workspace:infrastructure"
