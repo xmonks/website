@@ -16,8 +16,7 @@
   "workspaces": [
     "hckr.studio",
     "hckr.tv",
-    "infrastructure",
-    "raumea.cz"
+    "infrastructure"
   ],
   "packageManager": "yarn@4.3.1"
 }
