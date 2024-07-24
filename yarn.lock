@@ -2313,7 +2313,7 @@ __metadata:
   resolution: "@hckr-studio/hckr-studio-web@workspace:hckr.studio"
   dependencies:
     "@cloudflare/workers-types": "npm:4.20240722.0"
-    "@hckr_/blendid": "npm:8.5.3"
+    "@hckr_/blendid": "npm:8.5.5"
     open-props: "npm:1.7.5"
     postcss-jit-props: "npm:1.0.14"
     wrangler: "npm:3.66.0"
@@ -2325,7 +2325,7 @@ __metadata:
   resolution: "@hckr-studio/hckr-tv-web@workspace:hckr.tv"
   dependencies:
     "@cloudflare/workers-types": "npm:4.20240722.0"
-    "@hckr_/blendid": "npm:8.5.3"
+    "@hckr_/blendid": "npm:8.5.5"
     "@thi.ng/atom": "npm:5.3.7"
     linkedom: "npm:0.18.4"
     lit-html: "npm:3.1.4"
@@ -2354,9 +2354,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hckr_/blendid@npm:8.5.3":
-  version: 8.5.3
-  resolution: "@hckr_/blendid@npm:8.5.3"
+"@hckr_/blendid@npm:8.5.5":
+  version: 8.5.5
+  resolution: "@hckr_/blendid@npm:8.5.5"
   dependencies:
     "@vitejs/plugin-basic-ssl": "npm:1.1.0"
     browser-sync: "npm:3.0.2"
@@ -2414,7 +2414,7 @@ __metadata:
     workbox-build: "npm:7.1.1"
   bin:
     blendid: bin/blendid.js
-  checksum: 10/bc23e290cb07c8f55e89344aa83723584234fd44b7e816a1cce55f5beb930090d03bf2ef9ca5ea55bdaaae38dc808a8e827546b958e684283464f3d90065e486
+  checksum: 10/663ce6b53db8307a6b7c7bc2923b8fea8eaa86bbff4150008887400c846e6d97cc6691573ecce28389a5afc179ef2e131ed80eab585d21bae65324a1207fbabd
   languageName: node
   linkType: hard
 
