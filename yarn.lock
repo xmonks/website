@@ -1396,10 +1396,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:4.20240722.0":
-  version: 4.20240722.0
-  resolution: "@cloudflare/workers-types@npm:4.20240722.0"
-  checksum: 10/fd19d6b5d871affa75de462504337ab2d887b36c202c24ebfb93e1c608ea9a9a9b50e7a1828955035de09aa25ba45a458f1f9fa2f37ff5e20ee17482131b1174
+"@cloudflare/workers-types@npm:4.20240725.0":
+  version: 4.20240725.0
+  resolution: "@cloudflare/workers-types@npm:4.20240725.0"
+  checksum: 10/cd43e48e792d2c65263e6a5beb14de77f0f0b950c5dab9aa964c96c4851c69f5cff2b3b92c333894e738f9986e36a0282d20ab1d07713b6fcf9afb4e492bdecd
   languageName: node
   linkType: hard
 
@@ -2312,7 +2312,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-studio-web@workspace:hckr.studio"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20240722.0"
+    "@cloudflare/workers-types": "npm:4.20240725.0"
     "@hckr_/blendid": "npm:8.5.5"
     open-props: "npm:1.7.5"
     postcss-jit-props: "npm:1.0.14"
@@ -2324,7 +2324,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-tv-web@workspace:hckr.tv"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20240722.0"
+    "@cloudflare/workers-types": "npm:4.20240725.0"
     "@hckr_/blendid": "npm:8.5.5"
     "@thi.ng/atom": "npm:5.3.7"
     linkedom: "npm:0.18.4"
