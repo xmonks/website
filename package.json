@@ -18,5 +18,5 @@
     "hckr.tv",
     "infrastructure"
   ],
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "yarn@4.4.0"
 }
