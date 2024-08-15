@@ -60,6 +60,10 @@ jobs:
           name: Build hckr.tv website
           working_directory: hckr.tv
           command: yarn build
+      - run:
+          name: Build hckr.space website
+          working_directory: hckr.space
+          command: yarn build
       - persist_to_workspace:
           root: .
           paths: .blendid
