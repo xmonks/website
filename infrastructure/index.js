@@ -69,7 +69,7 @@ const list = new cloudflare.List(`hckr/redirect-list`, {
   )),
 });
 
-const rulset = new cloudflare.Ruleset(`hckr/redirect-ruleset`, {
+const ruleset = new cloudflare.Ruleset(`hckr/redirect-ruleset`, {
   accountId: account.id,
   description: "Redirects www to apex",
   name: `hckr_www_redirects`,

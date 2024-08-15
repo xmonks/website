@@ -8,12 +8,13 @@
   "license": "Apache-2.0",
   "private": true,
   "devDependencies": {
-    "dprint": "0.47.1"
+    "dprint": "0.47.2"
   },
   "scripts": {
     "fmt": "dprint fmt \"**/*.{md,mjs,js,json}\""
   },
   "workspaces": [
+    "hckr.space",
     "hckr.studio",
     "hckr.tv",
     "infrastructure"

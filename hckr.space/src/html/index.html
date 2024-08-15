@@ -1,0 +1,55 @@
+{% extends 'layouts/website.html' %}
+
+{% block title %}hckr.space{% endblock %}
+
+{% block content %}
+<main vocab="https://schema.org/" typeof="Organization">
+  <header>
+    <hgroup>
+      <h1 property="name">hckr_<em>space</em></h1>
+    </hgroup>
+
+    <blockquote>
+      <dl>
+        <dt><code>/ˈhækə(r)/</code></dt>
+        <dd>a person who uses or writes computer programs with enthusiasm and skill</dd>
+        <dt><code>/speɪs/</code></dt>
+        <dd>a place, especially a room or a building, that can be used for a particular purpose</dd>
+      </dl>
+    </blockquote>
+  </header>
+
+  <section id="partners">
+    <h2>our members</h2>
+    <div role="list">
+      <div role="listitem">
+        <h3><a href="https://hckr.studio/">hckr.studio</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://www.fenek.cz/">agentura Fenek</a></h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h2>contacts</h2>
+    <div property="address" typeof="PostalAddress">
+      <div>
+        <div><strong>hckr.space</strong></div>
+        <div property="streetAddress">U půjčovny 952/2</div>
+        <div><span property="postalCode">110 00</span>, <span property="addressLocality">Praha 1</span></div>
+        <div property="addressCountry">Czech Republic</div>
+        <div><a href="https://maps.app.goo.gl/MzqwzhzW78ptbujE7">navigate</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+{% endblock %}
+
+{% block javascript %}
+<script type="module">
+  import {helloWorld} from "{{ 'index.js' | assetUrl('esm') }}";
+
+  helloWorld();
+</script>
+{% endblock %}
