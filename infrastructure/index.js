@@ -48,6 +48,8 @@ const redirects = [
   ["www.trop.cz", "https://hckr.studio"],
   ["w3blogy.cz", "https://www.rarous.net/w3b/"],
   ["www.w3blogy.cz", "https://www.rarous.net/w3b/"],
+  ["atlas-as.cz", "https://hckr.studio"],
+  ["www.atlas-as.cz", "https://hckr.studio"],
 ];
 
 const list = new cloudflare.List(`hckr/redirect-list`, {
