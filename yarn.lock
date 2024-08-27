@@ -1377,10 +1377,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-shared@npm:0.3.0":
-  version: 0.3.0
-  resolution: "@cloudflare/workers-shared@npm:0.3.0"
-  checksum: 10/1466e03bfea2b13306432b3a109fb1119e71dcc4d03921af7ccf724badbfca299c5dce7f80a854c085de016021328e79eef9185b63a140f2e9482cd92e68e19e
+"@cloudflare/workers-shared@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@cloudflare/workers-shared@npm:0.4.0"
+  checksum: 10/2bd40b156314798a37232d0f2e5ce2b65f8baca99ba2b5800654b12c0576ad38cbdf5242ee1458667f34346cc58a9c865bb80a13ab3565d3a9bbfe68be043392
   languageName: node
   linkType: hard
 
@@ -2311,7 +2311,7 @@ __metadata:
     "@hckr_/blendid": "npm:8.6.1"
     open-props: "npm:1.7.5"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.72.2"
+    wrangler: "npm:3.72.3"
   languageName: unknown
   linkType: soft
 
@@ -2323,7 +2323,7 @@ __metadata:
     "@hckr_/blendid": "npm:8.6.1"
     open-props: "npm:1.7.5"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.72.2"
+    wrangler: "npm:3.72.3"
   languageName: unknown
   linkType: soft
 
@@ -2340,7 +2340,7 @@ __metadata:
     parse-duration: "npm:1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
-    wrangler: "npm:3.72.2"
+    wrangler: "npm:3.72.3"
   languageName: unknown
   linkType: soft
 
@@ -12685,12 +12685,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.72.2":
-  version: 3.72.2
-  resolution: "wrangler@npm:3.72.2"
+"wrangler@npm:3.72.3":
+  version: 3.72.3
+  resolution: "wrangler@npm:3.72.3"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
-    "@cloudflare/workers-shared": "npm:0.3.0"
+    "@cloudflare/workers-shared": "npm:0.4.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
     "@esbuild-plugins/node-modules-polyfill": "npm:^0.2.2"
     blake3-wasm: "npm:^2.1.5"
@@ -12719,7 +12719,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/7aa4f35d4e8061c21bad2355ca6e92760b8f2630fbc12665e95141177634af870d5cc25261f6eee7505954570a0bad176dcad46d0db2c3217dfe4a684fec491c
+  checksum: 10/f9b97bc4b4c8fc371aaa1b4d4a87f672ab8d49342d54175258ecb4df02f756bee3a9ded90d33e1f518841c19fbd7822fe898888875e8575de4024272b56c29b0
   languageName: node
   linkType: hard
 
