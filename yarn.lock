@@ -2309,7 +2309,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:4.20240821.1"
     "@hckr_/blendid": "npm:8.6.1"
-    open-props: "npm:1.7.5"
+    open-props: "npm:1.7.6"
     postcss-jit-props: "npm:1.0.14"
     wrangler: "npm:3.72.3"
   languageName: unknown
@@ -2321,7 +2321,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:4.20240821.1"
     "@hckr_/blendid": "npm:8.6.1"
-    open-props: "npm:1.7.5"
+    open-props: "npm:1.7.6"
     postcss-jit-props: "npm:1.0.14"
     wrangler: "npm:3.72.3"
   languageName: unknown
@@ -2336,7 +2336,7 @@ __metadata:
     "@thi.ng/atom": "npm:5.3.9"
     linkedom: "npm:0.18.4"
     lit-html: "npm:3.2.0"
-    open-props: "npm:1.7.5"
+    open-props: "npm:1.7.6"
     parse-duration: "npm:1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
@@ -8986,10 +8986,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"open-props@npm:1.7.5":
-  version: 1.7.5
-  resolution: "open-props@npm:1.7.5"
-  checksum: 10/8f153f135e13120ba94ef543c311c0c88c23a73639bb2b57e1269ca5c7f18aa89feffbc6f2f0bd64e2983c2a84e9aa41d51b9d4a7672421b13e56a013c611917
+"open-props@npm:1.7.6":
+  version: 1.7.6
+  resolution: "open-props@npm:1.7.6"
+  checksum: 10/eb4a30c890b93a72e5962e71297a366d821bc8f0b5b08ca302b11cacbfd410c7a0dda64f4a2dee1b3e220b3eb68aa714e2db152564ed54238ed155d9f3852a87
   languageName: node
   linkType: hard
 
