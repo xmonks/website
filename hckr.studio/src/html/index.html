@@ -41,26 +41,9 @@
         <h3 property="name">Pavel Trnka</h3>
         <p><a property="sameAs" href="https://www.ptrnka.cz/">ptrnka.cz</a></p>
       </div>
-    </div>
-  </section>
-
-  <section id="partners">
-    <h2>our partners</h2>
-    <div role="list">
-      <div role="listitem">
-        <h3><a href="https://www.keboola.com">Keboola</a></h3>
-      </div>
-      <div role="listitem">
-        <h3><a href="https://www.fenek.cz/">agentura Fenek</a></h3>
-      </div>
-      <div role="listitem">
-        <h3><a href="https://geneea.com/">Geneea</a></h3>
-      </div>
-      <div role="listitem">
-        <h3><a href="https://www.byzkids.com/">ByzKids</a></h3>
-      </div>
-      <div role="listitem">
-        <h3><a href="https://www.raumea.cz/">Raumea</a></h3>
+      <div class="contact" role="listitem" property="member" typeof="Person">
+        <h3 property="name">Veronika Vajdiaková</h3>
+        <p><a property="sameAs" href="https://fotkyodveroniky.cz/">fotkyodveroniky.cz</a></p>
       </div>
     </div>
   </section>
@@ -73,7 +56,7 @@
     <h3>office</h3>
     <div property="address" typeof="PostalAddress">
       <div>
-        <div><strong>hckr.space</strong></div>
+        <div><strong><a href="https://hckr.space">hckr.space</a></strong></div>
         <div property="streetAddress">U půjčovny 952/2</div>
         <div><span property="postalCode">110 00</span>, <span property="addressLocality">Praha 1</span></div>
         <div property="addressCountry">Czech Republic</div>
@@ -102,6 +85,30 @@
     </section>
   </section>
 
+  <section id="partners">
+    <h2>our partners</h2>
+    <div role="list">
+      <div role="listitem">
+        <h3><a href="https://www.keboola.com">Keboola</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://www.fenek.cz/">agentura Fenek</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://izatlouk.cz/">Irena Zatloukalová</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://geneea.com/">Geneea</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://www.svejda-goldmann.cz/">Švejda&amp;Goldmann</a></h3>
+      </div>
+      <div role="listitem">
+        <h3><a href="https://www.raumea.cz/">Raumea</a></h3>
+      </div>
+    </div>
+  </section>
+
   <section id="references">
     <h2>references</h2>
 
@@ -114,22 +121,23 @@
           <li>System architecture</li>
           <li>Implementation of Browser Extension, Web and Mobile Apps</li>
           <li>Implementation and maintenance of most Apify actors</li>
-          <li>Optimization for cost and maintenance in small team</li>
+          <li>Optimization for cost and maintenance in a small team</li>
         </ul>
       </div>
       <div role="listitem">
-        <h3>Hackercamp</h3>
+        <h3>Hacker Camp</h3>
         <ul>
-          <li>Visual identity</li>
+          <li>Visual identity and graphic design</li>
           <li>Implementation of public Web, attendees section and administration</li>
           <li>Production of Jungle Release stage</li>
+          <li>Wi-Fi coverage of the ground</li>
         </ul>
       </div>
       <div role="listitem">
         <h3>Aseko</h3>
         <p><a href="https://www.asekopool.com/cs/web-services-cz/">www.asekopool.com</a></p>
         <ul>
-          <li>Help with unification of mobile app development platform</li>
+          <li>Help with unification of a mobile apps development platform based on Web technology</li>
         </ul>
       </div>
       <div role="listitem">
@@ -152,13 +160,33 @@
       </div>
     </div>
   </section>
+  
+  <section id="tools">
+    <h2>tools</h2>
+
+    <div role="list">
+      <div role="listitem">
+        <h3>Apify Dataset to Keboola uploader</h3>
+        <p><a href="https://apify.com/hckr-studio/keboola-uploader">keboola-uploader</a></p>
+        <ul>
+          <li>Reliable uploader of Apify Datasets to Keboola Connection</li>
+          <li>gracefully handles migrations</li>
+          <li>implements retry policy for failed uploads</li>
+          <li>supports Actor Integration</li>
+          <li>allows to fine-tune the batch size for you optimal usage of resources</li>
+        </ul>
+      </div>
+      <div role="listitem">
+        <h3>Blendid!</h3>
+        <p><a href="https://github.com/hckr-studio/blendid">blendid on GitHub</a></p>
+        <ul>
+          <li>Static website builder</li>
+          <li>Assets pipeline</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </main>
 {% endblock %}
 
-{% block javascript %}
-<script type="module">
-  import {helloWorld} from "{{ 'index.js' | assetUrl('esm') }}";
-
-  helloWorld();
-</script>
-{% endblock %}
+{% block javascript %}{% endblock %}
