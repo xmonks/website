@@ -2311,7 +2311,7 @@ __metadata:
     "@hckr_/blendid": "npm:8.6.1"
     open-props: "npm:1.7.6"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.75.0"
+    wrangler: "npm:3.76.0"
   languageName: unknown
   linkType: soft
 
@@ -2323,7 +2323,7 @@ __metadata:
     "@hckr_/blendid": "npm:8.6.1"
     open-props: "npm:1.7.6"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.75.0"
+    wrangler: "npm:3.76.0"
   languageName: unknown
   linkType: soft
 
@@ -2340,7 +2340,7 @@ __metadata:
     parse-duration: "npm:1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
-    wrangler: "npm:3.75.0"
+    wrangler: "npm:3.76.0"
   languageName: unknown
   linkType: soft
 
@@ -8417,9 +8417,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20240821.1":
-  version: 3.20240821.1
-  resolution: "miniflare@npm:3.20240821.1"
+"miniflare@npm:3.20240821.2":
+  version: 3.20240821.2
+  resolution: "miniflare@npm:3.20240821.2"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:^8.8.0"
@@ -8435,7 +8435,7 @@ __metadata:
     zod: "npm:^3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10/ed6945094d714474fb88a157597148d447440c3dd581e08395da8046c9d2958c402976a017b2172981af517c5dd74b635103682a50e971ce4e565f73b89535b0
+  checksum: 10/f443db224c8c64ba9d725126e1ef6e7d6a5b7170e8da267eaae381472801cd2cf41306c90b8608d062e4af5e300a31434a906d377a9c1ea3df132f03a581b960
   languageName: node
   linkType: hard
 
@@ -12687,9 +12687,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.75.0":
-  version: 3.75.0
-  resolution: "wrangler@npm:3.75.0"
+"wrangler@npm:3.76.0":
+  version: 3.76.0
+  resolution: "wrangler@npm:3.76.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@cloudflare/workers-shared": "npm:0.4.1"
@@ -12700,7 +12700,7 @@ __metadata:
     date-fns: "npm:^3.6.0"
     esbuild: "npm:0.17.19"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:3.20240821.1"
+    miniflare: "npm:3.20240821.2"
     nanoid: "npm:^3.3.3"
     path-to-regexp: "npm:^6.2.0"
     resolve: "npm:^1.22.8"
@@ -12721,7 +12721,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/b12aaca168354abedb49eecc3c399f8059da3d37436d3747cbfb64b51c2b5deb12309992168d6dbc98573fbadc682481707a7a14748a9ce75311839515044c8c
+  checksum: 10/9e1d2c3476cbd2c38bf694df0678cb82b956cea479244acf443e33bf10d1ca65fee1e8ffb246db688455ebd385c11ac6058f0e0b847b9a2952bfb2af97c67ce7
   languageName: node
   linkType: hard
 
