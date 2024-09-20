@@ -2337,7 +2337,7 @@ __metadata:
     "@cloudflare/workers-types": "npm:4.20240919.0"
     "@hckr_/blendid": "npm:8.6.2"
     "@thi.ng/atom": "npm:5.3.10"
-    linkedom: "npm:0.18.4"
+    linkedom: "npm:0.18.5"
     lit-html: "npm:3.2.0"
     open-props: "npm:1.7.6"
     parse-duration: "npm:1.1.0"
@@ -8099,16 +8099,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"linkedom@npm:0.18.4":
-  version: 0.18.4
-  resolution: "linkedom@npm:0.18.4"
+"linkedom@npm:0.18.5":
+  version: 0.18.5
+  resolution: "linkedom@npm:0.18.5"
   dependencies:
     css-select: "npm:^5.1.0"
     cssom: "npm:^0.5.0"
     html-escaper: "npm:^3.0.3"
     htmlparser2: "npm:^9.1.0"
     uhyphen: "npm:^0.2.0"
-  checksum: 10/20ba81a925e60a152f40ce9937071f800f79b56014534245a6979b6705b3283c89fe90d3e18009e1828fef8327e8152a6be53216348e65d3b91348c5e9ca92a8
+  checksum: 10/80d37485eb190fa42db71ab17bc43a1be2c5bd1eb77e40b802ea4533a4cfc0548149e5edfc0004a8e334a457f6bc08669c12708a9888c1218bd5a1a4fb920cfd
   languageName: node
   linkType: hard
 

@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@thi.ng/atom": "5.3.10",
-    "linkedom": "0.18.4",
+    "linkedom": "0.18.5",
     "lit-html": "3.2.0",
     "parse-duration": "1.1.0",
     "rxjs": "7.8.1"
