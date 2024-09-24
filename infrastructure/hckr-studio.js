@@ -12,7 +12,7 @@ export function createDnsZone(account) {
     type: "TXT",
     name: "20240410132338pm._domainkey",
     comment: "Postmarkapp DKIM",
-    value:
+    content:
       "k=rsa;p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCygwrolR01/Cw/Tdo4d09q0w0q33VdzmxSDWsi4puj5ibOvyXA66Qtub46rZBZ1kbJ3PDlfeTDMx/snkWVasEz6lEoDJ0h2+EMcbTKU+TAHSauVkB+s0aabas2ZAQkZkBN8qJ7yiVSugWpB0AooK5mPJJEHt+mmgP0Dxbar77/QIDAQAB",
   });
   new cloudflare.Record("postmark-return-path-hckr.studio", {
@@ -20,7 +20,7 @@ export function createDnsZone(account) {
     type: "CNAME",
     name: "pm-bounces",
     comment: "Postmarkapp Return path",
-    value: "pm.mtasv.net",
+    content: "pm.mtasv.net",
   });
 
   return { zone };

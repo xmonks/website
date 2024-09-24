@@ -23,7 +23,6 @@ const hckrStudioZone = hckrStudio.createDnsZone(account);
 const hckrTvZone = hckrTv.createDnsZone(account);
 const twaregCzZone = twaregCz.createDnsZone(account);
 const tropCzZone = tropCz.createDnsZone(account);
-const xmonkStudioZone = xmonksStudio.createDnsZone(account);
 const xmonksStudioZone = xmonksStudio.createDnsZone(account);
 
 const hckrSpacePages = createPages(account, hckrSpaceZone.zone, "@", "hckr-space");

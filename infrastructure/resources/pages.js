@@ -1,9 +1,15 @@
 import cloudflare from "@pulumi/cloudflare";
 import { registerRedirectRecords } from "./dns.js";
 
-/** @typedef {import("@pulumi/cloudflare/types/input.js").PagesProjectDeploymentConfigsProduction} PagesProjectDeploymentConfigsProduction */
+/** @typedef {import("@pulumi/cloudflare/account.d.ts").Account} Account */
+/** @typedef {import("@pulumi/cloudflare/zone.d.ts").Zone} Zone */
+/** @typedef {import("@pulumi/cloudflare/types/input.d.ts").PagesProjectDeploymentConfigsProduction} PagesProjectDeploymentConfigsProduction */
 
 /**
+ * @param {Account} account
+ * @param {Zone} zone
+ * @param {string} recordName
+ * @param {string} projectName
  * @param {Object} options
  * @param {PagesProjectDeploymentConfigsProduction} options.productionConfiguration
  */
@@ -24,7 +30,7 @@ export function createPages(account, zone, recordName, projectName, { production
     zoneId: zone.id,
     name: recordName,
     type: "CNAME",
-    value: pages.domains[0],
+    content: pages.domains[0],
     ttl: 1,
     proxied: true,
   }, { dependsOn: [zone, pages] });

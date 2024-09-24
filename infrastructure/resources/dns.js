@@ -5,7 +5,7 @@ export function registerRedirectRecords(projectName, zone, recordName) {
     zoneId: zone.id,
     name: recordName,
     type: "A",
-    value: "192.0.2.1",
+    content: "192.0.2.1",
     ttl: 1,
     proxied: true,
   }, { dependsOn: [zone] });
@@ -14,7 +14,7 @@ export function registerRedirectRecords(projectName, zone, recordName) {
     zoneId: zone.id,
     name: recordName,
     type: "AAAA",
-    value: "100::",
+    content: "100::",
     ttl: 1,
     proxied: true,
   }, { dependsOn: [zone] });
