@@ -5,6 +5,7 @@ import * as hckrStudio from "./hckr-studio.js";
 import * as hckrTv from "./hckr-tv.js";
 import * as twaregCz from "./twareg-cz.js";
 import * as tropCz from "./trop-cz.js";
+import * as xmonksStudio from "./xmonks-studio.js";
 import { createPages, createRedirect } from "./resources/pages.js";
 
 const config = new pulumi.Config();
@@ -22,6 +23,8 @@ const hckrStudioZone = hckrStudio.createDnsZone(account);
 const hckrTvZone = hckrTv.createDnsZone(account);
 const twaregCzZone = twaregCz.createDnsZone(account);
 const tropCzZone = tropCz.createDnsZone(account);
+const xmonkStudioZone = xmonksStudio.createDnsZone(account);
+const xmonksStudioZone = xmonksStudio.createDnsZone(account);
 
 const hckrSpacePages = createPages(account, hckrSpaceZone.zone, "@", "hckr-space");
 const hckrStudioPages = createPages(account, hckrStudioZone.zone, "@", "hckr-studio", {
@@ -37,7 +40,6 @@ const redirects = [
   createRedirect(account, hckrStudioZone.zone, "www", "hckr_studio", hckrStudioPages.domain.domain),
   createRedirect(account, hckrTvZone.zone, "www", "hckr_tv", hckrTvPages.domain.domain),
   // those are managed in other repositories, but Lists are global to the account
-  ["rarous.net", "https://www.rarous.net"],
   ["hackercamp.cz", "https://www.hackercamp.cz"],
   ["hckr.camp", "https://www.hackercamp.cz"],
   ["www.hckr.camp", "https://www.hackercamp.cz"],
@@ -46,10 +48,13 @@ const redirects = [
   ["www.twareg.cz", "https://hckr.studio"],
   ["trop.cz", "https://hckr.studio"],
   ["www.trop.cz", "https://hckr.studio"],
-  ["w3blogy.cz", "https://www.rarous.net/w3b/"],
-  ["www.w3blogy.cz", "https://www.rarous.net/w3b/"],
   ["atlas-as.cz", "https://hckr.studio"],
   ["www.atlas-as.cz", "https://hckr.studio"],
+  ["xmonks.studio", "https://hckr.studio"],
+  ["www.xmonks.studio", "https://hckr.studio"],
+  ["rarous.net", "https://www.rarous.net"],
+  ["w3blogy.cz", "https://www.rarous.net/w3b/"],
+  ["www.w3blogy.cz", "https://www.rarous.net/w3b/"],
 ];
 
 const list = new cloudflare.List(`hckr/redirect-list`, {
