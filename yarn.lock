@@ -2306,6 +2306,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@hckr-studio/hckr-party-web@workspace:hckr.party":
+  version: 0.0.0-use.local
+  resolution: "@hckr-studio/hckr-party-web@workspace:hckr.party"
+  dependencies:
+    "@cloudflare/workers-types": "npm:4.20240925.0"
+    "@hckr_/blendid": "npm:8.6.2"
+    open-props: "npm:1.7.6"
+    postcss-jit-props: "npm:1.0.14"
+    wrangler: "npm:3.78.10"
+  languageName: unknown
+  linkType: soft
+
 "@hckr-studio/hckr-space-web@workspace:hckr.space":
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-space-web@workspace:hckr.space"
