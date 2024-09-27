@@ -64,6 +64,10 @@ jobs:
           name: Build hckr.space website
           working_directory: hckr.space
           command: yarn build
+      - run:
+          name: Build hckr.party website
+          working_directory: hckr.party
+          command: yarn build
       - persist_to_workspace:
           root: .
           paths: .blendid
@@ -95,6 +99,10 @@ jobs:
           name: Deploy hckr.space website
           working_directory: hckr.space # change directory to deploy functions
           command: yarn wrangler pages deploy ../.blendid/public/hckr.space --project-name hckr-space
+      - run:
+          name: Deploy hckr.party website
+          working_directory: hckr.party # change directory to deploy functions
+          command: yarn wrangler pages deploy ../.blendid/public/hckr.party --project-name hckr-party
       - slack/notify:
           event: fail
           mentions: '@here'

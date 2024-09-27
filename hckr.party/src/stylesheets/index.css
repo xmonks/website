@@ -1,0 +1,75 @@
+:root {
+  --headings-font-family: Poppins, var(--font-sans);
+  --text-font-family: var(--font-mono);
+  --text-color: black;
+  --background: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: white;
+    --background: black;
+  }
+}
+
+body {
+  font-family: var(--text-font-family);
+  font-variant-ligatures: common-ligatures;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+
+  color: var(--text-color);
+  background-color: var(--background);
+  color-scheme: light dark;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--headings-font-family);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: var(--font-size-fluid-3);
+  font-variation-settings: 'wght' 700;
+  letter-spacing: var(--font-letterspacing-0);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--font-size-fluid-2);
+  letter-spacing: var(--font-letterspacing-0);
+}
+
+h3 {
+  font-size: var(--font-size-fluid-1);
+}
+
+hgroup h1 {
+  margin-bottom: 0;
+}
+hgroup h1 em {
+  font-style: normal;
+  font-weight: 200;
+}
+hgroup h2 {
+  margin-top: 0;
+}
+
+main > section {
+  margin: 4em 0;
+}
+
+section h2::after {
+  content: "_";
+}
+
+blockquote dt {
+  font-size: var(--font-size-fluid-1);
+  font-weight: 600;
+}
+
+blockquote dd {
+  font-family: Gergia, var(--font-serif);
+}
