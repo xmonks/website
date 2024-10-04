@@ -18,6 +18,8 @@ jobs:
       - pulumi/login
       - node/install-packages:
           pkg-manager: yarn-berry
+          cache-version: v1-provision
+          override-ci-command: yarn workspaces focus @hckr-studio/websites-infrastructure
       - pulumi/update:
           working_directory: infrastructure
           stack: prod
@@ -36,6 +38,8 @@ jobs:
       - pulumi/login
       - node/install-packages:
           pkg-manager: yarn-berry
+          cache-version: v1-provision
+          override-ci-command: yarn workspaces focus @hckr-studio/websites-infrastructure
       - pulumi/preview:
           working_directory: infrastructure
           stack: prod
@@ -52,6 +56,8 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn-berry
+          cache-version: v1-build
+          override-ci-command: yarn workspaces focus @hckr-studio/hckr-party-web @hckr-studio/hckr-space-web @hckr-studio/hckr-studio-web @hckr-studio/hckr-tv-web
       - run:
           name: Build hckr.studio website
           working_directory: hckr.studio
@@ -87,6 +93,8 @@ jobs:
           at: .
       - node/install-packages:
           pkg-manager: yarn-berry
+          cache-version: v1-deploy
+          override-ci-command: yarn workspaces focus @hckr-studio/websites
       - run:
           name: Deploy hckr.studio website
           working_directory: hckr.studio # change directory to deploy functions
