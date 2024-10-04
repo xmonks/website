@@ -49,6 +49,11 @@ jobs:
           channel: ntf-website
 
   build:
+    parameters:
+      project_name:
+        type: string
+      site_dir:
+        type: string
     docker:
       - image: cimg/node:lts
     resource_class: arm.large
@@ -56,27 +61,15 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: yarn-berry
-          cache-version: v1-build
-          override-ci-command: yarn workspaces focus @hckr-studio/hckr-party-web @hckr-studio/hckr-space-web @hckr-studio/hckr-studio-web @hckr-studio/hckr-tv-web
+          cache-version: v1-build-<< parameters.project_name >>
+          override-ci-command: yarn workspaces focus @hckr-studio/<< parameters.project_name >>-web
       - run:
-          name: Build hckr.studio website
-          working_directory: hckr.studio
-          command: yarn build
-      - run:
-          name: Build hckr.tv website
-          working_directory: hckr.tv
-          command: yarn build
-      - run:
-          name: Build hckr.space website
-          working_directory: hckr.space
-          command: yarn build
-      - run:
-          name: Build hckr.party website
-          working_directory: hckr.party
+          name: Build << parameters.site_dir >> website
+          working_directory: << parameters.site_dir >>
           command: yarn build
       - persist_to_workspace:
           root: .
-          paths: .blendid
+          paths: .blendid/public/<< parameters.site_dir >>
       - slack/notify:
           event: fail
           mentions: '@here'
@@ -84,6 +77,11 @@ jobs:
           channel: ntf-website
 
   deploy:
+    parameters:
+      project_name:
+        type: string
+      site_dir:
+        type: string
     docker:
       - image: cimg/node:lts
     resource_class: arm.large
@@ -93,24 +91,12 @@ jobs:
           at: .
       - node/install-packages:
           pkg-manager: yarn-berry
-          cache-version: v1-build
-          override-ci-command: yarn workspaces focus @hckr-studio/hckr-party-web @hckr-studio/hckr-space-web @hckr-studio/hckr-studio-web @hckr-studio/hckr-tv-web
+          cache-version: v1-build-<< parameters.project_name >>
+          override-ci-command: yarn workspaces focus @hckr-studio/<< parameters.project_name >>-web
       - run:
-          name: Deploy hckr.studio website
-          working_directory: hckr.studio # change directory to deploy functions
-          command: yarn wrangler pages deploy ../.blendid/public/hckr.studio --project-name hckr-studio
-      - run:
-          name: Deploy hckr.tv website
-          working_directory: hckr.tv # change directory to deploy functions
-          command: yarn wrangler pages deploy ../.blendid/public/hckr.tv --project-name hckr-tv
-      - run:
-          name: Deploy hckr.space website
-          working_directory: hckr.space # change directory to deploy functions
-          command: yarn wrangler pages deploy ../.blendid/public/hckr.space --project-name hckr-space
-      - run:
-          name: Deploy hckr.party website
-          working_directory: hckr.party # change directory to deploy functions
-          command: yarn wrangler pages deploy ../.blendid/public/hckr.party --project-name hckr-party
+          name: Deploy << parameters.site_dir >> website
+          working_directory: << parameters.site_dir >> # change directory to deploy functions
+          command: yarn wrangler pages deploy ../.blendid/public/<< parameters.site_dir >> --project-name << parameters.project_name >>
       - slack/notify:
           event: fail
           mentions: '@here'
@@ -138,14 +124,77 @@ workflows:
             branches:
               ignore: trunk
       - build:
+          name: build-hckr-party
+          project_name: hckr-party
+          site_dir: hckr.party
+          context:
+            - slack
+      - build:
+          name: build-hckr-space
+          project_name: hckr-space
+          site_dir: hckr.space
+          context:
+            - slack
+      - build:
+          name: build-hckr-studio
+          project_name: hckr-studio
+          site_dir: hckr.studio
+          context:
+            - slack
+      - build:
+          name: build-hckr-tv
+          project_name: hckr-tv
+          site_dir: hckr.tv
           context:
             - slack
       - deploy:
+          name: deploy-hckr-party
+          project_name: hckr-party
+          site_dir: hckr.party
           context:
             - cloudflare
             - slack
           requires:
-            - build
+            - build-hckr-party
+            - provision
+          filters:
+            branches:
+              only: trunk
+      - deploy:
+          name: deploy-hckr-space
+          project_name: hckr-space
+          site_dir: hckr.space
+          context:
+            - cloudflare
+            - slack
+          requires:
+            - build-hckr-space
+            - provision
+          filters:
+            branches:
+              only: trunk
+      - deploy:
+          name: deploy-hckr-studio
+          project_name: hckr-studio
+          site_dir: hckr.studio
+          context:
+            - cloudflare
+            - slack
+          requires:
+            - build-hckr-studio
+            - provision
+          filters:
+            branches:
+              only: trunk
+      - deploy:
+          name: deploy-hckr-tv
+          project_name: hckr-tv
+          site_dir: hckr.tv
+          context:
+            - cloudflare
+            - slack
+          requires:
+            - build-hckr-tv
             - provision
           filters:
             branches:
