@@ -93,8 +93,8 @@ jobs:
           at: .
       - node/install-packages:
           pkg-manager: yarn-berry
-          cache-version: v1-deploy
-          override-ci-command: yarn workspaces focus @hckr-studio/websites
+          cache-version: v1-build
+          override-ci-command: yarn workspaces focus @hckr-studio/hckr-party-web @hckr-studio/hckr-space-web @hckr-studio/hckr-studio-web @hckr-studio/hckr-tv-web
       - run:
           name: Deploy hckr.studio website
           working_directory: hckr.studio # change directory to deploy functions
