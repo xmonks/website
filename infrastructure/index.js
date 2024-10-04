@@ -4,10 +4,10 @@ import * as hckrParty from "./hckr-party.js";
 import * as hckrSpace from "./hckr-space.js";
 import * as hckrStudio from "./hckr-studio.js";
 import * as hckrTv from "./hckr-tv.js";
-import * as twaregCz from "./twareg-cz.js";
-import * as tropCz from "./trop-cz.js";
-import * as xmonksStudio from "./xmonks-studio.js";
 import { createPages, createRedirect } from "./resources/pages.js";
+import * as tropCz from "./trop-cz.js";
+import * as twaregCz from "./twareg-cz.js";
+import * as xmonksStudio from "./xmonks-studio.js";
 
 const config = new pulumi.Config();
 

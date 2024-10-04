@@ -1,53 +1,53 @@
-{
+export default {
   "src": "./src",
-  "dest": "../.blendid/public/hckr.space",
+  "dest": "../.blendid/public/hckr.studio",
 
   "html": {
     "src": "html",
-    "dest": "./"
+    "dest": "./",
   },
 
   "static": {
     "src": "static",
-    "dest": "./"
+    "dest": "./",
   },
 
   "javascripts": {
     "src": "javascripts",
-    "dest": "assets/js"
+    "dest": "assets/js",
   },
 
   "esm": {
     "src": "esm",
-    "dest": "assets/esm"
+    "dest": "assets/esm",
   },
 
   "stylesheets": {
     "src": "stylesheets",
-    "dest": "assets/css"
+    "dest": "assets/css",
   },
 
   "images": {
     "src": "images",
-    "dest": "assets/img"
+    "dest": "assets/img",
   },
 
   "cloudinary": {
     "src": "cloudinary",
-    "dest": ""
+    "dest": "",
   },
 
   "data": {
-    "src": "data"
+    "src": "data",
   },
 
   "fonts": {
     "src": "fonts",
-    "dest": "assets/css"
+    "dest": "assets/css",
   },
 
   "icons": {
     "src": "icons",
-    "dest": "assets/img"
-  }
-}
+    "dest": "assets/img",
+  },
+};

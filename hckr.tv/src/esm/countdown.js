@@ -1,7 +1,7 @@
+import { defAtom } from "@thi.ng/atom";
+import { html, render } from "lit-html";
 import parseDuration from "parse-duration";
 import { interval } from "rxjs";
-import { defAtom } from "@thi.ng/atom";
-import { render, html } from "lit-html";
 import setStyles from "./set-styles.js";
 
 const countdown = document.getElementById("countdown");
@@ -10,17 +10,16 @@ const state = defAtom(0);
 const formatDuration = x =>
   new Date(x).toLocaleTimeString("cs", {
     timeStyle: "medium",
-    timeZone: "UTC"
+    timeZone: "UTC",
   });
 
 state.addWatch("render", (id, prev, curr) =>
   requestAnimationFrame(() =>
     render(
       html`<data value="${curr}">${formatDuration(curr)}</data>`,
-      countdown
+      countdown,
     )
-  )
-);
+  ));
 
 addEventListener("DOMContentLoaded", e => {
   const url = new URL(location.href);
