@@ -1190,7 +1190,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.10"
     "@thi.ng/atom": "npm:5.3.11"
     linkedom: "npm:0.18.5"
-    lit-html: "npm:3.2.0"
+    lit-html: "npm:3.2.1"
     open-props: "npm:1.7.6"
     parse-duration: "npm:1.1.0"
     postcss-jit-props: "npm:1.0.14"
@@ -5405,12 +5405,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lit-html@npm:3.2.0":
-  version: 3.2.0
-  resolution: "lit-html@npm:3.2.0"
+"lit-html@npm:3.2.1":
+  version: 3.2.1
+  resolution: "lit-html@npm:3.2.1"
   dependencies:
     "@types/trusted-types": "npm:^2.0.2"
-  checksum: 10/c6e6f07b3aa02d6b3dc047664d144911a49c7ed95137320b769771f8386873f8d72858b205cad707fa88fd5d882de25981de80660888c6f1be106af01bbba979
+  checksum: 10/d670a8e49da98d04b83dd13807fec86305d85915b30814c5461e7a34d001ce1efcd8395467897118d0ab5c09d9c224617b25a4eb2b743491f634f6a3bf155753
   languageName: node
   linkType: hard
 
