@@ -1154,7 +1154,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.10"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.80.2"
+    wrangler: "npm:3.80.3"
   languageName: unknown
   linkType: soft
 
@@ -1166,7 +1166,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.10"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.80.2"
+    wrangler: "npm:3.80.3"
   languageName: unknown
   linkType: soft
 
@@ -1178,7 +1178,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.10"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.80.2"
+    wrangler: "npm:3.80.3"
   languageName: unknown
   linkType: soft
 
@@ -1195,7 +1195,7 @@ __metadata:
     parse-duration: "npm:1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
-    wrangler: "npm:3.80.2"
+    wrangler: "npm:3.80.3"
   languageName: unknown
   linkType: soft
 
@@ -8523,15 +8523,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unenv@npm:unenv-nightly@2.0.0-20240919-125358-9a64854":
-  version: 2.0.0-20240919-125358-9a64854
-  resolution: "unenv-nightly@npm:2.0.0-20240919-125358-9a64854"
+"unenv@npm:unenv-nightly@2.0.0-20241009-125958-e8ea22f":
+  version: 2.0.0-20241009-125958-e8ea22f
+  resolution: "unenv-nightly@npm:2.0.0-20241009-125958-e8ea22f"
   dependencies:
     defu: "npm:^6.1.4"
     ohash: "npm:^1.1.4"
     pathe: "npm:^1.1.2"
     ufo: "npm:^1.5.4"
-  checksum: 10/af260151b3c2b4bb6e1d9a2d419f757b4a7d34ab643d953fd61842291d5f847fba3eb50f0f1344055df568bfd271d3c4cc50392cc326629fc895ac6f05362796
+  checksum: 10/ed23032957b4c9d75d3243b3b256b64175cbc26470503a4b4516c098442f4901e7764c55c87f1cf5c9a5aceb40d2e6dbae52018627a49a519a243ef86d65474e
   languageName: node
   linkType: hard
 
@@ -8855,9 +8855,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.80.2":
-  version: 3.80.2
-  resolution: "wrangler@npm:3.80.2"
+"wrangler@npm:3.80.3":
+  version: 3.80.3
+  resolution: "wrangler@npm:3.80.3"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@cloudflare/workers-shared": "npm:0.5.4"
@@ -8874,7 +8874,7 @@ __metadata:
     resolve.exports: "npm:^2.0.2"
     selfsigned: "npm:^2.0.1"
     source-map: "npm:^0.6.1"
-    unenv: "npm:unenv-nightly@2.0.0-20240919-125358-9a64854"
+    unenv: "npm:unenv-nightly@2.0.0-20241009-125958-e8ea22f"
     workerd: "npm:1.20240925.0"
     xxhash-wasm: "npm:^1.0.1"
   peerDependencies:
@@ -8888,7 +8888,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/233302df16bdfa67b02916337458bcbcf225d6acd41224e24cc43c58916b68e44215689175d5bf0ded5227e97a27384fb08b5e94c098354a157bf9af36be391e
+  checksum: 10/10ff0df41344f12661ff01c5785fa475a3ca9b923f95ebcb721181a0ebd9cd45c827190f4d0c59ae8efab089887021c4e8329a793359a806e84a2a2eb4f4743d
   languageName: node
   linkType: hard
 
