@@ -3,6 +3,7 @@
   --text-font-family: var(--font-mono);
   --text-color: black;
   --background: white;
+  --logo-color: var(--text-color);
 }
 
 @media (prefers-color-scheme: dark) {
