@@ -117,7 +117,7 @@ html, body {
 }
 
 body {
-  --wide: 100vw -30em;
+  --wide: 100vw - 30em;
 
   display: grid;
   row-gap: var(--spacer);
@@ -145,6 +145,10 @@ body {
   }
 }
 
+body > header {
+  --body-column: page;
+}
+
 body > main {
   --body-column: full;
   --spacer: 1rem;
@@ -160,6 +164,7 @@ body > main {
 }
 
 body > footer {
+  --body-column: page;
   hgroup {
     display: grid;
     grid-auto-flow: column;
