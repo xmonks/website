@@ -161,7 +161,7 @@ body > header {
 
   .claim {
     grid-area: 2/4;
-    font-size: 2em;
+    font-size: var(--size-fluid-4);
     font-weight: 300;
     font-family: var(--headings-font-family);
     text-transform: uppercase;
@@ -208,5 +208,6 @@ body > footer {
     & > * {
       margin: 0;
     }
+
   }
 }
