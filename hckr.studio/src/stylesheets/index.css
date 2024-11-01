@@ -88,7 +88,7 @@ main > section {
 }
 
 section h2 {
-  margin-inline-start: -1ex;
+  margin-inline-start: calc(-1 * (1ex + 2px));
   &::before {
     content: "_";
     color: var(--primary-color)
