@@ -3,7 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}{{ title }}{% endblock %}</title>
+  <title>{% block title %}{{ title or meta.title }}{% endblock %}</title>
+  <meta name="description" content="{% block description %}{{ description or meta.description }}{% endblock %}">
   <link rel="preload" as="font" crossorigin="anonymous"
         href="{{ "innovator-grotesk/variable.woff2" | assetUrl("fonts") }}">
   <style>
@@ -68,7 +69,7 @@
     <data value="3" property="numberOfEmployees"></data>
   </div>
 
-  <div class="claim">
+  <div class="claim" property="slogan">
     <strong>We help</strong> businesses and individuals succeed in the digital world.
   </div>
 </header>
