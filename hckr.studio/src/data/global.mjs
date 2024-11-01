@@ -1,1 +1,5 @@
-export default {};
+export default {
+  get currentYear() {
+    return new Date().getFullYear();
+  }
+};

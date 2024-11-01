@@ -154,6 +154,25 @@ body {
 
 body > header {
   --body-column: page;
+
+  .claim {
+    font-size: 2em;
+    font-weight: 300;
+    font-family: var(--headings-font-family);
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+  .claim strong {
+    position: relative;
+  }
+  .claim strong::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: asset-url("images", "underline.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 body > main {
@@ -175,10 +194,9 @@ body > footer {
   display: grid;
   grid: inherit;
   & >  * {
-    grid-column: var(--footer-column, wide);
+    grid-column: var(--footer-column, page);
   }
   hgroup {
-    --footer-column: page;
     display: flex;
     gap: var(--gap);
     align-items: baseline;

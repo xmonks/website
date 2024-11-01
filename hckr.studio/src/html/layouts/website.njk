@@ -26,6 +26,20 @@
       font-display: swap;
       unicode-range: U+0100-0101,U+0104-0130,U+0132-0151,U+0154-017F,U+018F,U+0192,U+01A0-01A1,U+01AF-01B0,U+01FA-01FF,U+0218-021B,U+0237,U+0259,U+1E80-1E85,U+1E9E,U+20A1,U+20A4,U+20A6,U+20A8-20AA,U+20AD-20AE,U+20B1-20B2,U+20B4-20B5,U+20B8-20BA,U+20BD,U+20BF
     }
+    @font-face {
+      font-family: "PP Stellar";
+      font-weight: 300;
+      src: url("{{ "pp-stellar/light.latin.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0-FF,U+131,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+    }
+    @font-face {
+      font-family: "PP Stellar";
+      font-weight: 300;
+      src: url("{{ "pp-stellar/light.latin2.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0100-0101,U+0104-0130,U+0132-0151,U+0154-017F,U+018F,U+0192,U+01A0-01A1,U+01AF-01B0,U+01FA-01FF,U+0218-021B,U+0237,U+0259,U+1E80-1E85,U+1E9E,U+20A1,U+20A4,U+20A6,U+20A8-20AA,U+20AD-20AE,U+20B1-20B2,U+20B4-20B5,U+20B8-20BA,U+20BD,U+20BF
+    }
   </style>
   <link rel="stylesheet" href="{{ 'index.css' | assetUrl('stylesheets') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,6 +67,10 @@
     <time datetime="2021-01-30" property="foundingDate"></time>
     <data value="3" property="numberOfEmployees"></data>
   </div>
+
+  <div class="claim">
+    <strong>We help</strong> organizations and individuals succeed in the digital world.
+  </div>
 </header>
 {% block content %}{% endblock %}
 <footer>
@@ -79,6 +97,7 @@
       <dd>a room where an artist works</dd>
     </dl>
   </blockquote>
+  <p>©️ {{ currentYear }} hckr.studio, s.r.o.</p>
 </footer>
 {% block javascript %}
 {% endblock %}
