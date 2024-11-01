@@ -45,6 +45,9 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   text-wrap: balance;
 }
+:is(h1, h2, h3, h4, h5) b {
+  color: var(--primary-color);
+}
 
 p, ul, ol, dl {
   text-wrap: pretty;
@@ -84,8 +87,12 @@ main > section {
   margin: 4em 0;
 }
 
-section h2::after {
-  content: "_";
+section h2 {
+  margin-inline-start: -1ex;
+  &::before {
+    content: "_";
+    color: var(--primary-color)
+  }
 }
 
 blockquote dt {
@@ -164,13 +171,20 @@ body > main {
 }
 
 body > footer {
-  --body-column: page;
+  --body-column: full;
+  display: grid;
+  grid: inherit;
+  & >  * {
+    grid-column: var(--footer-column, wide);
+  }
   hgroup {
-    display: grid;
-    grid-auto-flow: column;
-    > * {
+    --footer-column: page;
+    display: flex;
+    gap: var(--gap);
+    align-items: baseline;
+
+    & > * {
       margin: 0;
-      line-height: 67px;
     }
   }
 }
