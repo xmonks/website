@@ -59,10 +59,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:4.20241022.0":
-  version: 4.20241022.0
-  resolution: "@cloudflare/workers-types@npm:4.20241022.0"
-  checksum: 10/e08f7971818a2b79984f5530eac243b6922e387d2f958a38debbc42078fdd1d5e374a6595ead90bfd5bf6cee126c3fda13153a5705e75116588735705d47e3ab
+"@cloudflare/workers-types@npm:4.20241106.0":
+  version: 4.20241106.0
+  resolution: "@cloudflare/workers-types@npm:4.20241106.0"
+  checksum: 10/f5a62b26ae25e944f845fa86b407bba350eeffc1cec99e2bb34c591f1cb243427a560ff8220a764342f560bc1bd2f2e0f3dbf816ac0ee96288861d44ad3cd39f
   languageName: node
   linkType: hard
 
@@ -1150,7 +1150,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-party-web@workspace:hckr.party"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20241022.0"
+    "@cloudflare/workers-types": "npm:4.20241106.0"
     "@hckr_/blendid": "npm:9.0.0-beta.11"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
@@ -1162,7 +1162,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-space-web@workspace:hckr.space"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20241022.0"
+    "@cloudflare/workers-types": "npm:4.20241106.0"
     "@hckr_/blendid": "npm:9.0.0-beta.11"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
@@ -1174,7 +1174,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-studio-web@workspace:hckr.studio"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20241022.0"
+    "@cloudflare/workers-types": "npm:4.20241106.0"
     "@hckr_/blendid": "npm:9.0.0-beta.11"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
@@ -1186,7 +1186,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-tv-web@workspace:hckr.tv"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20241022.0"
+    "@cloudflare/workers-types": "npm:4.20241106.0"
     "@hckr_/blendid": "npm:9.0.0-beta.11"
     "@thi.ng/atom": "npm:5.3.11"
     linkedom: "npm:0.18.5"
