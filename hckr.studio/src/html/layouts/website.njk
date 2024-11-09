@@ -1,14 +1,21 @@
 {%- from 'macros/helpers.html' import sprite, spriteTarget, importmapTarget -%}
 <!doctype html>
-<html lang="{{ lang or meta.lang }}">
+<html lang="{{ meta.lang }}">
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}{{ title or meta.title }}{% endblock %}</title>
-  <meta name="description" content="{% block description %}{{ description or meta.description }}{% endblock %}">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="color-scheme" content="light dark">
-  <link rel="preload" as="font" crossorigin="anonymous"
-        href="{{ "innovator-grotesk/variable.woff2" | assetUrl("fonts") }}">
+  {% if images %}
+    {# `images` can be collection populated by `cloudinary` task, or just set `images: true` in `data/global.mjs`
+       to enable this if you use another way to upload images to cloudinary #}
+    <meta http-equiv="delegate-ch"
+          content="sec-ch-width https://res.cloudinary.com; sec-ch-dpr https://res.cloudinary.com; sec-ch-viewport-width https://res.cloudinary.com;">
+  {% endif %}
+  {% block head_pragma %}{% endblock %}
+  <title>{% block title %}{{ meta.title }} {{ title }}{% endblock %}</title>
+  {% if images %}
+    <link rel="preconnect" href="https://res.cloudinary.com">
+  {% endif %}
+  {% block head_preconnect %}{% endblock %}
   <style>
     @font-face {
       font-family: "Innovator Grotesk";
@@ -45,7 +52,16 @@
     }
   </style>
   <link rel="stylesheet" href="{{ 'index.css' | assetUrl('stylesheets') }}">
+  {% block head_stylesheets %}{% endblock %}
+  <link rel="preload" as="font" crossorigin="anonymous"
+        href="{{ "innovator-grotesk/variable.woff2" | assetUrl("fonts") }}">
+  {% block head_preload %}{% endblock %}
+  {% block head_async_scripts %}{% endblock %}
+  <meta name="description" content="{{ description or meta.description }}">
+  <meta name="generator" content="{{ generator or '@hckr_/blendid - static site generator and assets pipeline' }}">
+  <meta name="color-scheme" content="light dark">
   <link rel="manifest" href="{{ 'manifest.json' | assetUrl('static') }}">
+  <link rel="canonical" href="{{ canonicalUrl or meta.url }}">
   {% include "shared/app-icons.html" %}
   {% block head %}{% endblock %}
 </head>
@@ -113,7 +129,7 @@
     <a href="https://hckr.party/">hckr.party</a>
   _</p>
 </footer>
-{% block javascript %}
-{% endblock %}
+{% block scripts %}{% endblock %}
+{{ spriteTarget() }}
 </body>
 </html>

@@ -12,11 +12,6 @@ export default {
     "dest": "./",
   },
 
-  "javascripts": {
-    "src": "javascripts",
-    "dest": "assets/js",
-  },
-
   "esm": {
     "src": "esm",
     "dest": "assets/esm",
@@ -30,6 +25,11 @@ export default {
   "images": {
     "src": "images",
     "dest": "assets/img",
+  },
+
+  "cloudflare": {
+    "src": "cloudflare",
+    "dest": "",
   },
 
   "cloudinary": {
