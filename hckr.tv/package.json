@@ -11,7 +11,7 @@
     "wrangler": "3.86.0"
   },
   "scripts": {
-    "build": "blendid build",
+    "build": "blendid build --production",
     "start": "blendid"
   },
   "dependencies": {
