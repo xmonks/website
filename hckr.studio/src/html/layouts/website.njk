@@ -1,10 +1,12 @@
 {%- from 'macros/helpers.html' import sprite, spriteTarget, importmapTarget -%}
 <!doctype html>
-<html lang="en">
+<html lang="{{ lang or meta.lang }}">
 <head>
   <meta charset="utf-8">
   <title>{% block title %}{{ title or meta.title }}{% endblock %}</title>
   <meta name="description" content="{% block description %}{{ description or meta.description }}{% endblock %}">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
   <link rel="preload" as="font" crossorigin="anonymous"
         href="{{ "innovator-grotesk/variable.woff2" | assetUrl("fonts") }}">
   <style>
@@ -43,7 +45,6 @@
     }
   </style>
   <link rel="stylesheet" href="{{ 'index.css' | assetUrl('stylesheets') }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="{{ 'manifest.json' | assetUrl('static') }}">
   {% include "shared/app-icons.html" %}
   {% block head %}{% endblock %}

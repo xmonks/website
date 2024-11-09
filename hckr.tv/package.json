@@ -5,7 +5,7 @@
   "author": "Aleš Roubíček <ales@roubicek.name>",
   "devDependencies": {
     "@cloudflare/workers-types": "4.20241106.0",
-    "@hckr_/blendid": "9.0.0-beta.11",
+    "@hckr_/blendid": "9.0.0-beta.18",
     "open-props": "1.7.7",
     "postcss-jit-props": "1.0.14",
     "wrangler": "3.86.0"

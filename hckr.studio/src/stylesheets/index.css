@@ -82,11 +82,12 @@ hgroup h1 em {
 }
 
 hgroup h2 {
-  margin-top: 0;
+  margin-block-start: 0;
 }
 
 main > section {
-  margin: 4em 0;
+  margin-block: 4em;
+  margin-inline: 0;
 }
 
 section h2 {
@@ -208,6 +209,5 @@ body > footer {
     & > * {
       margin: 0;
     }
-
   }
 }
