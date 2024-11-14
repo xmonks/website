@@ -6,6 +6,8 @@
   --logo-color: var(--text-color);
   --primary-color: oklch(63.4% 0.216 24.886);
 
+  --underscore-color: var(--primary-color);
+
   /* layout measures */
   --root: clamp(max(1em, 20px), 1.2em + 0.5vw, 2em);
   --line-height: 1.5;
@@ -21,6 +23,10 @@
     var(--gap) + 4vw,
     min(var(--gap) * 6, 20vmin)
   );
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: --underscore 1060ms infinite ease-in-out;
+  }
 
   font-size: 100%;
   color-scheme: light dark;
@@ -92,9 +98,10 @@ main > section {
 
 section h2 {
   margin-inline-start: calc(-1 * (1ex + 2px));
+
   &::before {
     content: "_";
-    color: var(--primary-color)
+    color: var(--underscore-color);
   }
 }
 
@@ -210,4 +217,9 @@ body > footer {
       margin: 0;
     }
   }
+}
+
+@keyframes --underscore {
+  from { --underscore-color: var(--primary-color); }
+  to { --underscore-color: transparent; }
 }
