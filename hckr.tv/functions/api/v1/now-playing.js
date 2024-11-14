@@ -1,7 +1,9 @@
 import { DOMParser } from "linkedom/cached";
 
-export async function onRequestGet({}) {
-  const resp = await fetch("https://serato.com/playlists/Alessio_Busta/live");
+export async function onRequestGet({ request }) {
+  const url = new URL(request.url);
+  const artist = url.searchParams.get("artist") ?? "Alessio_Busta";
+  const resp = await fetch(`https://serato.com/playlists/${artist}/live`);
   const html = await resp.text();
   const document = new DOMParser().parseFromString(html, "text/html");
   const playlist = document.querySelectorAll(".playlist-trackname");
