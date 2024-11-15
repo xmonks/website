@@ -3,58 +3,136 @@
 <html lang="{{ meta.lang }}">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  {% if images %}
-    {# `images` can be collection populated by `cloudinary` task, or just set `images: true` in `data/global.mjs`
+  {% block head_pragma %}
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    {% if images %}
+      {# `images` can be collection populated by `cloudinary` task, or just set `images: true` in `data/global.mjs`
        to enable this if you use another way to upload images to cloudinary #}
-    <meta http-equiv="delegate-ch"
-          content="sec-ch-width https://res.cloudinary.com; sec-ch-dpr https://res.cloudinary.com; sec-ch-viewport-width https://res.cloudinary.com;">
-  {% endif %}
-  {% block head_pragma %}{% endblock %}
+      <meta http-equiv="delegate-ch"
+            content="sec-ch-width https://res.cloudinary.com; sec-ch-dpr https://res.cloudinary.com; sec-ch-viewport-width https://res.cloudinary.com;">
+    {% endif %}
+  {% endblock %}
   <title>{% block title %}{{ meta.title }} {{ title }}{% endblock %}</title>
-  {% if images %}
-    <link rel="preconnect" href="https://res.cloudinary.com">
-  {% endif %}
-  {% block head_preconnect %}{% endblock %}
+  {% block head_preconnect %}
+    {% if images %}
+      <link rel="preconnect" href="https://res.cloudinary.com">
+    {% endif %}
+  {% endblock %}
   <style>
-    @font-face {
-      font-family: "Innovator Grotesk";
-      src: url("{{ "innovator-grotesk/variable.woff2" | assetUrl("fonts") }}") format("woff2");
-      font-display: swap;
-    }
     @font-face {
       font-family: "PP Stellar";
       font-weight: 700;
       src: url("{{ "pp-stellar/bold.latin.woff2" | assetUrl("fonts") }}") format("woff2");
       font-display: swap;
-      unicode-range: U+0-FF,U+131,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+      font-style: normal;
+      unicode-range: U+0-FF, U+131, U+152, U+153, U+2BB, U+2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
+
     @font-face {
       font-family: "PP Stellar";
       font-weight: 700;
+      font-style: normal;
       src: url("{{ "pp-stellar/bold.latin2.woff2" | assetUrl("fonts") }}") format("woff2");
       font-display: swap;
-      unicode-range: U+0100-0101,U+0104-0130,U+0132-0151,U+0154-017F,U+018F,U+0192,U+01A0-01A1,U+01AF-01B0,U+01FA-01FF,U+0218-021B,U+0237,U+0259,U+1E80-1E85,U+1E9E,U+20A1,U+20A4,U+20A6,U+20A8-20AA,U+20AD-20AE,U+20B1-20B2,U+20B4-20B5,U+20B8-20BA,U+20BD,U+20BF
+      unicode-range: U+0100-0101, U+0104-0130, U+0132-0151, U+0154-017F, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01FA-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+20A1, U+20A4, U+20A6, U+20A8-20AA, U+20AD-20AE, U+20B1-20B2, U+20B4-20B5, U+20B8-20BA, U+20BD, U+20BF
     }
+
     @font-face {
       font-family: "PP Stellar";
       font-weight: 300;
+      font-style: normal;
       src: url("{{ "pp-stellar/light.latin.woff2" | assetUrl("fonts") }}") format("woff2");
       font-display: swap;
-      unicode-range: U+0-FF,U+131,U+152,U+153,U+2BB,U+2BC,U+2C6,U+2DA,U+2DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+      unicode-range: U+0-FF, U+131, U+152, U+153, U+2BB, U+2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
+
     @font-face {
       font-family: "PP Stellar";
       font-weight: 300;
+      font-style: normal;
       src: url("{{ "pp-stellar/light.latin2.woff2" | assetUrl("fonts") }}") format("woff2");
       font-display: swap;
-      unicode-range: U+0100-0101,U+0104-0130,U+0132-0151,U+0154-017F,U+018F,U+0192,U+01A0-01A1,U+01AF-01B0,U+01FA-01FF,U+0218-021B,U+0237,U+0259,U+1E80-1E85,U+1E9E,U+20A1,U+20A4,U+20A6,U+20A8-20AA,U+20AD-20AE,U+20B1-20B2,U+20B4-20B5,U+20B8-20BA,U+20BD,U+20BF
+      unicode-range: U+0100-0101, U+0104-0130, U+0132-0151, U+0154-017F, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01FA-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+20A1, U+20A4, U+20A6, U+20A8-20AA, U+20AD-20AE, U+20B1-20B2, U+20B4-20B5, U+20B8-20BA, U+20BD, U+20BF
+    }
+
+    @font-face {
+      font-family: "IBM Plex Serif";
+      font-weight: 400;
+      font-style: normal;
+      src: url("{{ "ibm-plex-serif/regular.latin.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0-FF, U+131, U+152, U+153, U+2BB, U+2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: "IBM Plex Serif";
+      font-weight: 400;
+      font-style: normal;
+      src: url("{{ "ibm-plex-serif/regular.latin2.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0100-0101, U+0104-0130, U+0132-0151, U+0154-017F, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01FA-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+20A1, U+20A4, U+20A6, U+20A8-20AA, U+20AD-20AE, U+20B1-20B2, U+20B4-20B5, U+20B8-20BA, U+20BD, U+20BF
+    }
+
+    @font-face {
+      font-family: "IBM Plex Serif";
+      font-weight: 400;
+      font-style: italic;
+      src: url("{{ "ibm-plex-serif/italic.latin.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0-FF, U+131, U+152, U+153, U+2BB, U+2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: "IBM Plex Serif";
+      font-weight: 400;
+      font-style: italic;
+      src: url("{{ "ibm-plex-serif/italic.latin2.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0100-0101, U+0104-0130, U+0132-0151, U+0154-017F, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01FA-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+20A1, U+20A4, U+20A6, U+20A8-20AA, U+20AD-20AE, U+20B1-20B2, U+20B4-20B5, U+20B8-20BA, U+20BD, U+20BF
+    }
+
+    @font-face {
+      font-family: "IBM Plex Serif";
+      font-weight: 800;
+      font-style: normal;
+      src: url("{{ "ibm-plex-serif/bold.latin.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0-FF, U+131, U+152, U+153, U+2BB, U+2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: "IBM Plex Serif";
+      font-weight: 800;
+      font-style: normal;
+      src: url("{{ "ibm-plex-serif/bold.latin2.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0100-0101, U+0104-0130, U+0132-0151, U+0154-017F, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01FA-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+20A1, U+20A4, U+20A6, U+20A8-20AA, U+20AD-20AE, U+20B1-20B2, U+20B4-20B5, U+20B8-20BA, U+20BD, U+20BF
+    }
+
+    @font-face {
+      font-family: "IBM Plex Serif";
+      font-weight: 800;
+      font-style: italic;
+      src: url("{{ "ibm-plex-serif/bolditalic.latin.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0-FF, U+131, U+152, U+153, U+2BB, U+2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: "IBM Plex Serif";
+      font-weight: 800;
+      font-style: italic;
+      src: url("{{ "ibm-plex-serif/bolditalic.latin2.woff2" | assetUrl("fonts") }}") format("woff2");
+      font-display: swap;
+      unicode-range: U+0100-0101, U+0104-0130, U+0132-0151, U+0154-017F, U+018F, U+0192, U+01A0-01A1, U+01AF-01B0, U+01FA-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+20A1, U+20A4, U+20A6, U+20A8-20AA, U+20AD-20AE, U+20B1-20B2, U+20B4-20B5, U+20B8-20BA, U+20BD, U+20BF
     }
   </style>
   <link rel="stylesheet" href="{{ 'index.css' | assetUrl('stylesheets') }}">
   {% block head_stylesheets %}{% endblock %}
   <link rel="preload" as="font" crossorigin="anonymous"
-        href="{{ "innovator-grotesk/variable.woff2" | assetUrl("fonts") }}">
+        href="{{ "ibm-plex-serif/regular.latin.woff2" | assetUrl("fonts") }}">
+  <link rel="preload" as="font" crossorigin="anonymous"
+        href="{{ "pp-stellar/bold.latin.woff2" | assetUrl("fonts") }}">
   {% block head_preload %}{% endblock %}
   {% block head_async_scripts %}{% endblock %}
   <meta name="description" content="{{ description or meta.description }}">
@@ -87,7 +165,7 @@
   </div>
 
   <div class="claim" property="slogan">
-    <strong>We help</strong> businesses and individuals succeed in the digital world.
+    <strong>We are</strong> hckr.studio
   </div>
 </header>
 {% block content %}{% endblock %}
@@ -127,7 +205,7 @@
     <a href="https://hckr.tv/">hckr.tv</a>
     _
     <a href="https://hckr.party/">hckr.party</a>
-  _</p>
+    _</p>
 </footer>
 {% block scripts %}{% endblock %}
 {{ spriteTarget() }}

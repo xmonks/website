@@ -1,6 +1,6 @@
 :root {
   --headings-font-family: "PP Stellar", var(--font-sans);
-  --text-font-family: "Innovator Grotesk", var(--font-sans);
+  --text-font-family: "IBM Plex Serif", var(--font-serif);
   --text-color: light-dark(black, white);
   --background: light-dark(white, black);
   --logo-color: var(--text-color);
@@ -59,7 +59,7 @@ p, ul, ol, dl {
   text-wrap: pretty;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--headings-font-family);
   letter-spacing: var(--font-letterspacing-0);
 }
@@ -75,16 +75,14 @@ h2 {
 h3 {
   font-size: var(--font-size-fluid-1);
 }
-header {
-  margin-block-start: var(--margin)
-}
+
 hgroup h1 {
   margin: 0;
 }
 
 hgroup h1 em {
   font-style: normal;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 hgroup h2 {
@@ -168,7 +166,7 @@ body > header {
   grid-template-columns: subgrid;
 
   .claim {
-    grid-area: 2/4;
+    grid-area: wide;
     font-size: var(--size-fluid-4);
     font-weight: 300;
     font-family: var(--headings-font-family);
@@ -202,7 +200,7 @@ body > main {
 }
 
 body > footer {
-  --body-column: full;
+  --body-column: extra;
   display: grid;
   grid: inherit;
   & >  * {
