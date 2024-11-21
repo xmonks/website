@@ -1180,7 +1180,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.19"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.88.0"
+    wrangler: "npm:3.89.0"
   languageName: unknown
   linkType: soft
 
@@ -1192,7 +1192,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.19"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.88.0"
+    wrangler: "npm:3.89.0"
   languageName: unknown
   linkType: soft
 
@@ -1204,7 +1204,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.19"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.88.0"
+    wrangler: "npm:3.89.0"
   languageName: unknown
   linkType: soft
 
@@ -1221,7 +1221,7 @@ __metadata:
     parse-duration: "npm:1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
-    wrangler: "npm:3.88.0"
+    wrangler: "npm:3.89.0"
   languageName: unknown
   linkType: soft
 
@@ -5745,9 +5745,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20241106.0":
-  version: 3.20241106.0
-  resolution: "miniflare@npm:3.20241106.0"
+"miniflare@npm:3.20241106.1":
+  version: 3.20241106.1
+  resolution: "miniflare@npm:3.20241106.1"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:^8.8.0"
@@ -5763,7 +5763,7 @@ __metadata:
     zod: "npm:^3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10/eb9e5e12c0ad9e18a54e3ad8a39d6602d0f21401aaddd1d4444b80d9b97640016fc6acdfd30e8bef16748eddbf01c9abe5b39bae15d83fe928be956e43c11954
+  checksum: 10/f1c51de67f02e440c1c84e1cd6da9895e1b4c3c93f2e40c3bb2543a0a89651d9bb4d40c2203295179e8a05318ad890cbe03e23d0acc40e3d7584f5a960fd2858
   languageName: node
   linkType: hard
 
@@ -8932,9 +8932,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.88.0":
-  version: 3.88.0
-  resolution: "wrangler@npm:3.88.0"
+"wrangler@npm:3.89.0":
+  version: 3.89.0
+  resolution: "wrangler@npm:3.89.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@cloudflare/workers-shared": "npm:0.7.1"
@@ -8946,7 +8946,7 @@ __metadata:
     esbuild: "npm:0.17.19"
     fsevents: "npm:~2.3.2"
     itty-time: "npm:^1.0.6"
-    miniflare: "npm:3.20241106.0"
+    miniflare: "npm:3.20241106.1"
     nanoid: "npm:^3.3.3"
     path-to-regexp: "npm:^6.3.0"
     resolve: "npm:^1.22.8"
@@ -8967,7 +8967,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/7bd3ada6a5c6fdf742884d51605bbcbfeae9ba80ec3a2ddc0ca06ef0395609397d73a002e0a66da23754bdace603ced15f8816750b869677d16dc71b706aa025
+  checksum: 10/b3e06b1d5f3e2b71ef4d4383ccea090be9a58ca36b81b703a6f289728b3a29437c4662b55bc7d98b85069e90ba096ad44d6f420470d022c70b60489793c65cf8
   languageName: node
   linkType: hard
 
