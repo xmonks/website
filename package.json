@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": "https://github.com/hckr-studio/websites.git",
   "author": "Aleš Roubíček <ales@roubicek.name>",
-  "license": "Apache-2.0",
+  "license": "EUPL-1.2",
   "private": true,
   "devDependencies": {
     "dprint": "0.47.5",
