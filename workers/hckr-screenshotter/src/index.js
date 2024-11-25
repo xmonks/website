@@ -1,9 +1,9 @@
 import puppeteer from "@cloudflare/puppeteer";
 
-const headers = {
-  "Content-Type": "image/png",
+const headers = type => ({
+  "Content-Type": `image/${type}`,
   "Cache-Control": "public, max-age=3600",
-};
+});
 
 export default {
   /*
@@ -20,12 +20,19 @@ export default {
       return new Response(null, { status: 400 });
     }
 
+    const url = searchParams.get("url");
+
+    const { value, metadata } = await env.imgCache.getWithMetadata(url, "arrayBuffer");
+    if (value) {
+      console.log(`found pre-rendered image in KV ${url}`);
+      return new Response(value, { headers: metadata.headers });
+    }
+
     const browser = await puppeteer.launch(env.browser);
     const page = await browser.newPage();
 
     page.on("response", resp => resp.ok() || console.log("ERROR:", resp.status(), resp.url(), resp.headers()));
 
-    const url = searchParams.get("url");
     const waitUntil = searchParams.get("waitUntil") ?? "load";
     const width = searchParams.get("width") ?? searchParams.get("w");
     const height = searchParams.get("height") ?? searchParams.get("h");
@@ -55,7 +62,13 @@ export default {
     const node = selector ? await page.waitForSelector(selector) : page;
     const buffer = await node.screenshot({ fullPage, type, encoding: "binary" });
 
+    // cache image for 12 hours
+    await env.imgCache.put(url, buffer, {
+      expirationTtl: 43_200,
+      metadata: { headers: headers(type) },
+    });
+
     await browser.close();
-    return new Response(buffer, { headers });
+    return new Response(buffer, { headers: headers(type) });
   },
 };
