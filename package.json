@@ -8,7 +8,8 @@
   "license": "Apache-2.0",
   "private": true,
   "devDependencies": {
-    "dprint": "0.47.5"
+    "dprint": "0.47.5",
+    "wrangler": "3.90.0"
   },
   "scripts": {
     "fmt": "dprint fmt \"**/*.{md,mjs,js,json}\""
@@ -18,7 +19,8 @@
     "hckr.space",
     "hckr.studio",
     "hckr.tv",
-    "infrastructure"
+    "infrastructure",
+    "workers/*"
   ],
   "packageManager": "yarn@4.5.2"
 }
