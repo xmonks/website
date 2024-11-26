@@ -93,6 +93,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cloudflare/workers-shared@npm:0.9.0":
+  version: 0.9.0
+  resolution: "@cloudflare/workers-shared@npm:0.9.0"
+  dependencies:
+    mime: "npm:^3.0.0"
+    zod: "npm:^3.22.3"
+  checksum: 10/152038b2bc4c0d11a1f18256a15702083be80f0b2967bde5892dbf670391d30772e9b862cdc83a26f58bdcd533ff9c9ff38962e3a41c874af0359465d3e130b1
+  languageName: node
+  linkType: hard
+
 "@cloudflare/workers-types@npm:4.20241112.0":
   version: 4.20241112.0
   resolution: "@cloudflare/workers-types@npm:4.20241112.0"
@@ -1214,7 +1224,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.19"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.90.0"
+    wrangler: "npm:3.91.0"
   languageName: unknown
   linkType: soft
 
@@ -1226,7 +1236,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.19"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.90.0"
+    wrangler: "npm:3.91.0"
   languageName: unknown
   linkType: soft
 
@@ -1238,7 +1248,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.0-beta.19"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.90.0"
+    wrangler: "npm:3.91.0"
   languageName: unknown
   linkType: soft
 
@@ -1255,7 +1265,7 @@ __metadata:
     parse-duration: "npm:1.1.0"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
-    wrangler: "npm:3.90.0"
+    wrangler: "npm:3.91.0"
   languageName: unknown
   linkType: soft
 
@@ -1273,7 +1283,7 @@ __metadata:
   resolution: "@hckr-studio/websites@workspace:."
   dependencies:
     dprint: "npm:0.47.5"
-    wrangler: "npm:3.90.0"
+    wrangler: "npm:3.91.0"
   languageName: unknown
   linkType: soft
 
@@ -1339,7 +1349,7 @@ __metadata:
     "@cloudflare/puppeteer": "npm:0.0.14"
     "@cloudflare/vitest-pool-workers": "npm:0.5.31"
     vitest: "npm:2.1.6"
-    wrangler: "npm:3.90.0"
+    wrangler: "npm:3.91.0"
   languageName: unknown
   linkType: soft
 
@@ -9262,6 +9272,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unenv@npm:unenv-nightly@2.0.0-20241121-161142-806b5c0":
+  version: 2.0.0-20241121-161142-806b5c0
+  resolution: "unenv-nightly@npm:2.0.0-20241121-161142-806b5c0"
+  dependencies:
+    defu: "npm:^6.1.4"
+    ohash: "npm:^1.1.4"
+    pathe: "npm:^1.1.2"
+    ufo: "npm:^1.5.4"
+  checksum: 10/2c107c85ce2e3c7969558c4fa48574d5dc157b03f1052a7a7870560185da4b996206f0e94a29927f3de4073138549be244ea6368923eb9214682a060516070b7
+  languageName: node
+  linkType: hard
+
 "unicorn-magic@npm:^0.1.0":
   version: 0.1.0
   resolution: "unicorn-magic@npm:0.1.0"
@@ -9787,6 +9809,45 @@ __metadata:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
   checksum: 10/229e9139e1d038fd1d296ccf46fa5a9a0c5232919e7e0a802ed4952ea5515d7875a36a5b013e7935db8eb52481094659b8a105c3600976797db1dfa1f654e7e1
+  languageName: node
+  linkType: hard
+
+"wrangler@npm:3.91.0":
+  version: 3.91.0
+  resolution: "wrangler@npm:3.91.0"
+  dependencies:
+    "@cloudflare/kv-asset-handler": "npm:0.3.4"
+    "@cloudflare/workers-shared": "npm:0.9.0"
+    "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
+    "@esbuild-plugins/node-modules-polyfill": "npm:^0.2.2"
+    blake3-wasm: "npm:^2.1.5"
+    chokidar: "npm:^4.0.1"
+    date-fns: "npm:^4.1.0"
+    esbuild: "npm:0.17.19"
+    fsevents: "npm:~2.3.2"
+    itty-time: "npm:^1.0.6"
+    miniflare: "npm:3.20241106.1"
+    nanoid: "npm:^3.3.3"
+    path-to-regexp: "npm:^6.3.0"
+    resolve: "npm:^1.22.8"
+    resolve.exports: "npm:^2.0.2"
+    selfsigned: "npm:^2.0.1"
+    source-map: "npm:^0.6.1"
+    unenv: "npm:unenv-nightly@2.0.0-20241121-161142-806b5c0"
+    workerd: "npm:1.20241106.1"
+    xxhash-wasm: "npm:^1.0.1"
+  peerDependencies:
+    "@cloudflare/workers-types": ^4.20241106.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@cloudflare/workers-types":
+      optional: true
+  bin:
+    wrangler: bin/wrangler.js
+    wrangler2: bin/wrangler.js
+  checksum: 10/1e54ee49d46781beb370a917d0f584ee88d17cce9e436ef9927efe37228940a4ac61de22c26ed120b8a943e4f8c5e8b8042e6156084000cc1794f75ff2a0ee13
   languageName: node
   linkType: hard
 
