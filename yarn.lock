@@ -1221,7 +1221,7 @@ __metadata:
   resolution: "@hckr-studio/hckr-party-web@workspace:hckr.party"
   dependencies:
     "@cloudflare/workers-types": "npm:4.20241127.0"
-    "@hckr_/blendid": "npm:9.0.0-beta.19"
+    "@hckr_/blendid": "npm:9.0.0"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
     wrangler: "npm:3.91.0"
@@ -1233,7 +1233,7 @@ __metadata:
   resolution: "@hckr-studio/hckr-space-web@workspace:hckr.space"
   dependencies:
     "@cloudflare/workers-types": "npm:4.20241127.0"
-    "@hckr_/blendid": "npm:9.0.0-beta.19"
+    "@hckr_/blendid": "npm:9.0.0"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
     wrangler: "npm:3.91.0"
@@ -1245,7 +1245,7 @@ __metadata:
   resolution: "@hckr-studio/hckr-studio-web@workspace:hckr.studio"
   dependencies:
     "@cloudflare/workers-types": "npm:4.20241127.0"
-    "@hckr_/blendid": "npm:9.0.0-beta.19"
+    "@hckr_/blendid": "npm:9.0.0"
     open-props: "npm:1.7.7"
     postcss-jit-props: "npm:1.0.14"
     wrangler: "npm:3.91.0"
@@ -1257,7 +1257,7 @@ __metadata:
   resolution: "@hckr-studio/hckr-tv-web@workspace:hckr.tv"
   dependencies:
     "@cloudflare/workers-types": "npm:4.20241127.0"
-    "@hckr_/blendid": "npm:9.0.0-beta.19"
+    "@hckr_/blendid": "npm:9.0.0"
     "@thi.ng/atom": "npm:5.3.13"
     linkedom: "npm:0.18.5"
     lit-html: "npm:3.2.1"
@@ -1287,12 +1287,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@hckr_/blendid@npm:9.0.0-beta.19":
-  version: 9.0.0-beta.19
-  resolution: "@hckr_/blendid@npm:9.0.0-beta.19"
+"@hckr_/blendid@npm:9.0.0":
+  version: 9.0.0
+  resolution: "@hckr_/blendid@npm:9.0.0"
   dependencies:
     "@csstools/postcss-gamut-mapping": "npm:2.0.6"
-    "@vitejs/plugin-basic-ssl": "npm:1.1.0"
+    "@vitejs/plugin-basic-ssl": "npm:1.2.0"
     cloudinary: "npm:2.5.1"
     cssnano: "npm:7.0.6"
     del: "npm:8.0.0"
@@ -1316,7 +1316,7 @@ __metadata:
     gulp-svgstore: "npm:9.0.0"
     gulplog: "npm:2.2.0"
     lodash-es: "npm:4.17.21"
-    marked: "npm:15.0.0"
+    marked: "npm:15.0.2"
     marked-gfm-heading-id: "npm:4.1.1"
     marked-highlight: "npm:2.2.1"
     marked-mangle: "npm:1.1.10"
@@ -1335,10 +1335,10 @@ __metadata:
     undertaker-registry: "npm:2.0.0"
     vinyl: "npm:3.0.0"
     vinyl-file: "npm:5.0.0"
-    vite: "npm:6.0.0-beta.10"
+    vite: "npm:6.0.1"
   bin:
     blendid: bin/blendid.js
-  checksum: 10/6473dd15d23549b9cf1e623eaeb2fd0e9e4df0cd9a604b2e005fece1b3896823ff19de58c850699c04a7e93f8a2be3b7c6714dac47944278c700ed1531ca46df
+  checksum: 10/cbd2d2981208ae36b9d8a6def85469b5d1fa52d7f8162e2346c1b4b6940857dc35532aed3464f1a393b4b315080e2444ebe3a06100e3407d2a01f8c481ee4f07
   languageName: node
   linkType: hard
 
@@ -2410,12 +2410,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitejs/plugin-basic-ssl@npm:1.1.0":
-  version: 1.1.0
-  resolution: "@vitejs/plugin-basic-ssl@npm:1.1.0"
+"@vitejs/plugin-basic-ssl@npm:1.2.0":
+  version: 1.2.0
+  resolution: "@vitejs/plugin-basic-ssl@npm:1.2.0"
   peerDependencies:
-    vite: ^3.0.0 || ^4.0.0 || ^5.0.0
-  checksum: 10/2c0631d1202a1b5f198a96c761cbcdde3730cc03a9be565ea12c37b47c22dd22976dc4bd614a400c431a55be0270359cf59fbb0530e77fafc0e591b1f58858ef
+    vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+  checksum: 10/34def4ab7838901f1f51bbff21fefac5f56346331f4ff1a8a3059d68e4cd43b62e1581a5ad39971d5d908343ee3217e782a0b506d97e0653c3373e27757ecedf
   languageName: node
   linkType: hard
 
@@ -6130,12 +6130,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:15.0.0":
-  version: 15.0.0
-  resolution: "marked@npm:15.0.0"
+"marked@npm:15.0.2":
+  version: 15.0.2
+  resolution: "marked@npm:15.0.2"
   bin:
     marked: bin/marked.js
-  checksum: 10/f7c21c3a3364a52069aac072c7492ebac6eda03f495905d15f1999f246dadbd26d621ff4a4e834a44fa5d26830e576a031b2c00ec104002d38e4e59150a6d6ff
+  checksum: 10/dde3d918bb3938906d7a874b990cbfb193514a5fef4b41bca102db3b63d50235afb517dd70429525b6e0a5cff43abd827e7bd2b18617f8bd4776db745e75e973
   languageName: node
   linkType: hard
 
@@ -7826,7 +7826,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.4.49, postcss@npm:^8.4.48, postcss@npm:^8.4.49":
+"postcss@npm:8.4.49, postcss@npm:^8.4.49":
   version: 8.4.49
   resolution: "postcss@npm:8.4.49"
   dependencies:
@@ -9508,16 +9508,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:6.0.0-beta.10":
-  version: 6.0.0-beta.10
-  resolution: "vite@npm:6.0.0-beta.10"
+"vite@npm:6.0.1":
+  version: 6.0.1
+  resolution: "vite@npm:6.0.1"
   dependencies:
     esbuild: "npm:^0.24.0"
     fsevents: "npm:~2.3.3"
-    postcss: "npm:^8.4.48"
+    postcss: "npm:^8.4.49"
     rollup: "npm:^4.23.0"
   peerDependencies:
-    "@types/node": ^18.0.0 || >=20.0.0
+    "@types/node": ^18.0.0 || ^20.0.0 || >=22.0.0
     jiti: ">=1.21.0"
     less: "*"
     lightningcss: ^1.21.0
@@ -9556,7 +9556,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 10/de2e807f2fc0f751647f061a100d23e927acf33a0974f9581b7dd7bd918819a6a761bf25f0cbf1313efe184f067b4ab4d05b46460de97b70493fdf327db91080
+  checksum: 10/a42bf6e92425920335175b59d0e4d98cae8f2bfa473c1e32bd62e1feb4b808341992f92632d1883103351f8e9ec4ae53179266b0a815731e9c109a2e3768cde5
   languageName: node
   linkType: hard
 
