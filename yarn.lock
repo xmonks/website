@@ -1262,7 +1262,7 @@ __metadata:
     linkedom: "npm:0.18.5"
     lit-html: "npm:3.2.1"
     open-props: "npm:1.7.7"
-    parse-duration: "npm:1.1.0"
+    parse-duration: "npm:1.1.1"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
     wrangler: "npm:3.91.0"
@@ -6844,10 +6844,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parse-duration@npm:1.1.0":
-  version: 1.1.0
-  resolution: "parse-duration@npm:1.1.0"
-  checksum: 10/c26ab1e3fdf1dc4b7006e87a82fd33c7dbee3116413a59369bbc3b160a8e7ed88616852c4c3dde23b7a857e270cb18fccf629ff52220803194239f8e092774a9
+"parse-duration@npm:1.1.1":
+  version: 1.1.1
+  resolution: "parse-duration@npm:1.1.1"
+  checksum: 10/60622742c411139e7656643fb1c91f7c6ef0f96bb71de8a1689fb0290c7f68e1c1c160672f3a7239ec379944f79b92300d453dbd2efa8c633cd11ebb006ea7dd
   languageName: node
   linkType: hard
 
