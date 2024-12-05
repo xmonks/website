@@ -218,7 +218,8 @@ body > footer {
 }
 
 #team [role=list] {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   flex-wrap: wrap;
   gap: 2em;
 }
