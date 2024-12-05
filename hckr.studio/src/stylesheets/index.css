@@ -1,10 +1,10 @@
 :root {
   --headings-font-family: "PP Stellar", var(--font-sans);
-  --text-font-family: "IBM Plex Serif", var(--font-serif);
+  --text-font-family: var(--font-sans);
   --text-color: light-dark(black, white);
   --background: light-dark(white, black);
   --logo-color: var(--text-color);
-  --primary-color: oklch(63.4% 0.216 24.886);
+  --primary-color: oklch(0.871 0.179 98.031);
 
   --underscore-color: var(--primary-color);
 
@@ -214,6 +214,31 @@ body > footer {
     & > * {
       margin: 0;
     }
+  }
+}
+
+#team [role=list] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+#contacts .cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#contacts dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+}
+
+#partners [role=list] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  h3 {
+    margin-block: 0;
   }
 }
 
