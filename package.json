@@ -8,7 +8,7 @@
   "license": "EUPL-1.2",
   "private": true,
   "devDependencies": {
-    "dprint": "0.47.5",
+    "dprint": "0.47.6",
     "wrangler": "3.95.0"
   },
   "scripts": {
