@@ -15,7 +15,7 @@
     "start": "blendid"
   },
   "dependencies": {
-    "@thi.ng/atom": "5.3.13",
+    "@thi.ng/atom": "5.3.14",
     "linkedom": "0.18.5",
     "lit-html": "3.2.1",
     "parse-duration": "1.1.1",
