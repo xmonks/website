@@ -1221,7 +1221,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.95.0"
+    wrangler: "npm:3.96.0"
   languageName: unknown
   linkType: soft
 
@@ -1233,7 +1233,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.95.0"
+    wrangler: "npm:3.96.0"
   languageName: unknown
   linkType: soft
 
@@ -1245,7 +1245,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.95.0"
+    wrangler: "npm:3.96.0"
   languageName: unknown
   linkType: soft
 
@@ -1262,7 +1262,7 @@ __metadata:
     parse-duration: "npm:1.1.1"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
-    wrangler: "npm:3.95.0"
+    wrangler: "npm:3.96.0"
   languageName: unknown
   linkType: soft
 
@@ -1280,7 +1280,7 @@ __metadata:
   resolution: "@hckr-studio/websites@workspace:."
   dependencies:
     dprint: "npm:0.47.6"
-    wrangler: "npm:3.95.0"
+    wrangler: "npm:3.96.0"
   languageName: unknown
   linkType: soft
 
@@ -1346,7 +1346,7 @@ __metadata:
     "@cloudflare/puppeteer": "npm:0.0.14"
     "@cloudflare/vitest-pool-workers": "npm:0.5.36"
     vitest: "npm:2.1.8"
-    wrangler: "npm:3.95.0"
+    wrangler: "npm:3.96.0"
   languageName: unknown
   linkType: soft
 
@@ -9925,6 +9925,43 @@ __metadata:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
   checksum: 10/fc5404e649dc223104ef28281e48d85161cb6732833c050d8ae2546bcd267d83f228d4dbf102d4885f334e77d51691d8f6e29365ff07fc5d77574f35ef7a1d8c
+  languageName: node
+  linkType: hard
+
+"wrangler@npm:3.96.0":
+  version: 3.96.0
+  resolution: "wrangler@npm:3.96.0"
+  dependencies:
+    "@cloudflare/kv-asset-handler": "npm:0.3.4"
+    "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
+    "@esbuild-plugins/node-modules-polyfill": "npm:^0.2.2"
+    blake3-wasm: "npm:^2.1.5"
+    chokidar: "npm:^4.0.1"
+    date-fns: "npm:^4.1.0"
+    esbuild: "npm:0.17.19"
+    fsevents: "npm:~2.3.2"
+    itty-time: "npm:^1.0.6"
+    miniflare: "npm:3.20241205.0"
+    nanoid: "npm:^3.3.3"
+    path-to-regexp: "npm:^6.3.0"
+    resolve: "npm:^1.22.8"
+    selfsigned: "npm:^2.0.1"
+    source-map: "npm:^0.6.1"
+    unenv: "npm:unenv-nightly@2.0.0-20241204-140205-a5d5190"
+    workerd: "npm:1.20241205.0"
+    xxhash-wasm: "npm:^1.0.1"
+  peerDependencies:
+    "@cloudflare/workers-types": ^4.20241205.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@cloudflare/workers-types":
+      optional: true
+  bin:
+    wrangler: bin/wrangler.js
+    wrangler2: bin/wrangler.js
+  checksum: 10/b1aaeeb2a191c99e3966af8ea184a65ea726394e5b2ca991e9ee70d0e7886ddfb317b4b38426e838585112d46ceb1a9d0d84386077ee7a1f40a2bd691e8eb92b
   languageName: node
   linkType: hard
 
