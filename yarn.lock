@@ -1221,7 +1221,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.96.0"
+    wrangler: "npm:3.97.0"
   languageName: unknown
   linkType: soft
 
@@ -1233,7 +1233,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.96.0"
+    wrangler: "npm:3.97.0"
   languageName: unknown
   linkType: soft
 
@@ -1245,7 +1245,7 @@ __metadata:
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
     postcss-jit-props: "npm:1.0.14"
-    wrangler: "npm:3.96.0"
+    wrangler: "npm:3.97.0"
   languageName: unknown
   linkType: soft
 
@@ -1262,7 +1262,7 @@ __metadata:
     parse-duration: "npm:1.1.1"
     postcss-jit-props: "npm:1.0.14"
     rxjs: "npm:7.8.1"
-    wrangler: "npm:3.96.0"
+    wrangler: "npm:3.97.0"
   languageName: unknown
   linkType: soft
 
@@ -1280,7 +1280,7 @@ __metadata:
   resolution: "@hckr-studio/websites@workspace:."
   dependencies:
     dprint: "npm:0.47.6"
-    wrangler: "npm:3.96.0"
+    wrangler: "npm:3.97.0"
   languageName: unknown
   linkType: soft
 
@@ -1346,7 +1346,7 @@ __metadata:
     "@cloudflare/puppeteer": "npm:0.0.14"
     "@cloudflare/vitest-pool-workers": "npm:0.5.36"
     vitest: "npm:2.1.8"
-    wrangler: "npm:3.96.0"
+    wrangler: "npm:3.97.0"
   languageName: unknown
   linkType: soft
 
@@ -2514,7 +2514,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.11.0, acorn@npm:^8.8.0, acorn@npm:^8.8.2":
+"acorn@npm:^8.11.0, acorn@npm:^8.14.0, acorn@npm:^8.8.0, acorn@npm:^8.8.2":
   version: 8.14.0
   resolution: "acorn@npm:8.14.0"
   bin:
@@ -3397,6 +3397,13 @@ __metadata:
   version: 0.0.1
   resolution: "concat-map@npm:0.0.1"
   checksum: 10/9680699c8e2b3af0ae22592cb764acaf973f292a7b71b8a06720233011853a58e256c89216a10cbe889727532fd77f8bcd49a760cedfde271b8e006c20e079f2
+  languageName: node
+  linkType: hard
+
+"confbox@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "confbox@npm:0.1.8"
+  checksum: 10/4ebcfb1c6a3b25276734ec5722e88768eb61fc02f98e11960b845c5c62bc27fd05f493d2a8244d9675b24ef95afe4c0d511cdcad02c72f5eeea463cc26687999
   languageName: node
   linkType: hard
 
@@ -6407,6 +6414,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mlly@npm:^1.7.2, mlly@npm:^1.7.3":
+  version: 1.7.3
+  resolution: "mlly@npm:1.7.3"
+  dependencies:
+    acorn: "npm:^8.14.0"
+    pathe: "npm:^1.1.2"
+    pkg-types: "npm:^1.2.1"
+    ufo: "npm:^1.5.4"
+  checksum: 10/77921e4b37f48e939b9879dbf3d3734086a69a97ddfe9adc5ae7b026ee2f73a0bcac4511c6c645cee79ccc2852c24b83f93bfd29ada7a7a3259cb943569fc7f6
+  languageName: node
+  linkType: hard
+
 "modify-filename@npm:2.0.0, modify-filename@npm:^2.0.0":
   version: 2.0.0
   resolution: "modify-filename@npm:2.0.0"
@@ -7104,6 +7123,17 @@ __metadata:
   dependencies:
     find-up: "npm:^6.3.0"
   checksum: 10/94298b20a446bfbbd66604474de8a0cdd3b8d251225170970f15d9646f633e056c80520dd5b4c1d1050c9fed8f6a9e5054b141c93806439452efe72e57562c03
+  languageName: node
+  linkType: hard
+
+"pkg-types@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "pkg-types@npm:1.2.1"
+  dependencies:
+    confbox: "npm:^0.1.8"
+    mlly: "npm:^1.7.2"
+    pathe: "npm:^1.1.2"
+  checksum: 10/d61f4b7a2351b55b22f1d08f5f9b4236928d5660886131cc0e11576362e2b3bfcb54084bb4a0ba79147b707a27dcae87444a86e731113e152ffd3b6155ce5a5a
   languageName: node
   linkType: hard
 
@@ -9388,6 +9418,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"unenv@npm:unenv-nightly@2.0.0-20241212-153011-af71c96":
+  version: 2.0.0-20241212-153011-af71c96
+  resolution: "unenv-nightly@npm:2.0.0-20241212-153011-af71c96"
+  dependencies:
+    defu: "npm:^6.1.4"
+    mlly: "npm:^1.7.3"
+    ohash: "npm:^1.1.4"
+    pathe: "npm:^1.1.2"
+    ufo: "npm:^1.5.4"
+  checksum: 10/4a9c0eebb90c97908128d4087d5dfc7ec8010d5930447b083aeb96d7bbb3177f68bac491570788fbe7681a24a580a36f24e4734905890a8905f7a099a6c73563
+  languageName: node
+  linkType: hard
+
 "unicorn-magic@npm:^0.1.0":
   version: 0.1.0
   resolution: "unicorn-magic@npm:0.1.0"
@@ -9928,9 +9971,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.96.0":
-  version: 3.96.0
-  resolution: "wrangler@npm:3.96.0"
+"wrangler@npm:3.97.0":
+  version: 3.97.0
+  resolution: "wrangler@npm:3.97.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -9947,7 +9990,7 @@ __metadata:
     resolve: "npm:^1.22.8"
     selfsigned: "npm:^2.0.1"
     source-map: "npm:^0.6.1"
-    unenv: "npm:unenv-nightly@2.0.0-20241204-140205-a5d5190"
+    unenv: "npm:unenv-nightly@2.0.0-20241212-153011-af71c96"
     workerd: "npm:1.20241205.0"
     xxhash-wasm: "npm:^1.0.1"
   peerDependencies:
@@ -9961,7 +10004,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/b1aaeeb2a191c99e3966af8ea184a65ea726394e5b2ca991e9ee70d0e7886ddfb317b4b38426e838585112d46ceb1a9d0d84386077ee7a1f40a2bd691e8eb92b
+  checksum: 10/2784919a2985281f1e7f1775e64ec701daefb361dd58bea90786641d83a81960092a8670a272a3f73709a927423b572404bcdd98abce27123630486e6fa377c2
   languageName: node
   linkType: hard
 

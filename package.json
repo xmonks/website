@@ -9,7 +9,7 @@
   "private": true,
   "devDependencies": {
     "dprint": "0.47.6",
-    "wrangler": "3.96.0"
+    "wrangler": "3.97.0"
   },
   "scripts": {
     "fmt": "dprint fmt \"**/*.{md,mjs,js,json}\""
