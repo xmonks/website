@@ -1,8 +1,13 @@
 :root {
-  --headings-font-family: Poppins, var(--font-sans);
-  --text-font-family: var(--font-mono);
+  --headings-font-family: "Readex Pro", var(--font-sans);
+  --text-font-family: "Readex Pro", var(--font-sans);
   --text-color: black;
   --background: white;
+
+  font-size: 100%;
+  color-scheme: light dark;
+  accent-color: var(--primary-color);
+  interpolate-size: allow-keywords;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,7 +37,6 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-weight: 900;
   font-size: var(--font-size-fluid-3);
-  font-variation-settings: 'wght' 700;
   letter-spacing: var(--font-letterspacing-0);
   text-transform: uppercase;
 }
@@ -61,7 +65,7 @@ main > section {
   margin: 4em 0;
 }
 
-section h2::after {
+section h2::before {
   content: "_";
 }
 
@@ -72,4 +76,70 @@ blockquote dt {
 
 blockquote dd {
   font-family: Gergia, var(--font-serif);
+}
+
+@layer --layout {
+  :root {
+    /* layout measures */
+    --root: clamp(max(1em, 20px), 1.2em + 0.5vw, 2em);
+    --line-height: 1.5;
+    --smaller: 0.8em;
+    --line: calc(1rem * var(--line-height));
+    --measure: 60ch;
+    --gap: 1rem;
+    --half-gap: calc(var(--gap) / 2);
+    --shim: calc(var(--gap) / 4);
+    --half-shim: calc(var(--shim) / 2);
+    --spacer: clamp(
+      var(--gap) * 1.5,
+      var(--gap) + 4vw,
+      min(var(--gap) * 6, 20vmin)
+    );
+  }
+
+  html {
+    --margin: var(--gap, 1em);
+    --inset: var(--gap, 1em);
+    --outset: 0px;
+  }
+
+  @media (min-width: 40em) {
+    html {
+      --margin: var(--spacer, 2em);
+      --outset: calc(var(--inset) * -1);
+    }
+  }
+
+  html, body {
+    margin: 0;
+  }
+
+  body {
+    --wide: 100vw - 30em;
+
+    display: grid;
+    row-gap: var(--spacer);
+    grid-template-columns:
+    [full-start] var(--margin)
+    [page-start] minmax(0, 0.5fr)
+    [extra-start] minmax(0, 1fr)
+    [wide-start] minmax(0, clamp(0px, var(--wide), var(--spacer, 3em)))
+    [main-start] minmax(12ch, var(--measure))
+    [main-end] minmax(0, clamp(0px, var(--wide), var(--gap, 1em)))
+    [wide-end] minmax(0, 1fr)
+    [extra-end] minmax(0, 0.5fr)
+    [page-end] var(--margin)
+    [full-end];
+  }
+
+  :where(body) > * {
+    grid-column: var(--body-column, wide);
+    margin-block: 0;
+  }
+
+  @media (max-width: 30em) {
+    body {
+      overflow-wrap: break-word;
+    }
+  }
 }

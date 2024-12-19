@@ -1,4 +1,4 @@
-{% extends 'layouts/website.html' %}
+{% extends 'layouts/website.njk' %}
 
 {% block title %}hckr.space{% endblock %}
 
@@ -46,10 +46,3 @@
 </main>
 {% endblock %}
 
-{% block javascript %}
-<script type="module">
-  import {helloWorld} from "{{ 'index.js' | assetUrl('esm') }}";
-
-  helloWorld();
-</script>
-{% endblock %}

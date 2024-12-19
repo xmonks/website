@@ -18,4 +18,9 @@ export default {
       ],
     },
   },
+
+  vite: {
+    browser: "google chrome canary",
+    browserArgs: "--ignore-certificate-errors --allow-insecure-localhost",
+  },
 };
