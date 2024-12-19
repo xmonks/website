@@ -1,8 +1,12 @@
 :root {
-  --headings-font-family: "Readex Pro", var(--font-sans);
-  --text-font-family: "Readex Pro", var(--font-sans);
+  --headings-font-family: "Pangea", var(--font-sans);
+  --text-font-family: "Pangea", var(--font-sans);
   --text-color: black;
   --background: white;
+
+  --primary-color: oklch(82.9% 0.175 193.24);
+
+  --underscore-color: var(--primary-color);
 
   font-size: 100%;
   color-scheme: light dark;
@@ -32,13 +36,14 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: var(--headings-font-family);
+  text-wrap: balance;
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 300;
   font-size: var(--font-size-fluid-3);
-  letter-spacing: var(--font-letterspacing-0);
   text-transform: uppercase;
+  font-variation-settings: "wdth" 72, "opsz" 18;
 }
 
 h2 {
@@ -48,6 +53,10 @@ h2 {
 
 h3 {
   font-size: var(--font-size-fluid-1);
+}
+
+p, li {
+  text-wrap: pretty;
 }
 
 hgroup h1 {
@@ -65,9 +74,15 @@ main > section {
   margin: 4em 0;
 }
 
-section h2::before {
-  content: "_";
+section h2 {
+  margin-inline-start: calc(-1 * (1ex - 4px));
+
+  &::before {
+    content: "_";
+    color: var(--underscore-color);
+  }
 }
+
 
 blockquote dt {
   font-size: var(--font-size-fluid-1);
@@ -78,7 +93,7 @@ blockquote dd {
   font-family: Gergia, var(--font-serif);
 }
 
-@layer --layout {
+@layer layout {
   :root {
     /* layout measures */
     --root: clamp(max(1em, 20px), 1.2em + 0.5vw, 2em);
@@ -115,7 +130,7 @@ blockquote dd {
   }
 
   body {
-    --wide: 100vw - 30em;
+    --wide: 100vw - 30ch;
 
     display: grid;
     row-gap: var(--spacer);
@@ -125,7 +140,7 @@ blockquote dd {
     [extra-start] minmax(0, 1fr)
     [wide-start] minmax(0, clamp(0px, var(--wide), var(--spacer, 3em)))
     [main-start] minmax(12ch, var(--measure))
-    [main-end] minmax(0, clamp(0px, var(--wide), var(--gap, 1em)))
+    [main-end] minmax(0, clamp(0px, var(--wide), var(--spacer, 3em)))
     [wide-end] minmax(0, 1fr)
     [extra-end] minmax(0, 0.5fr)
     [page-end] var(--margin)
@@ -133,7 +148,7 @@ blockquote dd {
   }
 
   :where(body) > * {
-    grid-column: var(--body-column, wide);
+    grid-column: var(--body-column, main);
     margin-block: 0;
   }
 

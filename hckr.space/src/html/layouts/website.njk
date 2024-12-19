@@ -16,6 +16,13 @@
     <link rel="preconnect" href="https://res.cloudinary.com">
   {% endif %}
   {% block head_preconnect %}{% endblock %}
+  <style>
+    @font-face {
+      font-family: Pangea;
+      font-weight: 300 700;
+      src: url("{{ "Pangea.woff2" | assetUrl("fonts") }}") format("woff2");
+    }
+  </style>
   <link rel="stylesheet" href="{{ 'index.css' | assetUrl('stylesheets') }}">
   {% block head_stylesheets %}{% endblock %}
   {% block head_preload %}{% endblock %}
