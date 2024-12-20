@@ -1255,7 +1255,7 @@ __metadata:
     "@cloudflare/workers-types": "npm:4.20241218.0"
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
-    postcss-jit-props: "npm:1.0.14"
+    postcss-jit-props: "npm:1.0.15"
     wrangler: "npm:3.99.0"
   languageName: unknown
   linkType: soft
@@ -1267,7 +1267,7 @@ __metadata:
     "@cloudflare/workers-types": "npm:4.20241218.0"
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
-    postcss-jit-props: "npm:1.0.14"
+    postcss-jit-props: "npm:1.0.15"
     wrangler: "npm:3.99.0"
   languageName: unknown
   linkType: soft
@@ -1279,7 +1279,7 @@ __metadata:
     "@cloudflare/workers-types": "npm:4.20241218.0"
     "@hckr_/blendid": "npm:9.0.1"
     open-props: "npm:1.7.8"
-    postcss-jit-props: "npm:1.0.14"
+    postcss-jit-props: "npm:1.0.15"
     wrangler: "npm:3.99.0"
   languageName: unknown
   linkType: soft
@@ -1295,7 +1295,7 @@ __metadata:
     lit-html: "npm:3.2.1"
     open-props: "npm:1.7.8"
     parse-duration: "npm:1.1.1"
-    postcss-jit-props: "npm:1.0.14"
+    postcss-jit-props: "npm:1.0.15"
     rxjs: "npm:7.8.1"
     wrangler: "npm:3.99.0"
   languageName: unknown
@@ -7487,14 +7487,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-jit-props@npm:1.0.14":
-  version: 1.0.14
-  resolution: "postcss-jit-props@npm:1.0.14"
+"postcss-jit-props@npm:1.0.15":
+  version: 1.0.15
+  resolution: "postcss-jit-props@npm:1.0.15"
   dependencies:
     tiny-glob: "npm:^0.2.9"
   peerDependencies:
     postcss: ^8.2.8
-  checksum: 10/ead22baa65e130bf4e3052cd99f25af8303776436f9fa55f339a83cdd7bf019471c636f49c547533dac6c8adc73ddacf37c6a2ec3dab4207a9ba02ddd0066f73
+  checksum: 10/e7d8d22c35b5b8c069800eae84bad33587d8c94af9c2537d29b096691aa80d9425cd0cc489fab1dfe9ebb6543032ccd30b6bba98775a1658f3b9d8fe6112b4f4
   languageName: node
   linkType: hard
 
