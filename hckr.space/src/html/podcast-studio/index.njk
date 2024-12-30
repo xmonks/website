@@ -11,101 +11,32 @@
   </section>
 
   <section id="podcasty">
-    <h2>Podcasty</h2>
+    <header>
+      <h2>Podcasty</h2>
+      <p>Jaké podcasty se u nás natáčí?</p>
+    </header>
 
-    <article id="data-talk">
-      <h3><a href="https://ceskepodcasty.cz/podcast/data-talk">DATA talk</a></h3>
-      <picture>
-        <img src="https://s3.actve.net/ceskepodcasty/321180_p1tusomhw587pmnj4sovjxmoopqk_29d6ee068d.jpeg" alt="" width="128" height="128">
-      </picture>
-      <p><a href="http://www.datatalk.cz/">www.datatalk.cz</a></p>
-      <p>Vítejte u Data Talku! V našem podcastu vám chceme pravidelně
-        přinášet zajímavý obsah z české a slovenské datové scény: rozhovory
-        na odborná témata, představení relevantních datových firem, problémů a
-        nástrojů, ale také aktuality z trhu.</p>
-    </article>
+    {% macro podcastTemplate(item) %}
+      <article class="podcast" id="{{ item.slug }}">
+        <h3><a href="{{ item.url }}">{{ item.title }}</a></h3>
+        <picture>
+          <img src="{{ item.image }}" alt="" width="128" height="128">
+        </picture>
+        {% if item.website or item.youtube %}
+          <p>{% if item.website %}<a href="{{ item.website }}">Web</a>{% endif %}
+            {% if item.youtube %}<a href="{{ item.youtube }}">YouTube</a>{% endif %}</p>
+        {% endif %}
+        {{ item.body | safe }}
+      </article>
+    {% endmacro %}
 
-    <article id="kanarci-v-siti">
-      <h3><a href="https://ceskepodcasty.cz/podcast/kanarci-v-siti">Kanárci v síti</a></h3>
-      <picture>
-        <img src="https://s3.actve.net/ceskepodcasty/755818_07f7akhc8rg70j4owbh2kkj1ahsy_be9bb82586.jpeg" alt="" width="128" height="128">
-      </picture>
-      <p><a href="https://www.kanarci.online/">www.kanarci.online</a></p>
-      <p>Podcast, ve kterém vás Alex Alvarová a Josef Holý provedou světem
-        dezinformací, digitální propagandy a AI. Epizody zdarma cca jednou
-        měsíčně na <a href="http://www.kanarci.online">www.kanarci.online</a>.
-        Placené každý týden na <a
-          href="https://herohero.co/kanarcivsiti">herohero.co/kanarcivsiti</a>.</p>
-    </article>
-
-    <article id="peopleops">
-      <h3><a href="https://ceskepodcasty.cz/podcast/people-ops-podcast">PeopleOps podcast</a></h3>
-      <picture>
-        <img src="https://s3.actve.net/ceskepodcasty/924107_fucg6l1s3gcjjcp1r76xr7mu2jwl_e53f7949f8.jpeg" alt="" width="128" height="128">
-      </picture>
-      <p><a href="https://www.peopleops.cz/">www.peopleops.cz</a></p>
-      <p>Ahoj, jsem Irča. Vaše průvodkyně ve světe PeopleOps. Víc jak dekádu se
-        pohybuji na technologickém trhu. Svoje roky sbírané know-how o komunikaci a
-        podpoře lidí (nejen v techu), chci sdílet se všemi, kdo nechtějí
-        narážet hlavou do zdi tam, kde už to za ně udělali jiní. Jsem tu pro
-        všechny, kdo chtějí vědět, jak mluvit a pracovat s lidmi v IT, aby to
-        dávalo smysl a přinášelo výsledky.</p>
-
-      <p>PeopleOps v kontextu, dlouhodobě, s praktickými zkušenostmi. Aby se
-        žádný skvělý specialista, který začal vést lidi, nebo s nimi začal
-        intenzivněji spolupracovat, neztratil v operativě a pod nánosem všech
-        nových povinností a vjemů! Staňte se angažovanějšími a přitahujte si
-        k sobě do týmu ty správné lidi! I s tím pomůžu v #PeopleOps. Protože
-        všechno je to o lidech. #empower #engage #tech</p>
-    </article>
-
-    <article id="exec">
-      <h3><a href="https://ceskepodcasty.cz/podcast/exec-talks-e-commerce-podcast">EXEC Talks</a></h3>
-      <picture>
-        <img src="https://s3.actve.net/ceskepodcasty/856909_eu4b16kjgaailq6mw2qqf90zrk63_e0bcf9d1d5.jpeg" alt="" width="128" height="128">
-      </picture>
-      <p>EXEC Talks je podcast pro e-commerce managery, ve kterém uslyšíte
-        rozhovory se zajímavými a úspěšnými e-commerce osobnostmi. EXEC Talks
-        vydává Shopsys, jednička ve tvorbě e-shopů na míru.</p>
-    </article>
-
-    <article id="hra-skolou">
-      <h3><a href="https://ceskepodcasty.cz/podcast/hra-skolou-podcast">Hra školou podcast</a></h3>
-      <picture>
-        <img src="https://s3.actve.net/ceskepodcasty/474899_41140393_1714943058227_906c4debdf0ce_01b5d2077e.jpeg" alt="" width="128" height="128">
-      </picture>
-      <p><a href="https://www.hraskoloupodcast.cz/">www.hraskoloupodcast.cz</a></p>
-      <p>Hledáte pro své dítě ten nejlepší možný start? Přemýšlíte, jak
-        vybrat nejlepší mateřskou školku a jaké možnosti se před vámi
-        otevírají? Podcast Hra školou shromažďuje klíčové informace na jednom
-        místě, přímo od kovaných expertů. Provedeme vás světem předškolního
-        vzdělávání a ukážeme, jaké máte možnosti.</p>
-    </article>
-
-    <article id="plodne-hovory">
-      <h3><a href="https://ceskepodcasty.cz/podcast/plodne-hovory">Plodné hovory</a></h3>
-      <picture>
-        <img src="https://s3.actve.net/ceskepodcasty/565730_39551174_1699198057067_5ee897b669cca_c50f0d6934.jpeg" alt="" width="128" height="128">
-      </picture>
-      <p>Plodné hovory&nbsp;&ndash; podcastová série pro všechny, kteří jsou na cestě
-        za svým vysněným miminkem a ta cesta už je možná dlouhá a bolavá. My
-        jsme na našeho Kristiánka čekali šest let. Za tu dobu jsme poznali spoustu
-        úžasných odborníků, kteří nám pomáhali a zajímavých lidí, jejichž
-        příběhy nás inspirovali. Postupně si budu zvát své hosty do studia a
-        věřím, že vás jejich znalosti a zkušenosti obohatí stejně jako nás.
-        Jmenuju se Dominika a budu s&nbsp;vámi sdílet náš příběh.</p>
-
-    </article>
-
-    <article id="appcast">
-      <h3><a href="https://ceskepodcasty.cz/podcast/app-cast-ceske-appky-ktere-dobyvaji-svet">AppCast</a></h3>
-      <picture>
-        <img src="https://s3.actve.net/ceskepodcasty/876303_riptkxu6fc6t3a289l9wni315mh0_b3dfc4d428.jpeg" alt="" width="128" height="128">
-      </picture>
-      <p>Rozhovory s tvůrci úspěšných aplikací, které vznikly v Česku.
-        V rámci rozhovorů se snažíme s hosty odkrývat, jaké jsou základní
-        ingredience receptu na úspěšnou aplikaci.</p>
-    </article>
+    {% for key in podcastsSection.list %}
+      {{ podcastTemplate(podcasts[key]) }}
+    {% endfor %}
   </section>
+
+  <pre>
+    {{ jahoda() | dump }}
+  </pre>
 
 {% endblock %}
