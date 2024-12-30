@@ -1,8 +1,8 @@
+import { texyTypography } from "@hckr_/blendid/lib/texy.mjs";
 import OpenProps from "open-props";
 import jitProps from "postcss-jit-props";
 
 export default {
-  html: true,
   images: true,
   cloudflare: true,
   cloudinary: false,
@@ -11,11 +11,13 @@ export default {
   svgSprite: true,
   esbuild: true,
 
+  html: {
+    markedExtensions: [texyTypography("cs")],
+  },
+
   stylesheets: {
     postcss: {
-      plugins: [
-        jitProps(OpenProps),
-      ],
+      plugins: [jitProps(OpenProps)],
     },
   },
 };
