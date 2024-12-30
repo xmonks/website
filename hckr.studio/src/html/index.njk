@@ -1,4 +1,13 @@
-{% extends 'layouts/website.njk' %}
+{% extends "layouts/website.njk" %}
+
+{% block head %}
+  <link rel="canonical" href="https://hckr.studio/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" content="hckr.studio">
+  <meta name="twitter:site" content="@hckr_studio">
+  <meta name="twitter:image" property="og:image" content="{{ "og-image.png" | assetUrl("images") }}">
+  <link rel="me" href="https://bsky.app/profile/hckr.studio">
+{% endblock %}
 
 {% set bodySchema = "Organization" %}
 {% block content %}
@@ -45,25 +54,25 @@
           </div>
         </div>
 
-      <section id="billing">
-        <h3>billing</h3>
-        <div property="legalName"><strong>hckr.studio s.r.o.</strong></div>
-        <div property="foundingLocation" typeof="Place">
-          <div property="address" typeof="PostalAddress">
-            <div property="streetAddress">Hartigova 31/27</div>
-            <div><span property="postalCode">130 00</span>, <span property="addressLocality">Praha 3</span></div>
-            <div property="addressCountry">Czech Republic</div>
+        <section id="billing">
+          <h3>billing</h3>
+          <div property="legalName"><strong>hckr.studio s.r.o.</strong></div>
+          <div property="foundingLocation" typeof="Place">
+            <div property="address" typeof="PostalAddress">
+              <div property="streetAddress">Hartigova 31/27</div>
+              <div><span property="postalCode">130 00</span>, <span property="addressLocality">Praha 3</span></div>
+              <div property="addressCountry">Czech Republic</div>
+            </div>
           </div>
-        </div>
-        <dl>
-          <dt>e-mail</dt>
-          <dd><a href="mailto:invoices&#64;hckr.studio">invoices&#64;<!-- -->hckr.studio</a></dd>
-          <dt>reg. no.</dt>
-          <dd>21186022</dd>
-          <dt>VAT ID</dt>
-          <dd property="vatID">CZ21186022</dd>
-        </dl>
-      </section>
+          <dl>
+            <dt>e-mail</dt>
+            <dd><a href="mailto:invoices&#64;hckr.studio">invoices&#64;<!-- -->hckr.studio</a></dd>
+            <dt>reg. no.</dt>
+            <dd>21186022</dd>
+            <dt>VAT ID</dt>
+            <dd property="vatID">CZ21186022</dd>
+          </dl>
+        </section>
       </div>
       <p>a limited company registered by Prague Municipal Court under file C 397979.</p>
     </section>

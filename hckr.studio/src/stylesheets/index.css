@@ -1,6 +1,6 @@
 :root {
-  --headings-font-family: "PP Stellar", var(--font-sans);
-  --text-font-family: var(--font-sans);
+  --headings-font-family: "Love Light", "Pangea", var(--font-sans);
+  --text-font-family: "Pangea", var(--font-sans);
   --text-color: light-dark(black, white);
   --background: light-dark(white, black);
   --logo-color: var(--text-color);
@@ -47,6 +47,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+  font-family: var(--headings-font-family);
   font-weight: 700;
   text-transform: uppercase;
   text-wrap: balance;
@@ -57,11 +58,6 @@ h1, h2, h3, h4, h5 {
 
 p, ul, ol, dl {
   text-wrap: pretty;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--headings-font-family);
-  letter-spacing: var(--font-letterspacing-0);
 }
 
 h1 {
@@ -82,7 +78,7 @@ hgroup h1 {
 
 hgroup h1 em {
   font-style: normal;
-  font-weight: 300;
+  letter-spacing: -4px;
 }
 
 hgroup h2 {
@@ -95,7 +91,7 @@ main > section {
 }
 
 section h2 {
-  margin-inline-start: calc(-1 * (1ex + 2px));
+  margin-inline-start: calc(-1 * (1ex + 5px));
 
   &::before {
     content: "_";
