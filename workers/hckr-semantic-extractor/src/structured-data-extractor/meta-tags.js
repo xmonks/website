@@ -9,7 +9,7 @@ const keyAttributes = new Set(["name", "property", "itemprop", "http-equiv"]);
 
 /**
  * @param {Document} document
- * @returns {Map<string, string>}
+ * @returns {Record<string, string[]>}
  */
 export function metaTags(document) {
   const result = new Map();
@@ -25,5 +25,5 @@ export function metaTags(document) {
     data.push(value);
     result.set(name, data);
   }
-  return result;
+  return Object.fromEntries(result);
 }

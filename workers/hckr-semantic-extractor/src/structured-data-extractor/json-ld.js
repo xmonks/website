@@ -18,7 +18,7 @@ function parse(el) {
 /**
  * @param {Document} document
  * @param options
- * @returns {Map<string, any>}
+ * @returns {Record<string, any>}
  */
 export function jsonLd(document, options) {
   const result = new Map();
@@ -42,5 +42,5 @@ export function jsonLd(document, options) {
       }
     }
   }
-  return result;
+  return Object.fromEntries(result);
 }

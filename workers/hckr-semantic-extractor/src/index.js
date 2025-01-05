@@ -27,7 +27,7 @@ export default {
     const resp = await fetch(url);
     const html = await resp.text();
     const { document } = parseHTML(html);
-    const result = parseStructuredData(document);
+    const result = parseStructuredData(document, { base: url });
     return Response.json({ url, title: document.title, ...result });
   },
 };

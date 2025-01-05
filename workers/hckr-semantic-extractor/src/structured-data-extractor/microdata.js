@@ -39,7 +39,7 @@ function getItemType(itemType) {
  * @param {Element} scope
  * @param {(element: Element) => string | undefined | null} extractValue
  * @param options
- * @returns {Map}
+ * @returns {Record<string, any>}
  */
 function extract(scope, extractValue, options) {
   const itemType = scope.getAttribute("itemtype");
@@ -61,7 +61,7 @@ function extract(scope, extractValue, options) {
     }
   }
 
-  return microdata;
+  return Object.fromEntries(microdata);
 }
 
 /**
@@ -157,7 +157,7 @@ function prepend(target, addition) {
  * @returns {Record<string, any>[]}
  */
 export function microdata(scope, extractValue = () => undefined, options) {
-  const itemScopes = scope.querySelectorAll(`[itemscope]`);
+  const itemScopes = scope.querySelectorAll(`[itemscope]:not([itemprop])`);
   const result = [];
   for (const itemScope of itemScopes) {
     result.push(extract(itemScope, extractValue, options));
