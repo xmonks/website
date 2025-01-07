@@ -28,6 +28,7 @@ export default {
     const html = await resp.text();
     const { document } = parseHTML(html);
     const result = parseStructuredData(document, { base: url });
-    return Response.json({ url, title: document.title, ...result });
+    const { lang } = document.documentElement;
+    return Response.json({ url, title: document.title, lang, ...result });
   },
 };
