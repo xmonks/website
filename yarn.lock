@@ -118,10 +118,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:4.20241230.0":
-  version: 4.20241230.0
-  resolution: "@cloudflare/workers-types@npm:4.20241230.0"
-  checksum: 10/ddb68935d69522e98a3b22e80620cc3c110c9f46cb033341b680c53c528d5704a43f4adaf3c69cecea7011212a8e36047146911419baba00f39043f1dc866676
+"@cloudflare/workers-types@npm:4.20250109.0":
+  version: 4.20250109.0
+  resolution: "@cloudflare/workers-types@npm:4.20250109.0"
+  checksum: 10/4d33d1154339f4adcea2d538d6c81166697c58d31a36494c6cf5f368a15092b904a8715ca0f46e50866691eb4c1dfb65dc1ac624215b8d9e79888cbd3a4bd48a
   languageName: node
   linkType: hard
 
@@ -1249,7 +1249,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-party-web@workspace:hckr.party"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20241230.0"
+    "@cloudflare/workers-types": "npm:4.20250109.0"
     "@hckr_/blendid": "npm:9.1.2"
     open-props: "npm:1.7.10"
     postcss-jit-props: "npm:1.0.15"
@@ -1261,7 +1261,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-space-web@workspace:hckr.space"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20241230.0"
+    "@cloudflare/workers-types": "npm:4.20250109.0"
     "@hckr_/blendid": "npm:9.1.2"
     open-props: "npm:1.7.10"
     postcss-jit-props: "npm:1.0.15"
@@ -1273,7 +1273,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-studio-web@workspace:hckr.studio"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20241230.0"
+    "@cloudflare/workers-types": "npm:4.20250109.0"
     "@hckr_/blendid": "npm:9.1.2"
     open-props: "npm:1.7.10"
     postcss-jit-props: "npm:1.0.15"
@@ -1285,7 +1285,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@hckr-studio/hckr-tv-web@workspace:hckr.tv"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20241230.0"
+    "@cloudflare/workers-types": "npm:4.20250109.0"
     "@hckr_/blendid": "npm:9.1.2"
     "@thi.ng/atom": "npm:5.3.16"
     linkedom: "npm:0.18.6"
