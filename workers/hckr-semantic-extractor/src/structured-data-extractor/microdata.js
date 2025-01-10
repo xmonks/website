@@ -157,7 +157,7 @@ function prepend(target, addition) {
  * @returns {Record<string, any>[]}
  */
 export function microdata(scope, extractValue = () => undefined, options) {
-  const itemScopes = scope.querySelectorAll(`[itemscope]:not([itemprop])`);
+  const itemScopes = scope.querySelectorAll(`[itemscope]`);
   const result = [];
   for (const itemScope of itemScopes) {
     result.push(extract(itemScope, extractValue, options));
