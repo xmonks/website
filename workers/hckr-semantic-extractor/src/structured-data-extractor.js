@@ -1,6 +1,7 @@
 import { jsonLd } from "./structured-data-extractor/json-ld.js";
 import { metaTags } from "./structured-data-extractor/meta-tags.js";
 import { microdata } from "./structured-data-extractor/microdata.js";
+import { relLinks, revLinks } from "./structured-data-extractor/links.js";
 
 // import { rdfa } from "./structured-data-extractor/rdfa.js";
 
@@ -13,6 +14,8 @@ export function parseStructuredData(document, options) {
     ["metatags", metaTags(document)],
     ["jsonld", jsonLd(document, options)],
     ["microdata", microdata(document, () => undefined, options)],
-    // ["rdfa", rdfa(document, options)]
+    // ["rdfa", rdfa(document, options)],
+    ["rel", relLinks(document)],
+    ["rev", revLinks(document)],
   ]);
 }
