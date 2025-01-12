@@ -1,6 +1,6 @@
 function parseLinks(document, type) {
   const items = new Map();
-  for (const link of document.querySelectorAll("[items][href]")) {
+  for (const link of document.querySelectorAll(`[${type}][href]`)) {
     const key = link.getAttribute(type);
     const val = link.getAttribute("href");
     if (!val) continue;
