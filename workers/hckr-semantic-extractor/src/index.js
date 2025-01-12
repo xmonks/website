@@ -23,7 +23,7 @@ export default {
     }
 
     const url = searchParams.get("url");
-    console.log(`Extracting structured data from ${url}`)
+    console.log(`Extracting structured data from ${url}`);
     const resp = await fetch(url, {
       headers: {
         "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
@@ -40,6 +40,7 @@ export default {
     const { document } = parseHTML(html);
     const result = parseStructuredData(document, { base: url });
     const { lang } = document.documentElement;
-    return Response.json({ url, title: document.title, lang, ...result });
+    const title = document.title.trim();
+    return Response.json({ url, title, lang, ...result });
   },
 };

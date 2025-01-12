@@ -20,7 +20,7 @@ export function metaTags(document) {
     if (!nameKey) continue;
 
     const name = elem.getAttribute(nameKey);
-    const value = elem.getAttribute("content");
+    const value = elem.getAttribute("content")?.trim();
     const data = result.get(name) ?? [];
     data.push(value);
     result.set(name, data);
