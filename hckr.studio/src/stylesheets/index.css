@@ -1,5 +1,5 @@
 :root {
-  --headings-font-family: "Love Light", "Pangea", var(--font-sans);
+  --headings-font-family: "Pangea", var(--font-sans);
   --text-font-family: "Pangea", var(--font-sans);
   --text-color: light-dark(black, white);
   --background: light-dark(white, black);
